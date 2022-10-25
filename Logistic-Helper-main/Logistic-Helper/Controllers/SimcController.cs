@@ -97,8 +97,7 @@ namespace LogisticHelper.Controllers
         public IActionResult Search()
         {
 
-            
-            
+
 
 
             return View();
