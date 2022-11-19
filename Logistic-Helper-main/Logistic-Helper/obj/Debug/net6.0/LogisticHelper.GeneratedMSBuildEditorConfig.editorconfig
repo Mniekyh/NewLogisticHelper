@@ -15,8 +15,12 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = C:\Users\mariu\Documents\GitHub\NewLogisticHelper\Logistic-Helper-main\Logistic-Helper
 build_property._RazorSourceGeneratorDebug = 
 
-[C:/Users/mariu/Documents/GitHub/NewLogisticHelper/Logistic-Helper-main/Logistic-Helper/Views/GoogleMap/GoogleMap(2wersja).cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcR29vZ2xlTWFwXEdvb2dsZU1hcCgyd2Vyc2phKS5jc2h0bWw=
+[C:/Users/mariu/Documents/GitHub/NewLogisticHelper/Logistic-Helper-main/Logistic-Helper/Views/GoogleMap/GoogleMap(3wersja).cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcR29vZ2xlTWFwXEdvb2dsZU1hcCgzd2Vyc2phKS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/mariu/Documents/GitHub/NewLogisticHelper/Logistic-Helper-main/Logistic-Helper/Views/GoogleMap/GoogleMap(działaMapa).cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcR29vZ2xlTWFwXEdvb2dsZU1hcChkemlhxYJhTWFwYSkuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/mariu/Documents/GitHub/NewLogisticHelper/Logistic-Helper-main/Logistic-Helper/Views/GoogleMap/GoogleMap.cshtml]

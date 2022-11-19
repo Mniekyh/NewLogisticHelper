@@ -343,3 +343,4 @@ C:\Users\mariu\Documents\GitHub\NewLogisticHelper\Logistic-Helper-main\Logistic-
 C:\Users\mariu\Documents\GitHub\NewLogisticHelper\Logistic-Helper-main\Logistic-Helper\bin\Debug\net6.0\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.0\tools\RoslynLatest\csi.exe.config
 C:\Users\mariu\Documents\GitHub\NewLogisticHelper\Logistic-Helper-main\Logistic-Helper\bin\Debug\net6.0\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.0\tools\RoslynLatest\vbc.exe.config
 C:\Users\mariu\Documents\GitHub\NewLogisticHelper\Logistic-Helper-main\Logistic-Helper\bin\Debug\net6.0\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.0\tools\RoslynLatest\VBCSCompiler.exe.config
+C:\Users\mariu\Documents\GitHub\NewLogisticHelper\Logistic-Helper-main\Logistic-Helper\bin\Debug\net6.0\bundleconfig.json
