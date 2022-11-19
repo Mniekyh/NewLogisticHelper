@@ -8,117 +8,125 @@ build_property.PlatformNeutralAssembly =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = LogisticHelper
 build_property.RootNamespace = LogisticHelper
-build_property.ProjectDir = N:\Programowanie\Inzynierka\PI2023\NewLogistic\NewLogisticHelper\Logistic-Helper-main\Logistic-Helper\
+build_property.ProjectDir = C:\Users\mariu\Documents\GitHub\NewLogisticHelper\Logistic-Helper-main\Logistic-Helper\
 build_property.RazorLangVersion = 6.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = N:\Programowanie\Inzynierka\PI2023\NewLogistic\NewLogisticHelper\Logistic-Helper-main\Logistic-Helper
+build_property.MSBuildProjectDirectory = C:\Users\mariu\Documents\GitHub\NewLogisticHelper\Logistic-Helper-main\Logistic-Helper
 build_property._RazorSourceGeneratorDebug = 
 
-[N:/Programowanie/Inzynierka/PI2023/NewLogistic/NewLogisticHelper/Logistic-Helper-main/Logistic-Helper/Views/Home/Index.cshtml]
+[C:/Users/mariu/Documents/GitHub/NewLogisticHelper/Logistic-Helper-main/Logistic-Helper/Views/GoogleMap/GoogleMap(2wersja).cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcR29vZ2xlTWFwXEdvb2dsZU1hcCgyd2Vyc2phKS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/mariu/Documents/GitHub/NewLogisticHelper/Logistic-Helper-main/Logistic-Helper/Views/GoogleMap/GoogleMap.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcR29vZ2xlTWFwXEdvb2dsZU1hcC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/mariu/Documents/GitHub/NewLogisticHelper/Logistic-Helper-main/Logistic-Helper/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[N:/Programowanie/Inzynierka/PI2023/NewLogistic/NewLogisticHelper/Logistic-Helper-main/Logistic-Helper/Views/Home/Privacy.cshtml]
+[C:/Users/mariu/Documents/GitHub/NewLogisticHelper/Logistic-Helper-main/Logistic-Helper/Views/Home/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[N:/Programowanie/Inzynierka/PI2023/NewLogistic/NewLogisticHelper/Logistic-Helper-main/Logistic-Helper/Views/OLD/Details.cshtml]
+[C:/Users/mariu/Documents/GitHub/NewLogisticHelper/Logistic-Helper-main/Logistic-Helper/Views/OLD/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcT0xEXERldGFpbHMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[N:/Programowanie/Inzynierka/PI2023/NewLogistic/NewLogisticHelper/Logistic-Helper-main/Logistic-Helper/Views/OLD/Index.cshtml]
+[C:/Users/mariu/Documents/GitHub/NewLogisticHelper/Logistic-Helper-main/Logistic-Helper/Views/OLD/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcT0xEXEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[N:/Programowanie/Inzynierka/PI2023/NewLogistic/NewLogisticHelper/Logistic-Helper-main/Logistic-Helper/Views/OLD/Search.cshtml]
+[C:/Users/mariu/Documents/GitHub/NewLogisticHelper/Logistic-Helper-main/Logistic-Helper/Views/OLD/Search.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcT0xEXFNlYXJjaC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[N:/Programowanie/Inzynierka/PI2023/NewLogistic/NewLogisticHelper/Logistic-Helper-main/Logistic-Helper/Views/OLD/Wrong.cshtml]
+[C:/Users/mariu/Documents/GitHub/NewLogisticHelper/Logistic-Helper-main/Logistic-Helper/Views/OLD/Wrong.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcT0xEXFdyb25nLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[N:/Programowanie/Inzynierka/PI2023/NewLogistic/NewLogisticHelper/Logistic-Helper-main/Logistic-Helper/Views/Shared/Error.cshtml]
+[C:/Users/mariu/Documents/GitHub/NewLogisticHelper/Logistic-Helper-main/Logistic-Helper/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[N:/Programowanie/Inzynierka/PI2023/NewLogistic/NewLogisticHelper/Logistic-Helper-main/Logistic-Helper/Views/Shared/_ValidationScriptsPartial.cshtml]
+[C:/Users/mariu/Documents/GitHub/NewLogisticHelper/Logistic-Helper-main/Logistic-Helper/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[N:/Programowanie/Inzynierka/PI2023/NewLogistic/NewLogisticHelper/Logistic-Helper-main/Logistic-Helper/Views/Simc/City.cshtml]
+[C:/Users/mariu/Documents/GitHub/NewLogisticHelper/Logistic-Helper-main/Logistic-Helper/Views/Simc/City.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2ltY1xDaXR5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[N:/Programowanie/Inzynierka/PI2023/NewLogistic/NewLogisticHelper/Logistic-Helper-main/Logistic-Helper/Views/Simc/Details.cshtml]
+[C:/Users/mariu/Documents/GitHub/NewLogisticHelper/Logistic-Helper-main/Logistic-Helper/Views/Simc/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2ltY1xEZXRhaWxzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[N:/Programowanie/Inzynierka/PI2023/NewLogistic/NewLogisticHelper/Logistic-Helper-main/Logistic-Helper/Views/Simc/Found.cshtml]
+[C:/Users/mariu/Documents/GitHub/NewLogisticHelper/Logistic-Helper-main/Logistic-Helper/Views/Simc/Found.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2ltY1xGb3VuZC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[N:/Programowanie/Inzynierka/PI2023/NewLogistic/NewLogisticHelper/Logistic-Helper-main/Logistic-Helper/Views/Simc/Index.cshtml]
+[C:/Users/mariu/Documents/GitHub/NewLogisticHelper/Logistic-Helper-main/Logistic-Helper/Views/Simc/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2ltY1xJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[N:/Programowanie/Inzynierka/PI2023/NewLogistic/NewLogisticHelper/Logistic-Helper-main/Logistic-Helper/Views/Simc/Schedule.cshtml]
+[C:/Users/mariu/Documents/GitHub/NewLogisticHelper/Logistic-Helper-main/Logistic-Helper/Views/Simc/Schedule.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2ltY1xTY2hlZHVsZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[N:/Programowanie/Inzynierka/PI2023/NewLogistic/NewLogisticHelper/Logistic-Helper-main/Logistic-Helper/Views/Simc/Search.cshtml]
+[C:/Users/mariu/Documents/GitHub/NewLogisticHelper/Logistic-Helper-main/Logistic-Helper/Views/Simc/Search.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2ltY1xTZWFyY2guY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[N:/Programowanie/Inzynierka/PI2023/NewLogistic/NewLogisticHelper/Logistic-Helper-main/Logistic-Helper/Views/Terc/Index.cshtml]
+[C:/Users/mariu/Documents/GitHub/NewLogisticHelper/Logistic-Helper-main/Logistic-Helper/Views/Terc/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGVyY1xJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[N:/Programowanie/Inzynierka/PI2023/NewLogistic/NewLogisticHelper/Logistic-Helper-main/Logistic-Helper/Views/Terc/Schedule.cshtml]
+[C:/Users/mariu/Documents/GitHub/NewLogisticHelper/Logistic-Helper-main/Logistic-Helper/Views/Terc/Schedule.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGVyY1xTY2hlZHVsZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[N:/Programowanie/Inzynierka/PI2023/NewLogistic/NewLogisticHelper/Logistic-Helper-main/Logistic-Helper/Views/Terc/Search.cshtml]
+[C:/Users/mariu/Documents/GitHub/NewLogisticHelper/Logistic-Helper-main/Logistic-Helper/Views/Terc/Search.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGVyY1xTZWFyY2guY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[N:/Programowanie/Inzynierka/PI2023/NewLogistic/NewLogisticHelper/Logistic-Helper-main/Logistic-Helper/Views/Ulic/Index.cshtml]
+[C:/Users/mariu/Documents/GitHub/NewLogisticHelper/Logistic-Helper-main/Logistic-Helper/Views/Ulic/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVWxpY1xJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[N:/Programowanie/Inzynierka/PI2023/NewLogistic/NewLogisticHelper/Logistic-Helper-main/Logistic-Helper/Views/Ulic/Schedule.cshtml]
+[C:/Users/mariu/Documents/GitHub/NewLogisticHelper/Logistic-Helper-main/Logistic-Helper/Views/Ulic/Schedule.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVWxpY1xTY2hlZHVsZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[N:/Programowanie/Inzynierka/PI2023/NewLogistic/NewLogisticHelper/Logistic-Helper-main/Logistic-Helper/Views/Ulic/Search.cshtml]
+[C:/Users/mariu/Documents/GitHub/NewLogisticHelper/Logistic-Helper-main/Logistic-Helper/Views/Ulic/Search.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVWxpY1xTZWFyY2guY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[N:/Programowanie/Inzynierka/PI2023/NewLogistic/NewLogisticHelper/Logistic-Helper-main/Logistic-Helper/Views/User/Create.cshtml]
+[C:/Users/mariu/Documents/GitHub/NewLogisticHelper/Logistic-Helper-main/Logistic-Helper/Views/User/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlclxDcmVhdGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[N:/Programowanie/Inzynierka/PI2023/NewLogistic/NewLogisticHelper/Logistic-Helper-main/Logistic-Helper/Views/User/Delete.cshtml]
+[C:/Users/mariu/Documents/GitHub/NewLogisticHelper/Logistic-Helper-main/Logistic-Helper/Views/User/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlclxEZWxldGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[N:/Programowanie/Inzynierka/PI2023/NewLogistic/NewLogisticHelper/Logistic-Helper-main/Logistic-Helper/Views/User/Edit.cshtml]
+[C:/Users/mariu/Documents/GitHub/NewLogisticHelper/Logistic-Helper-main/Logistic-Helper/Views/User/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlclxFZGl0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[N:/Programowanie/Inzynierka/PI2023/NewLogistic/NewLogisticHelper/Logistic-Helper-main/Logistic-Helper/Views/User/Index.cshtml]
+[C:/Users/mariu/Documents/GitHub/NewLogisticHelper/Logistic-Helper-main/Logistic-Helper/Views/User/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlclxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[N:/Programowanie/Inzynierka/PI2023/NewLogistic/NewLogisticHelper/Logistic-Helper-main/Logistic-Helper/Views/_ViewImports.cshtml]
+[C:/Users/mariu/Documents/GitHub/NewLogisticHelper/Logistic-Helper-main/Logistic-Helper/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[N:/Programowanie/Inzynierka/PI2023/NewLogistic/NewLogisticHelper/Logistic-Helper-main/Logistic-Helper/Views/_ViewStart.cshtml]
+[C:/Users/mariu/Documents/GitHub/NewLogisticHelper/Logistic-Helper-main/Logistic-Helper/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[N:/Programowanie/Inzynierka/PI2023/NewLogistic/NewLogisticHelper/Logistic-Helper-main/Logistic-Helper/Views/Shared/_Layout.cshtml]
+[C:/Users/mariu/Documents/GitHub/NewLogisticHelper/Logistic-Helper-main/Logistic-Helper/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-1hdbajuifn
