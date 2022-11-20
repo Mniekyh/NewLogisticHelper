@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "dmTPzt48EJi99oM0RfHStoIZ5wvX8KTbRfxXNXClyTY=",
+  "Hash": "bHwhUReXm5KjivpYkGsAbcVEmzFnRN5R2t51Siz4n4w=",
   "Source": "LogisticHelper",
   "BasePath": "_content/LogisticHelper",
   "Mode": "Default",
@@ -117,6 +117,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\js\\formCheck.js"
+    },
+    {
+      "Identity": "C:\\Users\\mariu\\Documents\\GitHub\\NewLogisticHelper\\Logistic-Helper-main\\Logistic-Helper\\wwwroot\\js\\googleMap.js",
+      "SourceId": "LogisticHelper",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\mariu\\Documents\\GitHub\\NewLogisticHelper\\Logistic-Helper-main\\Logistic-Helper\\wwwroot\\",
+      "BasePath": "_content/LogisticHelper",
+      "RelativePath": "js/googleMap.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\googleMap.js"
     },
     {
       "Identity": "C:\\Users\\mariu\\Documents\\GitHub\\NewLogisticHelper\\Logistic-Helper-main\\Logistic-Helper\\wwwroot\\js\\site.js",

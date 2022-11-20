@@ -36,6 +36,6 @@
     <ProjectReference Include="..\LogisticHelper.Models\LogisticHelper.Models.csproj" />
   </ItemGroup>
 
-  <ProjectExtensions><VisualStudio><UserProperties json_1json__JsonSchema="bund" /></VisualStudio></ProjectExtensions>
+  <ProjectExtensions><VisualStudio><UserProperties /></VisualStudio></ProjectExtensions>
 
 </Project>
