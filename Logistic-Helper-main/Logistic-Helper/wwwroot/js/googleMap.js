@@ -2,7 +2,7 @@
 
 $(document).ready(function () {
     $('#btn').click(function (event) {
-        alert("Hello! I am an alert box!!");
+        alert("Hello! its me!!");
         $("#btn").click(function () {
             var geocoder = new google.maps.Geocoder();
             var con = document.getElementById('txtCon').value;
