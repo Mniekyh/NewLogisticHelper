@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\mariu\\Documents\\NewLogisticHelper\\Logistic-Helper-main\\Logistic-Helper\\LogisticHelper.csproj": {}
+    "C:\\Users\\mariu\\Documents\\GitHub\\NewLogisticHelper\\Logistic-Helper-main\\Logistic-Helper\\LogisticHelper.csproj": {}
   },
   "projects": {
-    "C:\\Users\\mariu\\Documents\\NewLogisticHelper\\Logistic-Helper-main\\Logistic-Helper\\LogisticHelper.csproj": {
+    "C:\\Users\\mariu\\Documents\\GitHub\\NewLogisticHelper\\Logistic-Helper-main\\Logistic-Helper\\LogisticHelper.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\mariu\\Documents\\NewLogisticHelper\\Logistic-Helper-main\\Logistic-Helper\\LogisticHelper.csproj",
+        "projectUniqueName": "C:\\Users\\mariu\\Documents\\GitHub\\NewLogisticHelper\\Logistic-Helper-main\\Logistic-Helper\\LogisticHelper.csproj",
         "projectName": "LogisticHelper",
-        "projectPath": "C:\\Users\\mariu\\Documents\\NewLogisticHelper\\Logistic-Helper-main\\Logistic-Helper\\LogisticHelper.csproj",
+        "projectPath": "C:\\Users\\mariu\\Documents\\GitHub\\NewLogisticHelper\\Logistic-Helper-main\\Logistic-Helper\\LogisticHelper.csproj",
         "packagesPath": "C:\\Users\\mariu\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\mariu\\Documents\\NewLogisticHelper\\Logistic-Helper-main\\Logistic-Helper\\obj\\",
+        "outputPath": "C:\\Users\\mariu\\Documents\\GitHub\\NewLogisticHelper\\Logistic-Helper-main\\Logistic-Helper\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -32,11 +32,11 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\mariu\\Documents\\NewLogisticHelper\\Logistic-Helper-main\\LogisticHelper.DataAccess\\LogisticHelper.DataAccess.csproj": {
-                "projectPath": "C:\\Users\\mariu\\Documents\\NewLogisticHelper\\Logistic-Helper-main\\LogisticHelper.DataAccess\\LogisticHelper.DataAccess.csproj"
+              "C:\\Users\\mariu\\Documents\\GitHub\\NewLogisticHelper\\Logistic-Helper-main\\LogisticHelper.DataAccess\\LogisticHelper.DataAccess.csproj": {
+                "projectPath": "C:\\Users\\mariu\\Documents\\GitHub\\NewLogisticHelper\\Logistic-Helper-main\\LogisticHelper.DataAccess\\LogisticHelper.DataAccess.csproj"
               },
-              "C:\\Users\\mariu\\Documents\\NewLogisticHelper\\Logistic-Helper-main\\LogisticHelper.Models\\LogisticHelper.Models.csproj": {
-                "projectPath": "C:\\Users\\mariu\\Documents\\NewLogisticHelper\\Logistic-Helper-main\\LogisticHelper.Models\\LogisticHelper.Models.csproj"
+              "C:\\Users\\mariu\\Documents\\GitHub\\NewLogisticHelper\\Logistic-Helper-main\\LogisticHelper.Models\\LogisticHelper.Models.csproj": {
+                "projectPath": "C:\\Users\\mariu\\Documents\\GitHub\\NewLogisticHelper\\Logistic-Helper-main\\LogisticHelper.Models\\LogisticHelper.Models.csproj"
               }
             }
           }
@@ -153,14 +153,14 @@
         }
       }
     },
-    "C:\\Users\\mariu\\Documents\\NewLogisticHelper\\Logistic-Helper-main\\LogisticHelper.DataAccess\\LogisticHelper.DataAccess.csproj": {
+    "C:\\Users\\mariu\\Documents\\GitHub\\NewLogisticHelper\\Logistic-Helper-main\\LogisticHelper.DataAccess\\LogisticHelper.DataAccess.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\mariu\\Documents\\NewLogisticHelper\\Logistic-Helper-main\\LogisticHelper.DataAccess\\LogisticHelper.DataAccess.csproj",
+        "projectUniqueName": "C:\\Users\\mariu\\Documents\\GitHub\\NewLogisticHelper\\Logistic-Helper-main\\LogisticHelper.DataAccess\\LogisticHelper.DataAccess.csproj",
         "projectName": "LogisticHelper.DataAccess",
-        "projectPath": "C:\\Users\\mariu\\Documents\\NewLogisticHelper\\Logistic-Helper-main\\LogisticHelper.DataAccess\\LogisticHelper.DataAccess.csproj",
+        "projectPath": "C:\\Users\\mariu\\Documents\\GitHub\\NewLogisticHelper\\Logistic-Helper-main\\LogisticHelper.DataAccess\\LogisticHelper.DataAccess.csproj",
         "packagesPath": "C:\\Users\\mariu\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\mariu\\Documents\\NewLogisticHelper\\Logistic-Helper-main\\LogisticHelper.DataAccess\\obj\\",
+        "outputPath": "C:\\Users\\mariu\\Documents\\GitHub\\NewLogisticHelper\\Logistic-Helper-main\\LogisticHelper.DataAccess\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -181,8 +181,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\mariu\\Documents\\NewLogisticHelper\\Logistic-Helper-main\\LogisticHelper.Models\\LogisticHelper.Models.csproj": {
-                "projectPath": "C:\\Users\\mariu\\Documents\\NewLogisticHelper\\Logistic-Helper-main\\LogisticHelper.Models\\LogisticHelper.Models.csproj"
+              "C:\\Users\\mariu\\Documents\\GitHub\\NewLogisticHelper\\Logistic-Helper-main\\LogisticHelper.Models\\LogisticHelper.Models.csproj": {
+                "projectPath": "C:\\Users\\mariu\\Documents\\GitHub\\NewLogisticHelper\\Logistic-Helper-main\\LogisticHelper.Models\\LogisticHelper.Models.csproj"
               }
             }
           }
@@ -244,14 +244,14 @@
         }
       }
     },
-    "C:\\Users\\mariu\\Documents\\NewLogisticHelper\\Logistic-Helper-main\\LogisticHelper.Models\\LogisticHelper.Models.csproj": {
+    "C:\\Users\\mariu\\Documents\\GitHub\\NewLogisticHelper\\Logistic-Helper-main\\LogisticHelper.Models\\LogisticHelper.Models.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\mariu\\Documents\\NewLogisticHelper\\Logistic-Helper-main\\LogisticHelper.Models\\LogisticHelper.Models.csproj",
+        "projectUniqueName": "C:\\Users\\mariu\\Documents\\GitHub\\NewLogisticHelper\\Logistic-Helper-main\\LogisticHelper.Models\\LogisticHelper.Models.csproj",
         "projectName": "LogisticHelper.Models",
-        "projectPath": "C:\\Users\\mariu\\Documents\\NewLogisticHelper\\Logistic-Helper-main\\LogisticHelper.Models\\LogisticHelper.Models.csproj",
+        "projectPath": "C:\\Users\\mariu\\Documents\\GitHub\\NewLogisticHelper\\Logistic-Helper-main\\LogisticHelper.Models\\LogisticHelper.Models.csproj",
         "packagesPath": "C:\\Users\\mariu\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\mariu\\Documents\\NewLogisticHelper\\Logistic-Helper-main\\LogisticHelper.Models\\obj\\",
+        "outputPath": "C:\\Users\\mariu\\Documents\\GitHub\\NewLogisticHelper\\Logistic-Helper-main\\LogisticHelper.Models\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
