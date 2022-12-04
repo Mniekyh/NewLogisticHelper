@@ -27,7 +27,14 @@
     <div  id = "choosenStreet" class="bg-success">
         <form>
             <h2>@TempData["wojewodztwo"], @TempData["Powiat"], @TempData["nazwa"]</h2>
-            <datalist id="countrydata">
+          
+
+      </form>
+
+      @using (Html.BeginForm("Index", "GoogleMap", FormMethod.Post))
+{
+
+  <datalist id="countrydata">
                 @foreach(var streets in Model )
                 {
            
@@ -41,8 +48,16 @@
           list="countrydata"
           size="50"
           autocomplete="off" /> 
-      </form>
-           <button onclick = "getValue()">Submit</button>
+  
+    <br />
+    <input type="submit" id="btnSubmit" value="Submit" />
+    <br />
+    <br />
+
+}
+
+
+           @*<button onclick = "getValue()">Submit</button>*@
    
     </div>
         <div id="output"></div>

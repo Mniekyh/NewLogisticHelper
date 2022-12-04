@@ -4,7 +4,7 @@ namespace LogisticHelper.Controllers
 {
     public class GoogleMapController : Controller
     {
-        public IActionResult GoogleMap()
+        public IActionResult Index()
         {
             return View();
         }
