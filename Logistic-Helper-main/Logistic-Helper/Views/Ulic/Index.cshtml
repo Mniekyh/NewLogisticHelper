@@ -30,12 +30,15 @@
 
       @using (Html.BeginForm("Index", "GoogleMap", FormMethod.Post))
         {
+        @*    @TempData["wojewodztwo"], @TempData["Powiat"],@TempData["nazwa"]*@
+        
 
           <datalist id="countrydata">
                 @foreach(var streets in Model )
                 {
            
-                    <option value ='@TempData["nazwa"] @streets.Nazwa1'>@streets.Nazwa1</option>
+                    <option value ='@streets.Nazwa1'>@streets.Nazwa1</option>
+                    
                 }
             </datalist>
 
@@ -50,7 +53,8 @@
             <input type="submit" id="btnSubmit" onclick = "getValue()" value="Submit" />
             <br />
             <br />
-
+       
+       
     }
 
 
