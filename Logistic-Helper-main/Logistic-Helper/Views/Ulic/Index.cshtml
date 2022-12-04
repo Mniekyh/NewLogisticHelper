@@ -25,36 +25,33 @@
 @model List<UlicaDrzewo>
  
     <div  id = "choosenStreet" class="bg-success">
-        <form>
-            <h2>@TempData["wojewodztwo"], @TempData["Powiat"], @TempData["nazwa"]</h2>
-          
 
-      </form>
+    @*Form whichh allows to search for correct street in chosen city*@
 
       @using (Html.BeginForm("Index", "GoogleMap", FormMethod.Post))
-{
+        {
 
-  <datalist id="countrydata">
+          <datalist id="countrydata">
                 @foreach(var streets in Model )
                 {
            
-                    <option value =' @TempData["wojewodztwo"], @TempData["Powiat"], @TempData["nazwa"] @streets.Nazwa1'>@streets.Nazwa1</option>
+                    <option value ='@TempData["nazwa"] @streets.Nazwa1'>@streets.Nazwa1</option>
                 }
             </datalist>
 
             <label for="country">country</label>
 
-        <input type="text" id = "inputId"
-          list="countrydata"
-          size="50"
-          autocomplete="off" /> 
+            <input type="text" id = "inputId"
+            list="countrydata"
+            size="50"
+            autocomplete="off" /> 
   
-    <br />
-    <input type="submit" id="btnSubmit" value="Submit" />
-    <br />
-    <br />
+            <br />
+            <input type="submit" id="btnSubmit" onclick = "getValue()" value="Submit" />
+            <br />
+            <br />
 
-}
+    }
 
 
            @*<button onclick = "getValue()">Submit</button>*@
