@@ -1,0 +1,27 @@
+﻿@{
+    ViewData["Title"] = "Details";
+    <link href="~/styles/style.css" rel="stylesheet" />
+}
+<h1>Szczegóły</h1>
+<div class="agile-right">
+    <a>@Html.ActionLink("Dodaj", "Create", "Account")</a>
+</div>
+
+<div>
+    <ol>
+        <li>Miejscowosc: @ViewBag.addressesDetails[0]</li>
+        <li>Ulica: @ViewBag.addressesDetails[1]</li>
+
+
+
+        @*@foreach (var address in ViewBag.addressesDetails)
+            {
+                <li>@address</li>
+            }*@
+
+    </ol>
+</div>
+
+@*<div class="agile-center">
+        <a>@Html.ActionLink("Powrót", "Bindings", "Account")</a>
+    </div>*@

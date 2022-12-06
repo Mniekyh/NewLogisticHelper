@@ -7,7 +7,22 @@
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
     <link rel="stylesheet" href="~/LogisticHelper.styles.css" asp-append-version="true" />
+  
+
+    <style>
+        html, body {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+        }
+    </style>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAMRzkiGJaxpC2LKmfdhAqrnOklb6ySyfQ"></script>
 </head>
+
+
+
 <body>
     <header>
         <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
@@ -19,10 +34,14 @@
                 </button>
                 <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
                     <ul class="navbar-nav flex-grow-1">
+
                         <li class="nav-item">
                             <a class="nav-link text-dark" asp-area="" asp-controller="Simc" asp-action="Search">Wyszukaj miejscowość</a>
+                            
                         </li>
-                        
+                        <li class="nav-item"><a class="nav-link text-dark" asp-area="" asp-controller="User" asp-action="Index">Użytkownik</a></li>
+                        <li class="nav-item"><a class="nav-link text-dark" asp-area="" asp-controller="Account" asp-action="Login">Logowanie</a></li>
+
                             @*<li class="nav-item"><a class="nav-link text-dark" asp-area="" asp-controller="Terc" asp-action="Index">Teryt</a> </li>
                             <li class="nav-item"><a class="nav-link text-dark" asp-area="" asp-controller="User" asp-action="Index">Użytkownik</a></li>
                             <li class="nav-item"><a class="nav-link text-dark" asp-area="" asp-controller="Simc" asp-action="Index">Simc</a></li>
@@ -30,9 +49,23 @@
                        
                     </ul>
                 </div>
+                <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
+                    <ul class="navbar-nav flex-grow-1">
+
+                        <li class="nav-item">
+                            
+                            <a class="nav-link text-dark" asp-area="" asp-controller="GoogleMap" asp-action="GoogleMap">Mapa</a>
+                        </li>
+
+                        
+                    </ul>
+                </div>
+               
             </div>
+
         </nav>
-    </header>
+
+    </header> 
     <div class="container">
         <main role="main" class="pb-3">
             @RenderBody()
@@ -46,8 +79,20 @@
     </footer>
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.js"></script>
+
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+   
     <script src="~/js/site.js" asp-append-version="true"></script>
+
+   
+
+    <!--zastapienie Styles.Render("~/Content/css")  -->
+
+
     @await RenderSectionAsync("Scripts", required: false)
+    
 </body>
 </html>

@@ -1,0 +1,38 @@
+﻿@{
+    ViewData["Title"] = "Bindings";
+    <link href="~/styles/style.css" rel="stylesheet" />
+}
+<div class="agile-right">
+    <a>@Html.ActionLink("Dodaj", "Create", "Account")</a>
+</div>
+<div class="agile-center">
+    <ol>
+        <li>Cześć, Twoje ID to: @ViewBag.userId</</li>
+        <li>Lista Twoich adresów: </li>
+    </ol>
+</div>
+<div class="agile-center">
+    <table>
+        <tbody>
+            @foreach (var address in ViewBag.addressesList)
+            {
+            <tr>
+                <td style="white-space:nowrap">>@address[0]</td>
+                <td>
+                    <button type="button" class="btn btn-outline-info">
+                        @Html.ActionLink(
+                            "Szczegóły",
+                            "Details",
+                            "Account",
+                            routeValues: new {
+                                miejscowosc = @address[0],
+                                ulica = @address[1]
+                            },
+                            htmlAttributes: null)
+                        </button>
+                </td>
+            </tr>
+            }
+        </tbody>
+    </table>
+</div>

@@ -1,0 +1,11 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+@{
+    ViewData["Title"] = "Register error!";
+    <link href="~/styles/style.css" rel="stylesheet" />
+}
+<h1>Can't register because: </h1>
+<pre id="json" style="color: white; white-space:pre-wrap; text-align:start">@ViewBag.ErrorMessage</pre>

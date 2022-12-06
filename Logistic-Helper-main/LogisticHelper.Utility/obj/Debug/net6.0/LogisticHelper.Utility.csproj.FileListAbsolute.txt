@@ -54,3 +54,17 @@ C:\Users\mariu\Documents\NewLogisticHelper\Logistic-Helper-main\LogisticHelper.U
 C:\Users\mariu\Documents\NewLogisticHelper\Logistic-Helper-main\LogisticHelper.Utility\obj\Debug\net6.0\LogisticHelper.Utility.pdb
 C:\Users\mariu\Documents\NewLogisticHelper\Logistic-Helper-main\LogisticHelper.Utility\obj\Debug\net6.0\LogisticHelper.Utility.genruntimeconfig.cache
 C:\Users\mariu\Documents\NewLogisticHelper\Logistic-Helper-main\LogisticHelper.Utility\obj\Debug\net6.0\ref\LogisticHelper.Utility.dll
+C:\Users\Łukasz\Documents\GitHub\newnewnewLogisticHelper\NewLogisticHelper\Logistic-Helper-main\LogisticHelper.Utility\bin\Debug\net6.0\LogisticHelper.Utility.deps.json
+C:\Users\Łukasz\Documents\GitHub\newnewnewLogisticHelper\NewLogisticHelper\Logistic-Helper-main\LogisticHelper.Utility\bin\Debug\net6.0\LogisticHelper.Utility.runtimeconfig.json
+C:\Users\Łukasz\Documents\GitHub\newnewnewLogisticHelper\NewLogisticHelper\Logistic-Helper-main\LogisticHelper.Utility\bin\Debug\net6.0\LogisticHelper.Utility.dll
+C:\Users\Łukasz\Documents\GitHub\newnewnewLogisticHelper\NewLogisticHelper\Logistic-Helper-main\LogisticHelper.Utility\bin\Debug\net6.0\LogisticHelper.Utility.pdb
+C:\Users\Łukasz\Documents\GitHub\newnewnewLogisticHelper\NewLogisticHelper\Logistic-Helper-main\LogisticHelper.Utility\obj\Debug\net6.0\LogisticHelper.Utility.csproj.AssemblyReference.cache
+C:\Users\Łukasz\Documents\GitHub\newnewnewLogisticHelper\NewLogisticHelper\Logistic-Helper-main\LogisticHelper.Utility\obj\Debug\net6.0\LogisticHelper.Utility.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Łukasz\Documents\GitHub\newnewnewLogisticHelper\NewLogisticHelper\Logistic-Helper-main\LogisticHelper.Utility\obj\Debug\net6.0\LogisticHelper.Utility.AssemblyInfoInputs.cache
+C:\Users\Łukasz\Documents\GitHub\newnewnewLogisticHelper\NewLogisticHelper\Logistic-Helper-main\LogisticHelper.Utility\obj\Debug\net6.0\LogisticHelper.Utility.AssemblyInfo.cs
+C:\Users\Łukasz\Documents\GitHub\newnewnewLogisticHelper\NewLogisticHelper\Logistic-Helper-main\LogisticHelper.Utility\obj\Debug\net6.0\LogisticHelper.Utility.csproj.CoreCompileInputs.cache
+C:\Users\Łukasz\Documents\GitHub\newnewnewLogisticHelper\NewLogisticHelper\Logistic-Helper-main\LogisticHelper.Utility\obj\Debug\net6.0\LogisticHelper.Utility.dll
+C:\Users\Łukasz\Documents\GitHub\newnewnewLogisticHelper\NewLogisticHelper\Logistic-Helper-main\LogisticHelper.Utility\obj\Debug\net6.0\refint\LogisticHelper.Utility.dll
+C:\Users\Łukasz\Documents\GitHub\newnewnewLogisticHelper\NewLogisticHelper\Logistic-Helper-main\LogisticHelper.Utility\obj\Debug\net6.0\LogisticHelper.Utility.pdb
+C:\Users\Łukasz\Documents\GitHub\newnewnewLogisticHelper\NewLogisticHelper\Logistic-Helper-main\LogisticHelper.Utility\obj\Debug\net6.0\LogisticHelper.Utility.genruntimeconfig.cache
+C:\Users\Łukasz\Documents\GitHub\newnewnewLogisticHelper\NewLogisticHelper\Logistic-Helper-main\LogisticHelper.Utility\obj\Debug\net6.0\ref\LogisticHelper.Utility.dll
