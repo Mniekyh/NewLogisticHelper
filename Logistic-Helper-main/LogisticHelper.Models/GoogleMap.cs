@@ -32,9 +32,9 @@ namespace LogisticHelper.Models
 
 
 
-        public string txtCon { get; set; }
+        public string txtStreet { get; set; }
         public string txtCity { get; set; }
-        public string con { get; set; }
+        //public string con { get; set; }
         public string city { get; set; }
 
 

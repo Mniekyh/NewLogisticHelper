@@ -7,6 +7,7 @@ using Newtonsoft.Json;
 using System.Collections.Generic;
 using Microsoft.Data.SqlClient;
 using NuGet.Protocol.Plugins;
+using Chilkat;
 
 namespace LogisticHelper.Controllers
 {
@@ -136,6 +137,37 @@ namespace LogisticHelper.Controllers
                 return View("Error");
             }
         }
+        // przypisanie adresów klikając save przy mapie
+        [HttpPost]
+        public ActionResult GetDataFromView(Models.AccountController acc, string street, string city)
+        {
+
+            try
+            {
+                connectionString();
+                con.Open();
+                com.Connection = con;
+                com.CommandText = "INSERT INTO PD2023.dbo.address_with_userid(user_id, miejscowosc, ulica) VALUES('" + Models.AccountController.userId + "','" + street + "','" + city + "')";
+                dr = com.ExecuteReader();
+                con.Close();
+                GetUserAddresses(Models.AccountController.userId);
+                ViewBag.userId = Models.AccountController.userId;
+
+                return View("Bindings");
+
+            }
+            catch (Exception e)
+            {
+                ViewBag.ErrorMessage = JsonConvert.SerializeObject(e, Formatting.Indented);
+                con.Close();
+                return View("Error");
+            }
+
+            //Console.WriteLine("STREET:  {0}" , street);
+            //Console.WriteLine("City:  {0}", city);
+            //var test = 'a';
+            //return Json(test);
+        }
         //
         public IActionResult Register()
         {
@@ -158,32 +190,6 @@ namespace LogisticHelper.Controllers
             tempList.Add(ulica);
             ViewBag.addressesDetails = tempList;
             return View("Details");
-        }
-        // przypisanie adresów klikając save przy mapie
-
-        [HttpPost]
-        public ActionResult SaveAddress(Models.GoogleMap acc)
-        {
-            try
-            {
-                connectionString();
-                con.Open();
-                com.Connection = con;
-                //Console.WriteLine("K:  {0}" , Models.AccountController.userId);
-                com.CommandText = "INSERT INTO PD2023.dbo.address_with_userid(user_id, miejscowosc, ulica) VALUES('1','" + acc.txtCon + "','" + acc.city + "')";
-                dr = com.ExecuteReader();
-                con.Close();
-
-                return View("Bindings");
-
-            }
-            catch (Exception e)
-            {
-                ViewBag.ErrorMessage = JsonConvert.SerializeObject(e, Formatting.Indented);
-                con.Close();
-                return View("Error");
-            }
-
         }
     }
 }

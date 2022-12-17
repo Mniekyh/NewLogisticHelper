@@ -22,12 +22,12 @@ namespace LogisticHelper.Models
         public string ulica { get; set; }
 
 
-        public string? txtCon { get; set; }
-        public string? txtCity { get; set; }
+        //public string? txtCon { get; set; }
+        //public string? txtCity { get; set; }
 
-        public string? con { get; set; }
-        public string? city { get; set; }
-        public string? com { get; set; }
+        //public string? con { get; set; }
+        //public string? city { get; set; }
+        //public string? com { get; set; }
 
     }
 }

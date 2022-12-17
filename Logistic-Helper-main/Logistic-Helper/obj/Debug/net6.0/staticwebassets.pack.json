@@ -21,6 +21,10 @@
       "PackagePath": "staticwebassets\\js\\formCheck.js"
     },
     {
+      "Id": "C:\\Users\\Łukasz\\Documents\\GitHub\\newnewnewLogisticHelper\\NewLogisticHelper\\Logistic-Helper-main\\Logistic-Helper\\wwwroot\\js\\googleMap.js",
+      "PackagePath": "staticwebassets\\js\\googleMap.js"
+    },
+    {
       "Id": "C:\\Users\\Łukasz\\Documents\\GitHub\\newnewnewLogisticHelper\\NewLogisticHelper\\Logistic-Helper-main\\Logistic-Helper\\wwwroot\\js\\site.js",
       "PackagePath": "staticwebassets\\js\\site.js"
     },
