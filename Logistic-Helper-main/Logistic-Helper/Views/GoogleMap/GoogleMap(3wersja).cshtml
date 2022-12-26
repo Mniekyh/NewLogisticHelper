@@ -38,6 +38,7 @@
         $("#btn").click(function () {
             var geocoder = new google.maps.Geocoder();
             var con = document.getElementById('txtCon').value;
+          
             var city = document.getElementById('txtCity').value;
             var com = city + "," + con;
             geocoder.geocode({ 'address': com }, function (results, status) {
