@@ -41,8 +41,28 @@
                     
                 }
             </datalist>
+            <label for="country">Voivodeship</label>
 
-            <label for="country">country</label>
+            <input type="text" id = "VoivodeId"
+           value ='@TempData["wojewodztwo"]'
+            autocomplete="off" 
+            disabled/> 
+            <br/>
+            <label for="country">Powiat</label>
+
+            <input type="text" id = "PowiatId"
+           value ='@TempData["powiat"]'
+            disabled /> 
+            <br />
+            
+            <label for="country">City</label>
+
+            <input type="text" id = "CityId"
+           value ='@TempData["nazwa"]'
+            disabled /> 
+  
+            <br />
+            <label for="country">Street</label>
 
             <input type="text" id = "inputId"
             list="countrydata"
