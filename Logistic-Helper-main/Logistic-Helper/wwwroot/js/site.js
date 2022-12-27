@@ -3,6 +3,13 @@
 
 // Write your JavaScript code.
 function getValue() {
-    var a = document.getElementById("inputId").value
-    window.location = "https://www.google.com/maps/search/"+a;
+    alert("kooo")
+    sessionStorage.setItem("favoriteMovie", "Shrek");
+
+    var InputId = document.getElementById("InputId").value
+
+   
+    localStorage.setItem("InputId", InputId)
+    alert("kooo")
+
 }
