@@ -42,7 +42,10 @@ namespace LogisticHelper.Controllers
                 }
 
             }
-
+           
+            TempData["wojewodztwo2"] = TempData["wojewodztwo"];
+            TempData["powiat2"] = TempData["powiat"];
+            TempData["nazwa2"] = TempData["nazwa"];
 
             return View(streets);
         } 
