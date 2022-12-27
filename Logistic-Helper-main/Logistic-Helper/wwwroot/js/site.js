@@ -6,10 +6,10 @@ function getValue() {
     alert("kooo")
     sessionStorage.setItem("favoriteMovie", "Shrek");
 
-    var streetId = document.getElementById("InputId").value
-    var cityId = document.getElementById("CityId").value
-    localStorage.setItem("streetId",streetid )
-    localStorage.setItem("cityId", cityid)
+    var InputId = document.getElementById("InputId").value
+
+   
+    localStorage.setItem("InputId", InputId)
     alert("kooo")
 
 }
