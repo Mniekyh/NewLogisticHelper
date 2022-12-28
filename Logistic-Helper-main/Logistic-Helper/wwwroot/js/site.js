@@ -3,13 +3,12 @@
 
 // Write your JavaScript code.
 function getValue() {
-    alert("kooo")
-    sessionStorage.setItem("favoriteMovie", "Shrek");
+
 
     var InputId = document.getElementById("InputId").value
 
    
     localStorage.setItem("InputId", InputId)
-    alert("kooo")
+
 
 }

@@ -15,12 +15,52 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = N:\Programowanie\Inzynierka\PI2023\NewLogistic\NewLogisticHelper\Logistic-Helper-main\Logistic-Helper
 build_property._RazorSourceGeneratorDebug = 
 
+[N:/Programowanie/Inzynierka/PI2023/NewLogistic/NewLogisticHelper/Logistic-Helper-main/Logistic-Helper/Views/Account/Bindings.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxCaW5kaW5ncy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[N:/Programowanie/Inzynierka/PI2023/NewLogistic/NewLogisticHelper/Logistic-Helper-main/Logistic-Helper/Views/Account/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[N:/Programowanie/Inzynierka/PI2023/NewLogistic/NewLogisticHelper/Logistic-Helper-main/Logistic-Helper/Views/Account/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxEZXRhaWxzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[N:/Programowanie/Inzynierka/PI2023/NewLogistic/NewLogisticHelper/Logistic-Helper-main/Logistic-Helper/Views/Account/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxFcnJvci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[N:/Programowanie/Inzynierka/PI2023/NewLogistic/NewLogisticHelper/Logistic-Helper-main/Logistic-Helper/Views/Account/Login.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxMb2dpbi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[N:/Programowanie/Inzynierka/PI2023/NewLogistic/NewLogisticHelper/Logistic-Helper-main/Logistic-Helper/Views/Account/Register.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxSZWdpc3Rlci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[N:/Programowanie/Inzynierka/PI2023/NewLogistic/NewLogisticHelper/Logistic-Helper-main/Logistic-Helper/Views/Account/RegisterError.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxSZWdpc3RlckVycm9yLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[N:/Programowanie/Inzynierka/PI2023/NewLogistic/NewLogisticHelper/Logistic-Helper-main/Logistic-Helper/Views/Account/RegisterSuccesfull.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxSZWdpc3RlclN1Y2Nlc2Z1bGwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[N:/Programowanie/Inzynierka/PI2023/NewLogistic/NewLogisticHelper/Logistic-Helper-main/Logistic-Helper/Views/Account/ResetPassword.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxSZXNldFBhc3N3b3JkLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
 [N:/Programowanie/Inzynierka/PI2023/NewLogistic/NewLogisticHelper/Logistic-Helper-main/Logistic-Helper/Views/GoogleMap/GoogleMap(3wersja).cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcR29vZ2xlTWFwXEdvb2dsZU1hcCgzd2Vyc2phKS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [N:/Programowanie/Inzynierka/PI2023/NewLogistic/NewLogisticHelper/Logistic-Helper-main/Logistic-Helper/Views/GoogleMap/GoogleMap(działaMapa).cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcR29vZ2xlTWFwXEdvb2dsZU1hcChkemlhxYJhTWFwYSkuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[N:/Programowanie/Inzynierka/PI2023/NewLogistic/NewLogisticHelper/Logistic-Helper-main/Logistic-Helper/Views/GoogleMap/GoogleMap.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcR29vZ2xlTWFwXEdvb2dsZU1hcC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [N:/Programowanie/Inzynierka/PI2023/NewLogistic/NewLogisticHelper/Logistic-Helper-main/Logistic-Helper/Views/GoogleMap/Index.cshtml]

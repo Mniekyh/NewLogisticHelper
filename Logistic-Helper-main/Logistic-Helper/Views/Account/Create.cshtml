@@ -1,0 +1,58 @@
+﻿@{
+    ViewData["Title"] = "Create!";
+    <link href="~/styles/style.css" rel="stylesheet" />
+}
+<h1>Dodawanie</h1>
+<div class="clear-loading spinner">
+    <span></span>
+</div>
+<div class="w3ls-login box box--big">
+    <!-- form starts here -->
+    <form asp-controller="Account" asp-action="AddAddress">
+        <form action="Verify" method="post">
+                <div class="agile-field-txt">
+                    <label><i class="fa fa-user" aria-hidden="true"></i> miejscowosc </label>
+                    <input type="text" name="miejscowosc" placeholder="Enter text" required="" />
+                </div>
+
+            <div class="agile-field-txt">
+                <label><i class="fa fa-user" aria-hidden="true"></i> ulica </label>
+                <input type="text" name="ulica" placeholder="Enter text" required="" />
+            </div>
+
+            <!-- //end script -->
+            <input type="submit" value="Dodaj">
+        </form>
+    </form>
+</div>
+
+
+
+
+@*<h2>An ordered HTML list</h2>
+<asp-controller="Account" asp-action="AddAddress"></asp-controller>
+<ol>
+    <li>miejscowosc</li>
+    <li>user_id</li>
+    <li>Milk</li>
+</ol>*@
+
+
+<div id="map" style="width: 500px; height: 500px"></div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.7.1/leaflet.js"></script>
+<script>
+    // Creating map options
+    var mapOptions = {
+        center: [50.26709761300904, 19.012391830693055],
+        zoom: 100
+    }
+
+    // Creating a map object
+    var map = new L.map("map", mapOptions);
+
+    // Creating a Layer object
+    var layer = new L.TileLayer("http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png");
+
+    // Adding layer to the map
+    map.addLayer(layer);
+</script>
