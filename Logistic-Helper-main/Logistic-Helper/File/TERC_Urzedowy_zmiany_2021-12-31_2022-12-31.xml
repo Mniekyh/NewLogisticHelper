@@ -1,0 +1,692 @@
+<zmiany>
+  <zmiana>
+    <TypKorekty>M</TypKorekty>
+    <WojPrzed>04</WojPrzed>
+    <PowPrzed>14</PowPrzed>
+    <GmiPrzed>08</GmiPrzed>
+    <RodzPrzed>2</RodzPrzed>
+    <NazwaPrzed>Pruszcz</NazwaPrzed>
+    <NazwaDodatkowaPrzed>gmina wiejska</NazwaDodatkowaPrzed>
+    <StanPrzed>2021-01-01</StanPrzed>
+    <WojPo>04</WojPo>
+    <PowPo>14</PowPo>
+    <GmiPo>08</GmiPo>
+    <RodzPo>3</RodzPo>
+    <NazwaPo />
+    <NazwaDodatkowaPo>gmina miejsko-wiejska</NazwaDodatkowaPo>
+    <WyodrebnionoZIdentyfikatora1 />
+    <WyodrebnionoZIdentyfikatora2 />
+    <WyodrebnionoZIdentyfikatora3 />
+    <WlaczonoDoIdentyfikatora1 />
+    <WlaczonoDoIdentyfikatora2 />
+    <WlaczonoDoIdentyfikatora3 />
+    <StanPo>2022-01-01</StanPo>
+  </zmiana>
+  <zmiana>
+    <TypKorekty>D</TypKorekty>
+    <WojPrzed />
+    <PowPrzed />
+    <GmiPrzed />
+    <RodzPrzed />
+    <NazwaPrzed />
+    <NazwaDodatkowaPrzed />
+    <StanPrzed>2021-01-01</StanPrzed>
+    <WojPo>04</WojPo>
+    <PowPo>14</PowPo>
+    <GmiPo>08</GmiPo>
+    <RodzPo>4</RodzPo>
+    <NazwaPo>Pruszcz</NazwaPo>
+    <NazwaDodatkowaPo>miasto</NazwaDodatkowaPo>
+    <WyodrebnionoZIdentyfikatora1 />
+    <WyodrebnionoZIdentyfikatora2 />
+    <WyodrebnionoZIdentyfikatora3 />
+    <WlaczonoDoIdentyfikatora1 />
+    <WlaczonoDoIdentyfikatora2 />
+    <WlaczonoDoIdentyfikatora3 />
+    <StanPo>2022-01-01</StanPo>
+  </zmiana>
+  <zmiana>
+    <TypKorekty>D</TypKorekty>
+    <WojPrzed />
+    <PowPrzed />
+    <GmiPrzed />
+    <RodzPrzed />
+    <NazwaPrzed />
+    <NazwaDodatkowaPrzed />
+    <StanPrzed>2021-01-01</StanPrzed>
+    <WojPo>04</WojPo>
+    <PowPo>14</PowPo>
+    <GmiPo>08</GmiPo>
+    <RodzPo>5</RodzPo>
+    <NazwaPo>Pruszcz</NazwaPo>
+    <NazwaDodatkowaPo>obszar wiejski</NazwaDodatkowaPo>
+    <WyodrebnionoZIdentyfikatora1 />
+    <WyodrebnionoZIdentyfikatora2 />
+    <WyodrebnionoZIdentyfikatora3 />
+    <WlaczonoDoIdentyfikatora1 />
+    <WlaczonoDoIdentyfikatora2 />
+    <WlaczonoDoIdentyfikatora3 />
+    <StanPo>2022-01-01</StanPo>
+  </zmiana>
+  <zmiana>
+    <TypKorekty>M</TypKorekty>
+    <WojPrzed>06</WojPrzed>
+    <PowPrzed>06</PowPrzed>
+    <GmiPrzed>04</GmiPrzed>
+    <RodzPrzed>2</RodzPrzed>
+    <NazwaPrzed>Izbica</NazwaPrzed>
+    <NazwaDodatkowaPrzed>gmina wiejska</NazwaDodatkowaPrzed>
+    <StanPrzed>2021-01-01</StanPrzed>
+    <WojPo>06</WojPo>
+    <PowPo>06</PowPo>
+    <GmiPo>04</GmiPo>
+    <RodzPo>3</RodzPo>
+    <NazwaPo />
+    <NazwaDodatkowaPo>gmina miejsko-wiejska</NazwaDodatkowaPo>
+    <WyodrebnionoZIdentyfikatora1 />
+    <WyodrebnionoZIdentyfikatora2 />
+    <WyodrebnionoZIdentyfikatora3 />
+    <WlaczonoDoIdentyfikatora1 />
+    <WlaczonoDoIdentyfikatora2 />
+    <WlaczonoDoIdentyfikatora3 />
+    <StanPo>2022-01-01</StanPo>
+  </zmiana>
+  <zmiana>
+    <TypKorekty>D</TypKorekty>
+    <WojPrzed />
+    <PowPrzed />
+    <GmiPrzed />
+    <RodzPrzed />
+    <NazwaPrzed />
+    <NazwaDodatkowaPrzed />
+    <StanPrzed>2021-01-01</StanPrzed>
+    <WojPo>06</WojPo>
+    <PowPo>06</PowPo>
+    <GmiPo>04</GmiPo>
+    <RodzPo>4</RodzPo>
+    <NazwaPo>Izbica</NazwaPo>
+    <NazwaDodatkowaPo>miasto</NazwaDodatkowaPo>
+    <WyodrebnionoZIdentyfikatora1 />
+    <WyodrebnionoZIdentyfikatora2 />
+    <WyodrebnionoZIdentyfikatora3 />
+    <WlaczonoDoIdentyfikatora1 />
+    <WlaczonoDoIdentyfikatora2 />
+    <WlaczonoDoIdentyfikatora3 />
+    <StanPo>2022-01-01</StanPo>
+  </zmiana>
+  <zmiana>
+    <TypKorekty>D</TypKorekty>
+    <WojPrzed />
+    <PowPrzed />
+    <GmiPrzed />
+    <RodzPrzed />
+    <NazwaPrzed />
+    <NazwaDodatkowaPrzed />
+    <StanPrzed>2021-01-01</StanPrzed>
+    <WojPo>06</WojPo>
+    <PowPo>06</PowPo>
+    <GmiPo>04</GmiPo>
+    <RodzPo>5</RodzPo>
+    <NazwaPo>Izbica</NazwaPo>
+    <NazwaDodatkowaPo>obszar wiejski</NazwaDodatkowaPo>
+    <WyodrebnionoZIdentyfikatora1 />
+    <WyodrebnionoZIdentyfikatora2 />
+    <WyodrebnionoZIdentyfikatora3 />
+    <WlaczonoDoIdentyfikatora1 />
+    <WlaczonoDoIdentyfikatora2 />
+    <WlaczonoDoIdentyfikatora3 />
+    <StanPo>2022-01-01</StanPo>
+  </zmiana>
+  <zmiana>
+    <TypKorekty>M</TypKorekty>
+    <WojPrzed>10</WojPrzed>
+    <PowPrzed>08</PowPrzed>
+    <GmiPrzed>06</GmiPrzed>
+    <RodzPrzed>2</RodzPrzed>
+    <NazwaPrzed>Lutomiersk</NazwaPrzed>
+    <NazwaDodatkowaPrzed>gmina wiejska</NazwaDodatkowaPrzed>
+    <StanPrzed>2021-01-01</StanPrzed>
+    <WojPo>10</WojPo>
+    <PowPo>08</PowPo>
+    <GmiPo>06</GmiPo>
+    <RodzPo>3</RodzPo>
+    <NazwaPo />
+    <NazwaDodatkowaPo>gmina miejsko-wiejska</NazwaDodatkowaPo>
+    <WyodrebnionoZIdentyfikatora1 />
+    <WyodrebnionoZIdentyfikatora2 />
+    <WyodrebnionoZIdentyfikatora3 />
+    <WlaczonoDoIdentyfikatora1 />
+    <WlaczonoDoIdentyfikatora2 />
+    <WlaczonoDoIdentyfikatora3 />
+    <StanPo>2022-01-01</StanPo>
+  </zmiana>
+  <zmiana>
+    <TypKorekty>D</TypKorekty>
+    <WojPrzed />
+    <PowPrzed />
+    <GmiPrzed />
+    <RodzPrzed />
+    <NazwaPrzed />
+    <NazwaDodatkowaPrzed />
+    <StanPrzed>2021-01-01</StanPrzed>
+    <WojPo>10</WojPo>
+    <PowPo>08</PowPo>
+    <GmiPo>06</GmiPo>
+    <RodzPo>4</RodzPo>
+    <NazwaPo>Lutomiersk</NazwaPo>
+    <NazwaDodatkowaPo>miasto</NazwaDodatkowaPo>
+    <WyodrebnionoZIdentyfikatora1 />
+    <WyodrebnionoZIdentyfikatora2 />
+    <WyodrebnionoZIdentyfikatora3 />
+    <WlaczonoDoIdentyfikatora1 />
+    <WlaczonoDoIdentyfikatora2 />
+    <WlaczonoDoIdentyfikatora3 />
+    <StanPo>2022-01-01</StanPo>
+  </zmiana>
+  <zmiana>
+    <TypKorekty>D</TypKorekty>
+    <WojPrzed />
+    <PowPrzed />
+    <GmiPrzed />
+    <RodzPrzed />
+    <NazwaPrzed />
+    <NazwaDodatkowaPrzed />
+    <StanPrzed>2021-01-01</StanPrzed>
+    <WojPo>10</WojPo>
+    <PowPo>08</PowPo>
+    <GmiPo>06</GmiPo>
+    <RodzPo>5</RodzPo>
+    <NazwaPo>Lutomiersk</NazwaPo>
+    <NazwaDodatkowaPo>obszar wiejski</NazwaDodatkowaPo>
+    <WyodrebnionoZIdentyfikatora1 />
+    <WyodrebnionoZIdentyfikatora2 />
+    <WyodrebnionoZIdentyfikatora3 />
+    <WlaczonoDoIdentyfikatora1 />
+    <WlaczonoDoIdentyfikatora2 />
+    <WlaczonoDoIdentyfikatora3 />
+    <StanPo>2022-01-01</StanPo>
+  </zmiana>
+  <zmiana>
+    <TypKorekty>M</TypKorekty>
+    <WojPrzed>10</WojPrzed>
+    <PowPrzed>15</PowPrzed>
+    <GmiPrzed>01</GmiPrzed>
+    <RodzPrzed>2</RodzPrzed>
+    <NazwaPrzed>Bolimów</NazwaPrzed>
+    <NazwaDodatkowaPrzed>gmina wiejska</NazwaDodatkowaPrzed>
+    <StanPrzed>2021-01-01</StanPrzed>
+    <WojPo>10</WojPo>
+    <PowPo>15</PowPo>
+    <GmiPo>01</GmiPo>
+    <RodzPo>3</RodzPo>
+    <NazwaPo />
+    <NazwaDodatkowaPo>gmina miejsko-wiejska</NazwaDodatkowaPo>
+    <WyodrebnionoZIdentyfikatora1 />
+    <WyodrebnionoZIdentyfikatora2 />
+    <WyodrebnionoZIdentyfikatora3 />
+    <WlaczonoDoIdentyfikatora1 />
+    <WlaczonoDoIdentyfikatora2 />
+    <WlaczonoDoIdentyfikatora3 />
+    <StanPo>2022-01-01</StanPo>
+  </zmiana>
+  <zmiana>
+    <TypKorekty>D</TypKorekty>
+    <WojPrzed />
+    <PowPrzed />
+    <GmiPrzed />
+    <RodzPrzed />
+    <NazwaPrzed />
+    <NazwaDodatkowaPrzed />
+    <StanPrzed>2021-01-01</StanPrzed>
+    <WojPo>10</WojPo>
+    <PowPo>15</PowPo>
+    <GmiPo>01</GmiPo>
+    <RodzPo>4</RodzPo>
+    <NazwaPo>Bolimów</NazwaPo>
+    <NazwaDodatkowaPo>miasto</NazwaDodatkowaPo>
+    <WyodrebnionoZIdentyfikatora1 />
+    <WyodrebnionoZIdentyfikatora2 />
+    <WyodrebnionoZIdentyfikatora3 />
+    <WlaczonoDoIdentyfikatora1 />
+    <WlaczonoDoIdentyfikatora2 />
+    <WlaczonoDoIdentyfikatora3 />
+    <StanPo>2022-01-01</StanPo>
+  </zmiana>
+  <zmiana>
+    <TypKorekty>D</TypKorekty>
+    <WojPrzed />
+    <PowPrzed />
+    <GmiPrzed />
+    <RodzPrzed />
+    <NazwaPrzed />
+    <NazwaDodatkowaPrzed />
+    <StanPrzed>2021-01-01</StanPrzed>
+    <WojPo>10</WojPo>
+    <PowPo>15</PowPo>
+    <GmiPo>01</GmiPo>
+    <RodzPo>5</RodzPo>
+    <NazwaPo>Bolimów</NazwaPo>
+    <NazwaDodatkowaPo>obszar wiejski</NazwaDodatkowaPo>
+    <WyodrebnionoZIdentyfikatora1 />
+    <WyodrebnionoZIdentyfikatora2 />
+    <WyodrebnionoZIdentyfikatora3 />
+    <WlaczonoDoIdentyfikatora1 />
+    <WlaczonoDoIdentyfikatora2 />
+    <WlaczonoDoIdentyfikatora3 />
+    <StanPo>2022-01-01</StanPo>
+  </zmiana>
+  <zmiana>
+    <TypKorekty>M</TypKorekty>
+    <WojPrzed>14</WojPrzed>
+    <PowPrzed>12</PowPrzed>
+    <GmiPrzed>04</GmiPrzed>
+    <RodzPrzed>2</RodzPrzed>
+    <NazwaPrzed>Cegłów</NazwaPrzed>
+    <NazwaDodatkowaPrzed>gmina wiejska</NazwaDodatkowaPrzed>
+    <StanPrzed>2021-01-01</StanPrzed>
+    <WojPo>14</WojPo>
+    <PowPo>12</PowPo>
+    <GmiPo>04</GmiPo>
+    <RodzPo>3</RodzPo>
+    <NazwaPo />
+    <NazwaDodatkowaPo>gmina miejsko-wiejska</NazwaDodatkowaPo>
+    <WyodrebnionoZIdentyfikatora1 />
+    <WyodrebnionoZIdentyfikatora2 />
+    <WyodrebnionoZIdentyfikatora3 />
+    <WlaczonoDoIdentyfikatora1 />
+    <WlaczonoDoIdentyfikatora2 />
+    <WlaczonoDoIdentyfikatora3 />
+    <StanPo>2022-01-01</StanPo>
+  </zmiana>
+  <zmiana>
+    <TypKorekty>D</TypKorekty>
+    <WojPrzed />
+    <PowPrzed />
+    <GmiPrzed />
+    <RodzPrzed />
+    <NazwaPrzed />
+    <NazwaDodatkowaPrzed />
+    <StanPrzed>2021-01-01</StanPrzed>
+    <WojPo>14</WojPo>
+    <PowPo>12</PowPo>
+    <GmiPo>04</GmiPo>
+    <RodzPo>4</RodzPo>
+    <NazwaPo>Cegłów</NazwaPo>
+    <NazwaDodatkowaPo>miasto</NazwaDodatkowaPo>
+    <WyodrebnionoZIdentyfikatora1 />
+    <WyodrebnionoZIdentyfikatora2 />
+    <WyodrebnionoZIdentyfikatora3 />
+    <WlaczonoDoIdentyfikatora1 />
+    <WlaczonoDoIdentyfikatora2 />
+    <WlaczonoDoIdentyfikatora3 />
+    <StanPo>2022-01-01</StanPo>
+  </zmiana>
+  <zmiana>
+    <TypKorekty>D</TypKorekty>
+    <WojPrzed />
+    <PowPrzed />
+    <GmiPrzed />
+    <RodzPrzed />
+    <NazwaPrzed />
+    <NazwaDodatkowaPrzed />
+    <StanPrzed>2021-01-01</StanPrzed>
+    <WojPo>14</WojPo>
+    <PowPo>12</PowPo>
+    <GmiPo>04</GmiPo>
+    <RodzPo>5</RodzPo>
+    <NazwaPo>Cegłów</NazwaPo>
+    <NazwaDodatkowaPo>obszar wiejski</NazwaDodatkowaPo>
+    <WyodrebnionoZIdentyfikatora1 />
+    <WyodrebnionoZIdentyfikatora2 />
+    <WyodrebnionoZIdentyfikatora3 />
+    <WlaczonoDoIdentyfikatora1 />
+    <WlaczonoDoIdentyfikatora2 />
+    <WlaczonoDoIdentyfikatora3 />
+    <StanPo>2022-01-01</StanPo>
+  </zmiana>
+  <zmiana>
+    <TypKorekty>M</TypKorekty>
+    <WojPrzed>14</WojPrzed>
+    <PowPrzed>20</PowPrzed>
+    <GmiPrzed>08</GmiPrzed>
+    <RodzPrzed>2</RodzPrzed>
+    <NazwaPrzed>Nowe Miasto</NazwaPrzed>
+    <NazwaDodatkowaPrzed>gmina wiejska</NazwaDodatkowaPrzed>
+    <StanPrzed>2021-01-01</StanPrzed>
+    <WojPo>14</WojPo>
+    <PowPo>20</PowPo>
+    <GmiPo>08</GmiPo>
+    <RodzPo>3</RodzPo>
+    <NazwaPo />
+    <NazwaDodatkowaPo>gmina miejsko-wiejska</NazwaDodatkowaPo>
+    <WyodrebnionoZIdentyfikatora1 />
+    <WyodrebnionoZIdentyfikatora2 />
+    <WyodrebnionoZIdentyfikatora3 />
+    <WlaczonoDoIdentyfikatora1 />
+    <WlaczonoDoIdentyfikatora2 />
+    <WlaczonoDoIdentyfikatora3 />
+    <StanPo>2022-01-01</StanPo>
+  </zmiana>
+  <zmiana>
+    <TypKorekty>D</TypKorekty>
+    <WojPrzed />
+    <PowPrzed />
+    <GmiPrzed />
+    <RodzPrzed />
+    <NazwaPrzed />
+    <NazwaDodatkowaPrzed />
+    <StanPrzed>2021-01-01</StanPrzed>
+    <WojPo>14</WojPo>
+    <PowPo>20</PowPo>
+    <GmiPo>08</GmiPo>
+    <RodzPo>4</RodzPo>
+    <NazwaPo>Nowe Miasto</NazwaPo>
+    <NazwaDodatkowaPo>miasto</NazwaDodatkowaPo>
+    <WyodrebnionoZIdentyfikatora1 />
+    <WyodrebnionoZIdentyfikatora2 />
+    <WyodrebnionoZIdentyfikatora3 />
+    <WlaczonoDoIdentyfikatora1 />
+    <WlaczonoDoIdentyfikatora2 />
+    <WlaczonoDoIdentyfikatora3 />
+    <StanPo>2022-01-01</StanPo>
+  </zmiana>
+  <zmiana>
+    <TypKorekty>D</TypKorekty>
+    <WojPrzed />
+    <PowPrzed />
+    <GmiPrzed />
+    <RodzPrzed />
+    <NazwaPrzed />
+    <NazwaDodatkowaPrzed />
+    <StanPrzed>2021-01-01</StanPrzed>
+    <WojPo>14</WojPo>
+    <PowPo>20</PowPo>
+    <GmiPo>08</GmiPo>
+    <RodzPo>5</RodzPo>
+    <NazwaPo>Nowe Miasto</NazwaPo>
+    <NazwaDodatkowaPo>obszar wiejski</NazwaDodatkowaPo>
+    <WyodrebnionoZIdentyfikatora1 />
+    <WyodrebnionoZIdentyfikatora2 />
+    <WyodrebnionoZIdentyfikatora3 />
+    <WlaczonoDoIdentyfikatora1 />
+    <WlaczonoDoIdentyfikatora2 />
+    <WlaczonoDoIdentyfikatora3 />
+    <StanPo>2022-01-01</StanPo>
+  </zmiana>
+  <zmiana>
+    <TypKorekty>M</TypKorekty>
+    <WojPrzed>14</WojPrzed>
+    <PowPrzed>25</PowPrzed>
+    <GmiPrzed>06</GmiPrzed>
+    <RodzPrzed>2</RodzPrzed>
+    <NazwaPrzed>Jedlnia-Letnisko</NazwaPrzed>
+    <NazwaDodatkowaPrzed>gmina wiejska</NazwaDodatkowaPrzed>
+    <StanPrzed>2021-01-01</StanPrzed>
+    <WojPo>14</WojPo>
+    <PowPo>25</PowPo>
+    <GmiPo>06</GmiPo>
+    <RodzPo>3</RodzPo>
+    <NazwaPo />
+    <NazwaDodatkowaPo>gmina miejsko-wiejska</NazwaDodatkowaPo>
+    <WyodrebnionoZIdentyfikatora1 />
+    <WyodrebnionoZIdentyfikatora2 />
+    <WyodrebnionoZIdentyfikatora3 />
+    <WlaczonoDoIdentyfikatora1 />
+    <WlaczonoDoIdentyfikatora2 />
+    <WlaczonoDoIdentyfikatora3 />
+    <StanPo>2022-01-01</StanPo>
+  </zmiana>
+  <zmiana>
+    <TypKorekty>D</TypKorekty>
+    <WojPrzed />
+    <PowPrzed />
+    <GmiPrzed />
+    <RodzPrzed />
+    <NazwaPrzed />
+    <NazwaDodatkowaPrzed />
+    <StanPrzed>2021-01-01</StanPrzed>
+    <WojPo>14</WojPo>
+    <PowPo>25</PowPo>
+    <GmiPo>06</GmiPo>
+    <RodzPo>4</RodzPo>
+    <NazwaPo>Jedlnia-Letnisko</NazwaPo>
+    <NazwaDodatkowaPo>miasto</NazwaDodatkowaPo>
+    <WyodrebnionoZIdentyfikatora1 />
+    <WyodrebnionoZIdentyfikatora2 />
+    <WyodrebnionoZIdentyfikatora3 />
+    <WlaczonoDoIdentyfikatora1 />
+    <WlaczonoDoIdentyfikatora2 />
+    <WlaczonoDoIdentyfikatora3 />
+    <StanPo>2022-01-01</StanPo>
+  </zmiana>
+  <zmiana>
+    <TypKorekty>D</TypKorekty>
+    <WojPrzed />
+    <PowPrzed />
+    <GmiPrzed />
+    <RodzPrzed />
+    <NazwaPrzed />
+    <NazwaDodatkowaPrzed />
+    <StanPrzed>2021-01-01</StanPrzed>
+    <WojPo>14</WojPo>
+    <PowPo>25</PowPo>
+    <GmiPo>06</GmiPo>
+    <RodzPo>5</RodzPo>
+    <NazwaPo>Jedlnia-Letnisko</NazwaPo>
+    <NazwaDodatkowaPo>obszar wiejski</NazwaDodatkowaPo>
+    <WyodrebnionoZIdentyfikatora1 />
+    <WyodrebnionoZIdentyfikatora2 />
+    <WyodrebnionoZIdentyfikatora3 />
+    <WlaczonoDoIdentyfikatora1 />
+    <WlaczonoDoIdentyfikatora2 />
+    <WlaczonoDoIdentyfikatora3 />
+    <StanPo>2022-01-01</StanPo>
+  </zmiana>
+  <zmiana>
+    <TypKorekty>M</TypKorekty>
+    <WojPrzed>24</WojPrzed>
+    <PowPrzed>04</PowPrzed>
+    <GmiPrzed>12</GmiPrzed>
+    <RodzPrzed>2</RodzPrzed>
+    <NazwaPrzed>Olsztyn</NazwaPrzed>
+    <NazwaDodatkowaPrzed>gmina wiejska</NazwaDodatkowaPrzed>
+    <StanPrzed>2021-01-01</StanPrzed>
+    <WojPo>24</WojPo>
+    <PowPo>04</PowPo>
+    <GmiPo>12</GmiPo>
+    <RodzPo>3</RodzPo>
+    <NazwaPo />
+    <NazwaDodatkowaPo>gmina miejsko-wiejska</NazwaDodatkowaPo>
+    <WyodrebnionoZIdentyfikatora1 />
+    <WyodrebnionoZIdentyfikatora2 />
+    <WyodrebnionoZIdentyfikatora3 />
+    <WlaczonoDoIdentyfikatora1 />
+    <WlaczonoDoIdentyfikatora2 />
+    <WlaczonoDoIdentyfikatora3 />
+    <StanPo>2022-01-01</StanPo>
+  </zmiana>
+  <zmiana>
+    <TypKorekty>D</TypKorekty>
+    <WojPrzed />
+    <PowPrzed />
+    <GmiPrzed />
+    <RodzPrzed />
+    <NazwaPrzed />
+    <NazwaDodatkowaPrzed />
+    <StanPrzed>2021-01-01</StanPrzed>
+    <WojPo>24</WojPo>
+    <PowPo>04</PowPo>
+    <GmiPo>12</GmiPo>
+    <RodzPo>4</RodzPo>
+    <NazwaPo>Olsztyn</NazwaPo>
+    <NazwaDodatkowaPo>miasto</NazwaDodatkowaPo>
+    <WyodrebnionoZIdentyfikatora1 />
+    <WyodrebnionoZIdentyfikatora2 />
+    <WyodrebnionoZIdentyfikatora3 />
+    <WlaczonoDoIdentyfikatora1 />
+    <WlaczonoDoIdentyfikatora2 />
+    <WlaczonoDoIdentyfikatora3 />
+    <StanPo>2022-01-01</StanPo>
+  </zmiana>
+  <zmiana>
+    <TypKorekty>D</TypKorekty>
+    <WojPrzed />
+    <PowPrzed />
+    <GmiPrzed />
+    <RodzPrzed />
+    <NazwaPrzed />
+    <NazwaDodatkowaPrzed />
+    <StanPrzed>2021-01-01</StanPrzed>
+    <WojPo>24</WojPo>
+    <PowPo>04</PowPo>
+    <GmiPo>12</GmiPo>
+    <RodzPo>5</RodzPo>
+    <NazwaPo>Olsztyn</NazwaPo>
+    <NazwaDodatkowaPo>obszar wiejski</NazwaDodatkowaPo>
+    <WyodrebnionoZIdentyfikatora1 />
+    <WyodrebnionoZIdentyfikatora2 />
+    <WyodrebnionoZIdentyfikatora3 />
+    <WlaczonoDoIdentyfikatora1 />
+    <WlaczonoDoIdentyfikatora2 />
+    <WlaczonoDoIdentyfikatora3 />
+    <StanPo>2022-01-01</StanPo>
+  </zmiana>
+  <zmiana>
+    <TypKorekty>M</TypKorekty>
+    <WojPrzed>26</WojPrzed>
+    <PowPrzed>06</PowPrzed>
+    <GmiPrzed>02</GmiPrzed>
+    <RodzPrzed>2</RodzPrzed>
+    <NazwaPrzed>Iwaniska</NazwaPrzed>
+    <NazwaDodatkowaPrzed>gmina wiejska</NazwaDodatkowaPrzed>
+    <StanPrzed>2021-01-01</StanPrzed>
+    <WojPo>26</WojPo>
+    <PowPo>06</PowPo>
+    <GmiPo>02</GmiPo>
+    <RodzPo>3</RodzPo>
+    <NazwaPo />
+    <NazwaDodatkowaPo>gmina miejsko-wiejska</NazwaDodatkowaPo>
+    <WyodrebnionoZIdentyfikatora1 />
+    <WyodrebnionoZIdentyfikatora2 />
+    <WyodrebnionoZIdentyfikatora3 />
+    <WlaczonoDoIdentyfikatora1 />
+    <WlaczonoDoIdentyfikatora2 />
+    <WlaczonoDoIdentyfikatora3 />
+    <StanPo>2022-01-01</StanPo>
+  </zmiana>
+  <zmiana>
+    <TypKorekty>D</TypKorekty>
+    <WojPrzed />
+    <PowPrzed />
+    <GmiPrzed />
+    <RodzPrzed />
+    <NazwaPrzed />
+    <NazwaDodatkowaPrzed />
+    <StanPrzed>2021-01-01</StanPrzed>
+    <WojPo>26</WojPo>
+    <PowPo>06</PowPo>
+    <GmiPo>02</GmiPo>
+    <RodzPo>4</RodzPo>
+    <NazwaPo>Iwaniska</NazwaPo>
+    <NazwaDodatkowaPo>miasto</NazwaDodatkowaPo>
+    <WyodrebnionoZIdentyfikatora1 />
+    <WyodrebnionoZIdentyfikatora2 />
+    <WyodrebnionoZIdentyfikatora3 />
+    <WlaczonoDoIdentyfikatora1 />
+    <WlaczonoDoIdentyfikatora2 />
+    <WlaczonoDoIdentyfikatora3 />
+    <StanPo>2022-01-01</StanPo>
+  </zmiana>
+  <zmiana>
+    <TypKorekty>D</TypKorekty>
+    <WojPrzed />
+    <PowPrzed />
+    <GmiPrzed />
+    <RodzPrzed />
+    <NazwaPrzed />
+    <NazwaDodatkowaPrzed />
+    <StanPrzed>2021-01-01</StanPrzed>
+    <WojPo>26</WojPo>
+    <PowPo>06</PowPo>
+    <GmiPo>02</GmiPo>
+    <RodzPo>5</RodzPo>
+    <NazwaPo>Iwaniska</NazwaPo>
+    <NazwaDodatkowaPo>obszar wiejski</NazwaDodatkowaPo>
+    <WyodrebnionoZIdentyfikatora1 />
+    <WyodrebnionoZIdentyfikatora2 />
+    <WyodrebnionoZIdentyfikatora3 />
+    <WlaczonoDoIdentyfikatora1 />
+    <WlaczonoDoIdentyfikatora2 />
+    <WlaczonoDoIdentyfikatora3 />
+    <StanPo>2022-01-01</StanPo>
+  </zmiana>
+  <zmiana>
+    <TypKorekty>M</TypKorekty>
+    <WojPrzed>30</WojPrzed>
+    <PowPrzed>19</PowPrzed>
+    <GmiPrzed>03</GmiPrzed>
+    <RodzPrzed>2</RodzPrzed>
+    <NazwaPrzed>Kaczory</NazwaPrzed>
+    <NazwaDodatkowaPrzed>gmina wiejska</NazwaDodatkowaPrzed>
+    <StanPrzed>2021-01-01</StanPrzed>
+    <WojPo>30</WojPo>
+    <PowPo>19</PowPo>
+    <GmiPo>03</GmiPo>
+    <RodzPo>3</RodzPo>
+    <NazwaPo />
+    <NazwaDodatkowaPo>gmina miejsko-wiejska</NazwaDodatkowaPo>
+    <WyodrebnionoZIdentyfikatora1 />
+    <WyodrebnionoZIdentyfikatora2 />
+    <WyodrebnionoZIdentyfikatora3 />
+    <WlaczonoDoIdentyfikatora1 />
+    <WlaczonoDoIdentyfikatora2 />
+    <WlaczonoDoIdentyfikatora3 />
+    <StanPo>2022-01-01</StanPo>
+  </zmiana>
+  <zmiana>
+    <TypKorekty>D</TypKorekty>
+    <WojPrzed />
+    <PowPrzed />
+    <GmiPrzed />
+    <RodzPrzed />
+    <NazwaPrzed />
+    <NazwaDodatkowaPrzed />
+    <StanPrzed>2021-01-01</StanPrzed>
+    <WojPo>30</WojPo>
+    <PowPo>19</PowPo>
+    <GmiPo>03</GmiPo>
+    <RodzPo>4</RodzPo>
+    <NazwaPo>Kaczory</NazwaPo>
+    <NazwaDodatkowaPo>miasto</NazwaDodatkowaPo>
+    <WyodrebnionoZIdentyfikatora1 />
+    <WyodrebnionoZIdentyfikatora2 />
+    <WyodrebnionoZIdentyfikatora3 />
+    <WlaczonoDoIdentyfikatora1 />
+    <WlaczonoDoIdentyfikatora2 />
+    <WlaczonoDoIdentyfikatora3 />
+    <StanPo>2022-01-01</StanPo>
+  </zmiana>
+  <zmiana>
+    <TypKorekty>D</TypKorekty>
+    <WojPrzed />
+    <PowPrzed />
+    <GmiPrzed />
+    <RodzPrzed />
+    <NazwaPrzed />
+    <NazwaDodatkowaPrzed />
+    <StanPrzed>2021-01-01</StanPrzed>
+    <WojPo>30</WojPo>
+    <PowPo>19</PowPo>
+    <GmiPo>03</GmiPo>
+    <RodzPo>5</RodzPo>
+    <NazwaPo>Kaczory</NazwaPo>
+    <NazwaDodatkowaPo>obszar wiejski</NazwaDodatkowaPo>
+    <WyodrebnionoZIdentyfikatora1 />
+    <WyodrebnionoZIdentyfikatora2 />
+    <WyodrebnionoZIdentyfikatora3 />
+    <WlaczonoDoIdentyfikatora1 />
+    <WlaczonoDoIdentyfikatora2 />
+    <WlaczonoDoIdentyfikatora3 />
+    <StanPo>2022-01-01</StanPo>
+  </zmiana>
+</zmiany>

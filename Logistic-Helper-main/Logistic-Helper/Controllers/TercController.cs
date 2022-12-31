@@ -163,11 +163,11 @@ namespace LogisticHelper.Controllers
             //Teec is updated once a year
 
             DateTime s = DateTime.Now;
-            string startingDate = s.ToShortDateString();
+            string startingDate = s.ToString("yyyy-MM-dd");
 
 
             DateTime e = s.AddYears(-1);
-            string endingDate = e.ToShortDateString();
+            string endingDate = e.ToString("yyyy-MM-dd");
 
 
 
