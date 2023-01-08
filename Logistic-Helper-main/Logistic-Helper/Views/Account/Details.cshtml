@@ -1,27 +1,28 @@
-﻿@{
-    ViewData["Title"] = "Details";
-    <link href="~/styles/style.css" rel="stylesheet" />
-}
+﻿@{ViewData["Title"] = "Details";
+    <link href="~/styles/style.css" rel="stylesheet" />}
 <h1>Szczegóły</h1>
 <div class="agile-right">
     <a>@Html.ActionLink("Dodaj", "Create", "Account")</a>
 </div>
-
 <div>
     <ol>
         <li>Miejscowosc: @ViewBag.addressesDetails[0]</li>
         <li>Ulica: @ViewBag.addressesDetails[1]</li>
-
-
-
-        @*@foreach (var address in ViewBag.addressesDetails)
-            {
-                <li>@address</li>
-            }*@
-
     </ol>
 </div>
+<div id="map-canvas" style="height: 500px; width: 500px">
+</div>
+<h2>Dodaj załącznik</h2>
 
-@*<div class="agile-center">
-        <a>@Html.ActionLink("Powrót", "Bindings", "Account")</a>
-    </div>*@
+@using (Html.BeginForm("AddAttachment", "Account", FormMethod.Post, new { @enctype = "multipart/form-data" })){
+<form asp-controller="Account" asp-action="AddAttachment">
+    <form action="AddAttachment" method="post">
+            <label for="formFile">Wgraj z dysku:</label>
+            <input type="file" name="formFile" id="file" />
+            <br><br>
+            <input type="submit" value="Zapisz" />
+            <br><br>
+            @ViewBag.Message
+        </form>
+    </form>
+}

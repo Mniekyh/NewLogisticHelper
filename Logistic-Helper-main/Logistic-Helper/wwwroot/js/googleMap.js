@@ -1,6 +1,4 @@
-﻿
-
-$(document).ready(function () {
+﻿$(document).ready(function () {
     console.log("ready");
     //wyszukiwanie
     $('#search').click(function (event) {
@@ -10,7 +8,6 @@ $(document).ready(function () {
     $('#save').click(function (event) {
         buttonSaveClick()
     });
-
 });
 
 function buttonSearchClick() {

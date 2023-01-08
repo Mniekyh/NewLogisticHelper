@@ -36,4 +36,8 @@
     <ProjectReference Include="..\LogisticHelper.Models\LogisticHelper.Models.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Attachments\" />
+  </ItemGroup>
+
 </Project>

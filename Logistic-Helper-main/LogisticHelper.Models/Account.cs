@@ -15,11 +15,21 @@ namespace LogisticHelper.Models
         public string Password { get; set; }
         public string Email { get; set; }
 
+        public string EmailToResetPass { get; set; }
+        public string NewPassword { get; set; }
+        public string? token { get; set; }
+        public string mailConfirmed { get; set; }
+        public string? WrittenToken { get; set; }
 
+        public class FileModel
+        {
+            public string FileName { get; set; }
+        }
 
         public string user_id { get; set; }
         public string miejscowosc { get; set; }
         public string ulica { get; set; }
+        public string Policy { get; set; }
 
 
         //public string? txtCon { get; set; }
