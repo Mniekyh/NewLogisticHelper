@@ -9,6 +9,7 @@ using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
 using System;
 using static LogisticHelper.Models.AccountController;
+using System.Data;
 
 namespace LogisticHelper.Controllers;
 public class AccountController : Controller
@@ -69,10 +70,10 @@ public class AccountController : Controller
             while (reader.Read())
             {
                 List<String> tempList = new List<String>();
-                tempList.Add(reader.GetString(1));
-                if (!reader.IsDBNull(2))
+                tempList.Add(reader.GetString(2));
+                if (!reader.IsDBNull(3))
                 {
-                    tempList.Add(reader.GetString(2));
+                    tempList.Add(reader.GetString(3));
                 }
                 else
                 {
@@ -132,6 +133,7 @@ public class AccountController : Controller
         catch (Exception e)
         {
             ViewBag.ErrorMessage = JsonConvert.SerializeObject(e, Formatting.Indented);
+            ViewBag.RegisterError = ("Podana nazwa użytkownika lub adres E-mail już istnieje, wprowadź inne dane");
             con.Close();
             return View("RegisterError");
         }
@@ -169,18 +171,16 @@ public class AccountController : Controller
     public ActionResult GetDataFromView(Models.AccountController acc, string street, string city)
     {
         try
-        {
-            connectionString();
-            con.Open();
-            com.Connection = con;
-            com.CommandText = "INSERT INTO PD2023.dbo.address_with_userid(user_id, miejscowosc, ulica) VALUES('" + Models.AccountController.userId + "','" + street + "','" + city + "')";
-            dr = com.ExecuteReader();
-            con.Close();
-            GetUserAddresses(Models.AccountController.userId);
-            ViewBag.userId = Models.AccountController.userId;
-
-            return View("Bindings");
-
+            {
+                connectionString();
+                con.Open();
+                com.Connection = con;
+                com.CommandText = "INSERT INTO PD2023.dbo.address_with_userid(user_id, miejscowosc, ulica) VALUES('" + Models.AccountController.userId + "','" + city + "','" + street + "')";
+                dr = com.ExecuteReader();
+                con.Close();
+                GetUserAddresses(Models.AccountController.userId);
+                ViewBag.userId = Models.AccountController.userId;
+                return View("Bindings");
         }
         catch (Exception e)
         {
@@ -188,14 +188,14 @@ public class AccountController : Controller
             con.Close();
             return View("Error");
         }
-
-        //Console.WriteLine("STREET:  {0}" , street);
-        //Console.WriteLine("City:  {0}", city);
-        //var test = 'a';
-        //return Json(test);
     }
 
-    public IActionResult Register()
+//Console.WriteLine("STREET:  {0}" , street);
+//Console.WriteLine("City:  {0}", city);
+//var test = 'a';
+//return Json(test);
+
+public IActionResult Register()
     {
         Console.WriteLine("Hej {0}", HttpContext.User.Identity.IsAuthenticated);
         return View("Register");
@@ -247,7 +247,8 @@ public class AccountController : Controller
         Console.WriteLine("AddAttachment start");
         try
         {
-            string fileName = Path.GetFileName(formFile.FileName);
+            ViewBag.userId = Models.AccountController.userId;
+            string fileName = @ViewBag.userId +"att"+ Path.GetFileName(formFile.FileName);
             string uploadpath = Path.Combine(Directory.GetCurrentDirectory(), "Attachments", fileName);
             var stream = new FileStream(uploadpath, FileMode.Create);
             formFile.CopyToAsync(stream);
