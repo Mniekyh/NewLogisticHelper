@@ -1,7 +1,5 @@
-﻿
-   
-var tekst = localStorage.getItem("InputId");
+﻿var tekst = localStorage.getItem("InputId");
 
-var cityId = document.getElementById("txtCon");
+var cityId = document.getElementById("txtStreet");
 
 cityId.value = tekst;
