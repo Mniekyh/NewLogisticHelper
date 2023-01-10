@@ -11,6 +11,10 @@ using System;
 using static LogisticHelper.Models.AccountController;
 using System.Data;
 using System.Drawing.Drawing2D;
+using Microsoft.OData.Edm;
+using NuGet.Packaging;
+using System.Security.Cryptography;
+using System.Text;
 
 namespace LogisticHelper.Controllers;
 public class AccountController : Controller
@@ -29,14 +33,30 @@ public class AccountController : Controller
     {
         con.ConnectionString = "Data Source=wsb2020.database.windows.net;Initial Catalog=PD2023;Persist Security Info=True;User ID=dyplom;Password=Dypl0m2022!@#";  //baza danych
     }
+    //hashowanie stringa
+    static string ComputeSHA512(string s)
+    {
+        StringBuilder sb = new StringBuilder();
+        using (SHA512 sha512 = SHA512.Create())
+        {
+            byte[] hashValue = sha512.ComputeHash(Encoding.UTF8.GetBytes(s));
+            foreach (byte b in hashValue)
+            {
+                sb.Append($"{b:X2}");
+            }
+        }
+        return sb.ToString();
+    }
     //Logowanie
     [HttpPost]
     public ActionResult Verify(Models.AccountController acc)
     {
+        string hashValue = ComputeSHA512(acc.Password);
+        Console.WriteLine(hashValue);
         connectionString();
         con.Open();
         com.Connection = con;
-        com.CommandText = "select * from PD2023.dbo.login where username='" + acc.Name + "' and password='" + acc.Password + "'";
+        com.CommandText = "select * from PD2023.dbo.login where username='" + acc.Name + "' and password='" + hashValue + "'";
         dr = com.ExecuteReader();
         if (dr.Read())
         {
@@ -116,17 +136,19 @@ public class AccountController : Controller
         //return new EmptyResult();
     }
 
-
     //Rejestracja
     [HttpPost]
     public ActionResult Sign(Models.AccountController acc)
     {
         try
         {
+
+            string hashValue = ComputeSHA512(acc.Password);
+            Console.WriteLine(hashValue);
             connectionString();
             con.Open();
             com.Connection = con;
-            com.CommandText = "INSERT INTO PD2023.dbo.login(username, password, email) VALUES('" + acc.Name + "','" + acc.Password + "','" + acc.Email + "')";
+            com.CommandText = "INSERT INTO PD2023.dbo.login(username, password, email) VALUES('" + acc.Name + "','" + hashValue + "','" + acc.Email + "')";
             dr = com.ExecuteReader();
             con.Close();
             return View("RegisterSuccesfull");
