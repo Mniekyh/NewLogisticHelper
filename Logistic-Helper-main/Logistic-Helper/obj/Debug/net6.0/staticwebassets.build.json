@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "gsIaWUbtzNECAVRA0+wZ7nfpC2FglFAlt5DUUc6cxTs=",
+  "Hash": "DHImSwkpN14I04zp4jtTuPT7MTnU3TOBI+F1Zz0TPi0=",
   "Source": "LogisticHelper",
   "BasePath": "_content/LogisticHelper",
   "Mode": "Default",
@@ -117,23 +117,6 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\js\\formCheck.js"
-    },
-    {
-      "Identity": "C:\\Users\\Łukasz\\Documents\\GitHub\\newnewnewLogisticHelper\\NewLogisticHelper\\Logistic-Helper-main\\Logistic-Helper\\wwwroot\\js\\GetInput.js",
-      "SourceId": "LogisticHelper",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Łukasz\\Documents\\GitHub\\newnewnewLogisticHelper\\NewLogisticHelper\\Logistic-Helper-main\\Logistic-Helper\\wwwroot\\",
-      "BasePath": "_content/LogisticHelper",
-      "RelativePath": "js/GetInput.js",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\js\\GetInput.js"
     },
     {
       "Identity": "C:\\Users\\Łukasz\\Documents\\GitHub\\newnewnewLogisticHelper\\NewLogisticHelper\\Logistic-Helper-main\\Logistic-Helper\\wwwroot\\js\\googleMap.js",
