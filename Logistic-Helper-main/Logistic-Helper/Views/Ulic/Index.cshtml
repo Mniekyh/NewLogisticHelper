@@ -6,84 +6,79 @@
 <h1>Hej, łelkom na Ulicy</h1>
 
 
-
-
-<div class = "container p-3">
-    <div class = "row pt-4">
-        <div class= "col-6">
-            <h2 class = "text-primary">Ulic List</h2>
+<div class="container p-3">
+    <div class="row pt-4">
+        <div class="col-6">
+            <h2 class="text-primary">Ulic List</h2>
 
         </div>
-        <div class= "col-6 text-end">
-            <a asp-controller="Terc" asp-action= "Search" class = "btn btn-primary"> Search  Terc <i class="bi bi-plus-circle"></i></a>
-            
+        <div class="col-6 text-end">
+            <a asp-controller="Terc" asp-action="Search" class="btn btn-primary"> Search  Terc <i class="bi bi-plus-circle"></i></a>
+
         </div>
     </div>
-    <br /><br/>
+    <br /><br />
 </div>
 
 @model List<UlicaDrzewo>
- 
-    <div  id = "choosenStreet" class="bg-success">
+<div id="choosenStreet" class="bg-success">
 
     @*Form whichh allows to search for correct street in chosen city*@
 
-      @using (Html.BeginForm("Index", "GoogleMap", FormMethod.Post))
-        {
+    @using (Html.BeginForm("Index", "GoogleMap", FormMethod.Post))
+    {
         @*    @TempData["wojewodztwo"], @TempData["Powiat"],@TempData["nazwa"]*@
-        
 
-          <datalist id="countrydata">
-                @foreach(var streets in Model )
-                {
-           
-                    <option value ='@streets.Nazwa1'>@streets.Nazwa1</option>
-                    
-                }
-            </datalist>
-            <label for="country">Voivodeship</label>
 
-            <input type="text" id = "VoivodeId"
-           value ='@TempData["wojewodztwo"]'
-            autocomplete="off" 
-            disabled/> 
-            <br/>
-            <label for="country">Powiat</label>
+        <datalist id="countrydata">
+            @foreach (var streets in Model)
+            {
 
-            <input type="text" id = "PowiatId"
-           value ='@TempData["powiat"]'
-            disabled /> 
-            <br />
-            
-            <label for="country">City</label>
+                <option value='@streets.Nazwa1'>@streets.Nazwa1</option>
 
-            <input type="text" id = "CityId"
-           value ='@TempData["nazwa"]'
-            disabled /> 
-           
-  
-            <br />
-            <label for="country">Street</label>
+            }
+        </datalist>
+        <label for="country">Voivodeship</label>
 
-            <input type="text" id = "InputId"
-            list="countrydata"
-            size="50"
-            autocomplete="off" /> 
-  
-            <br />
-            <input type="submit" id="btnSubmit" onclick = "getValue()" value="Submit" />
-            <br />
-            <br />
-       
-       
+        <input type="text" id="VoivodeId"
+           value='@TempData["wojewodztwo"]'
+           autocomplete="off"
+           disabled />
+        <br />
+        <label for="country">Powiat</label>
+
+        <input type="text" id="PowiatId"
+           value='@TempData["powiat"]'
+           disabled />
+        <br />
+
+        <label for="country">City</label>
+
+        <input type="text" id="CityId"
+           value='@TempData["nazwa"]'
+           disabled />
+
+
+        <br />
+        <label for="country">Street</label>
+
+        <input type="text" id="InputId"
+           list="countrydata"
+           size="50"
+           autocomplete="off" />
+
+        <br />
+        <input type="submit" id="btnSubmit" onclick="getValue()" value="Submit" />
+        <br />
+        <br />
+
+
     }
 
+    @*<button onclick = "getValue()">Submit</button>*@
 
-           @*<button onclick = "getValue()">Submit</button>*@
-   
-    </div>
-        <div id="output"></div>
-
+</div>
+<div id="output"></div>
 
 
 @*Table which shows Category inside*@
@@ -129,8 +124,8 @@ table class="table table-bordered table-stripped" style= "width:100%;">
                 <td width= "10%">
                     @obj.POW
                 </td>
-            
-            
+
+
                 <td width= "10%">
                     @obj.GMI
 
@@ -142,6 +137,5 @@ table class="table table-bordered table-stripped" style= "width:100%;">
           </tr>
         }
     </tbody>
-
 
 </table>*@
