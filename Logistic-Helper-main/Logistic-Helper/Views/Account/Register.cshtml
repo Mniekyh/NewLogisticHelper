@@ -1,14 +1,7 @@
-﻿
-
-@{
-    ViewData["Title"] = "Register";
-    <link href="~/styles/style.css" rel="stylesheet" />
-}
+﻿@{    ViewData["Title"] = "Register";
+    <link href="~/styles/style.css" rel="stylesheet" />}
 <h1>Formularz Rejestracji</h1>
-<div class="clear-loading spinner">
-    <span></span>
-</div>
-<div class="w3ls-login box box--big">
+<div>
     <!-- form starts here -->
     <form asp-controller="Account" asp-action="Sign">
         <form action="Sign" method="post">
@@ -43,15 +36,11 @@
                 }
             </script>
             <!-- //end script -->
-            <input type="submit" value="Register">
+            <input type="submit" value="Zarejestruj się">
         </form>
     </form>
 </div>
 <!-- //form ends here -->
 <!--copyright-->
-<div class="copy-wthree">
-    <p>
-        © PD2023. All Rights Reserved
-    </p>
-</div>
+<div><p>© PD2023. All Rights Reserved</p></div>
 <!--//copyright-->

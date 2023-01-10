@@ -5,6 +5,8 @@ using Microsoft.EntityFrameworkCore;
 using System.Linq.Expressions;
 using Microsoft.Extensions.DependencyInjection;
 using FluentScheduler;
+using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Authentication.Cookies;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -17,6 +19,9 @@ builder.Services.AddDbContext<ApplicationDbContext>(options => options.UseSqlSer
 );
 builder.Services.AddScoped<IUnitOfWork, UnitOfWork>();
 //builder.Services.AddHostedService<TercUpdateJob>();
+
+builder.Services.AddAuthentication(CookieAuthenticationDefaults.AuthenticationScheme)
+    .AddCookie(CookieAuthenticationDefaults.AuthenticationScheme);
 
 
 

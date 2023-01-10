@@ -1,33 +1,23 @@
-﻿
-
-@{
-    ViewData["Title"] = "Home Page";
-    <link href="~/styles/style.css" rel="stylesheet" />
-
-
-}
-
-<h1>Formularz logowania</h1>
-<div class="clear-loading spinner">
-    <span></span>
-</div>
-<div class="w3ls-login box box--big">
+﻿@{   ViewData["Title"] = "Home Page";
+    <link href="~/styles/style.css" rel="stylesheet" />}
+<h1>Logowanie</h1>
+<div>
     <!-- form starts here -->
     <form asp-controller="Account" asp-action="Verify">
         <form action="Verify" method="post">
             <div class="agile-field-txt">
-                <label><i class="fa fa-user" aria-hidden="true"></i> Username </label>
-                <input type="text" name="Name" placeholder="Enter User Name" required="" />
+                <label><i class="fa fa-user" aria-hidden="true"></i> Login </label>
+                <input type="text" name="Name" placeholder="Wprowadź nazwę użytkownika" required="" />
             </div>
             <div class="agile-field-txt">
-                <label><i class="fa fa-unlock-alt" aria-hidden="true"></i> password </label>
-                <input type="password" name="Password" placeholder="Enter Password" required="" id="myInput" />
+                <label><i class="fa fa-unlock-alt" aria-hidden="true"></i> Hasło </label>
+                <input type="password" name="Password" placeholder="Wprowadź hasło" required="" id="myInput" />
                 <div class="agile_label">
-                    <input id="check3" name="check3" type="checkbox" value="show password" onclick="myFunction()">
-                    <label class="check" for="check3">Show password</label>
+                    <input id="check3" name="check3" type="checkbox" value="show password" onclick="showPassword()">
+                    <label class="check" for="check3">Pokaż hasło</label>
                 </div>
                 <div class="agile-right">
-                    <a>@Html.ActionLink("Rejestracja2", "Register", "Account")</a>
+                    <a>@Html.ActionLink("Rejestracja", "Register", "Account")</a>
                 </div>
                 <div class="agile-right">
                     <a>@Html.ActionLink("Reset hasła", "ResetPassword", "Account")</a>
@@ -35,7 +25,7 @@
             </div>
             <!-- script for show password -->
             <script>
-                function myFunction() {
+                function showPassword() {
                     var x = document.getElementById("myInput");
                     if (x.type === "password") {
                         x.type = "text";
@@ -45,19 +35,11 @@
                 }
             </script>
             <!-- //end script -->
-            <input type="submit" value="LOGIN">
-            @*<input type="submit" value="SIGN">*@
+            <input type="submit" value="Zaloguj">
         </form>
     </form>
 </div>
 <!-- //form ends here -->
 <!--copyright-->
-
-
-
-<div class="copy-wthree">
-    <p>
-        © PD2023. All Rights Reserved
-    </p>
-</div>
+<div><p>© PD2023. All Rights Reserved</p></div>
 <!--//copyright-->

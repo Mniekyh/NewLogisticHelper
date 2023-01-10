@@ -1,12 +1,8 @@
-﻿@*@{
-        ViewData["Title"] = "Create";
-        Layout = "~/Views/Home/Index.cshtml";
-    }*@
+﻿@*wspólny widok błędu wykorzystany w przypadku błędnego logowania oraz wprowadzenia błędnego tokenu zmiany hasła*@
 @{
     ViewData["Title"] = "Error";
     <link href="~/styles/style.css" rel="stylesheet" />
 }
-<h1>Błąd logowania</h1>
-<div class="agile-right">
-    <a>@Html.ActionLink("Powrót", "Login", "Account")</a>
-</div>
+<h1>Niepowodzenie</h1>
+<pre id="json" style="color: darkred; white-space:pre-wrap; text-align:start">@ViewBag.ErrorMessage</pre>
+<div class="agile-right"><a>@Html.ActionLink("Powrót", "Login", "Account")</a></div>
