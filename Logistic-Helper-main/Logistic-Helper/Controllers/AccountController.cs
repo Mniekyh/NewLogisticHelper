@@ -10,6 +10,7 @@ using Microsoft.AspNetCore.Http;
 using System;
 using static LogisticHelper.Models.AccountController;
 using System.Data;
+using System.Drawing.Drawing2D;
 
 namespace LogisticHelper.Controllers;
 public class AccountController : Controller
@@ -348,4 +349,24 @@ public IActionResult Register()
     //    Console.WriteLine(ViewBag.Message);
     //    return (RedirectToAction("Details"));
     //}
+
+    //public FileResult DownloadAttachment(string fileName)
+    //{
+    //    //Build the File Path.
+    //    string path = Server.MapPath("~/Files/") + fileName;
+
+    //    //Read the File data into Byte Array.
+    //    byte[] bytes = System.IO.File.ReadAllBytes(path);
+
+    //    //Send the File to Download.
+    //    return File(bytes, "application/octet-stream", fileName);
+    //}
 }
+
+
+
+
+
+
+
+

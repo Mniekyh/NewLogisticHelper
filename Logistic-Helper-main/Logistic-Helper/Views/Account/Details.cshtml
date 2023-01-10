@@ -1,9 +1,6 @@
 ﻿@{ViewData["Title"] = "Details";
     <link href="~/styles/style.css" rel="stylesheet" />}
 <h1>Szczegóły</h1>
-<div class="agile-right">
-    <a>@Html.ActionLink("Dodaj", "Create", "Account")</a>
-</div>
 <div>
     <ol>
         <li>Miejscowosc: @ViewBag.addressesDetails[0]</li>
@@ -26,3 +23,22 @@
         </form>
     </form>
 }
+
+
+@*@using (Html("ReadAttachment", "Account", FormMethod.Get, new { @enctype = "multipart/form-data" })){
+<form asp-controller="Account" asp-action="ReadAttachment">
+<div>
+    <table>
+        <tr>
+            <th>File Name</th>
+            <th></th>
+        </tr>
+            @foreach (AccountController file in Model)
+        {
+            <tr>
+                <td>@file.FileName</td>
+                <td>@Html.ActionLink("Download", "DownloadFile", new { fileName = file.FileName })</td>
+            </tr>
+        }
+    </table>
+</div>*@

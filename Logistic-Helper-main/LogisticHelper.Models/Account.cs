@@ -21,10 +21,8 @@ namespace LogisticHelper.Models
         public string mailConfirmed { get; set; }
         public string? WrittenToken { get; set; }
 
-        public class FileModel
-        {
-            public string FileName { get; set; }
-        }
+        
+        public string FileName { get; set; }
 
         public string user_id { get; set; }
         public string miejscowosc { get; set; }
@@ -40,4 +38,5 @@ namespace LogisticHelper.Models
         //public string? com { get; set; }
 
     }
+
 }
