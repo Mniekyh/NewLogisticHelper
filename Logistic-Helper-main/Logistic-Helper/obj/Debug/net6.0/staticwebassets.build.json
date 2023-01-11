@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "diXw20CqWMV7MlShQ12YJjoS+tZlTBjw6rFiUs/QXhQ=",
+  "Hash": "xBuAbLWkJuWdJp8FHvpBH1TBqAOLymP1XaFv+rwdDdk=",
   "Source": "LogisticHelper",
   "BasePath": "_content/LogisticHelper",
   "Mode": "Default",
@@ -49,6 +49,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "N:\\Programowanie\\Inzynierka\\PI2023\\NewLogistic\\NewLogisticHelper\\Logistic-Helper-main\\Logistic-Helper\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\LogisticHelper.bundle.scp.css"
+    },
+    {
+      "Identity": "N:\\Programowanie\\Inzynierka\\PI2023\\NewLogistic\\NewLogisticHelper\\Logistic-Helper-main\\Logistic-Helper\\wwwroot\\css\\myStyle.css",
+      "SourceId": "LogisticHelper",
+      "SourceType": "Discovered",
+      "ContentRoot": "N:\\Programowanie\\Inzynierka\\PI2023\\NewLogistic\\NewLogisticHelper\\Logistic-Helper-main\\Logistic-Helper\\wwwroot\\",
+      "BasePath": "_content/LogisticHelper",
+      "RelativePath": "css/myStyle.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\myStyle.css"
     },
     {
       "Identity": "N:\\Programowanie\\Inzynierka\\PI2023\\NewLogistic\\NewLogisticHelper\\Logistic-Helper-main\\Logistic-Helper\\wwwroot\\css\\Original.css",

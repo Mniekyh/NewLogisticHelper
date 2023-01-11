@@ -23,7 +23,7 @@ function buttonSearchClick() {
             var y = results[0].geometry.location.lng();
             var latlng = new google.maps.LatLng(x, y);
             var myOptions = {
-                zoom: 8,
+                zoom: 20,
                 center: latlng,
                 mapTypeId: google.maps.MapTypeId.ROADMAP
             };
