@@ -17,7 +17,7 @@
             @foreach (var address in ViewBag.addressesList)
             {
             <tr>
-                <td style="white-space:nowrap">>@address[0]</td>
+                    <td style="white-space:nowrap">>@address[0], @address[1]</td>
                 <td>
                     <button type="button" class="btn">
                         @Html.ActionLink(

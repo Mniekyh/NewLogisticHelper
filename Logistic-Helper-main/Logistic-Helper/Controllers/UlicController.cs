@@ -29,9 +29,9 @@ namespace LogisticHelper.Controllers
             string rodz = TempData["RODZ"] as string;
             string sym = TempData["SYM"] as string;
 
-            
+
             List<UlicaDrzewo[]> city = new List<UlicaDrzewo[]>();
-            city.Add(await client.PobierzListeUlicDlaMiejscowosciAsync(woj,pow ,gmi ,rodz, sym, true, false, DateTime.Now));
+            city.Add(await client.PobierzListeUlicDlaMiejscowosciAsync(woj, pow, gmi, rodz, sym, true, false, DateTime.Now));
             List<UlicaDrzewo> streets = new List<UlicaDrzewo>();
             foreach (var st in city)
             {
@@ -42,14 +42,14 @@ namespace LogisticHelper.Controllers
                 }
 
             }
-           
+
             TempData["wojewodztwo2"] = TempData["wojewodztwo"];
             TempData["powiat2"] = TempData["powiat"];
             TempData["nazwa2"] = TempData["nazwa"];
 
             return View(streets);
-        } 
-       
+        }
+
 
         // GET: UlicController/Details/5
         public ActionResult Details(int id)

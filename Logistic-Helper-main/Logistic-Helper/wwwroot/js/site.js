@@ -7,8 +7,7 @@ function getValue() {
 
     var InputId = document.getElementById("InputId").value
 
-   
-    localStorage.setItem("InputId", InputId)
 
+    localStorage.setItem("InputId", InputId)
 
 }
