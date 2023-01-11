@@ -97,8 +97,7 @@ namespace LogisticHelper.Controllers
         public IActionResult Search()
         {
 
-            
-            
+
 
 
             return View();
@@ -270,25 +269,16 @@ namespace LogisticHelper.Controllers
 
 
 
-            IEnumerable<Simc> SimcObjList = _unitOfWork.Simc.GetAll();
+            DateTime s = DateTime.Now;
+            DateTime e = s.AddYears(-1);
 
-
-            //Teec is updated once a year
-
-            DateTime prsD = DateTime.Now;
-            string presentDate = prsD.ToShortDateString();
-
-            DateTime pstD = prsD.AddYears(-1);
-            string pastDate = pstD.ToShortDateString();
-
-
-            
+         
+            //Simc is updated once a year
 
 
 
-            //Here we have XML compressed to ZIP, now figure out how to suck it to db
-            //FileChange is a variable in which is file, it doesnt exist phyisically on disc, how to unzip it?
-            var UpdateFile = client.PobierzZmianySimcUrzedowyAsync(pstD, prsD);
+            var UpdateFile = client.PobierzZmianySimcUrzedowyAsync(e, s);
+
             PlikZmiany fileChange = UpdateFile.Result;
             string fileName = fileChange.nazwa_pliku;
             string zipContent = fileChange.plik_zawartosc;
@@ -307,15 +297,29 @@ namespace LogisticHelper.Controllers
             ZipArchive zipArchive = new ZipArchive(fs);
             string destination = Directory.GetCurrentDirectory() + @"/File/";
             zipArchive.ExtractToDirectory(destination);
-            ViewBag.Message = "Selected SS Name: " + zipContent;
-            //  ViewBag.Message = "Selected GMI Name: " + search;
+            //return XML
+        }
+     
 
-            //Above works, need smth to read xml
+            
+            public void readXML()
+        {
+            DateTime s = DateTime.Now;
+            string startingDate = s.ToString("yyyy-MM-dd");
+
+
+            DateTime e = s.AddYears(-1);
+            string endingDate = e.ToString("yyyy-MM-dd");
+
+            IEnumerable<Simc> SimcObjList = _unitOfWork.Simc.GetAll();
+
+
+
 
 
             XmlDocument doc = new XmlDocument();
 
-            doc.Load(Directory.GetCurrentDirectory() + "/File/SIMC_Urzedowy_zmiany_" + pastDate + "_" + presentDate + ".xml");
+            doc.Load(Directory.GetCurrentDirectory() + "/File/SIMC_Urzedowy_zmiany_" + endingDate + "_" + startingDate + ".xml");
             var xList = doc.SelectNodes("/zmiany/zmiana"); // Znajdź węzeł zmiany, w której znajdują się informacje dot. modernizacji
             foreach (XmlNode xNode in xList)
             {
@@ -516,10 +520,10 @@ namespace LogisticHelper.Controllers
                         break;
                 }
 
-                //WORKS, now polishing this little boy!!!
+       
 
             }
-            // wezły
+           
 
 
         }

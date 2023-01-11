@@ -53,3 +53,4 @@ N:\Programowanie\Inzynierka\PI2023\NewLogistic\NewLogisticHelper\Logistic-Helper
 N:\Programowanie\Inzynierka\PI2023\NewLogistic\NewLogisticHelper\Logistic-Helper-main\LogisticHelper.Models\obj\Debug\net6.0\ref\LogisticHelper.Models.dll
 N:\Programowanie\Inzynierka\PI2023\NewLogistic\NewLogisticHelper\Logistic-Helper-main\LogisticHelper.Models\obj\Debug\net6.0\LogisticHelper.Models.pdb
 N:\Programowanie\Inzynierka\PI2023\NewLogistic\NewLogisticHelper\Logistic-Helper-main\LogisticHelper.Models\obj\Debug\net6.0\LogisticHelper.Models.genruntimeconfig.cache
+N:\Programowanie\Inzynierka\PI2023\NewLogistic\NewLogisticHelper\Logistic-Helper-main\LogisticHelper.Models\obj\Debug\net6.0\LogisticHelper.Models.csproj.AssemblyReference.cache
