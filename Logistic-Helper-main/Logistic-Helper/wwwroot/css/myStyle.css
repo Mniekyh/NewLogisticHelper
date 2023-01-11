@@ -1,8 +1,46 @@
-﻿* {
-    animation: fadeIn 5s;
-
+﻿
+input {
+    transition: 2s;
 }
-body
-{
-    
+
+.formLabel {
+    display: block;
+    margin: 1rem;
+    font-size: 2rem;
+}
+#myForm {
+    flex-direction: column;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.myInputs {
+    width: 30%;
+    height: 50%;
+    font-size: 2rem;
+  
+    box-shadow: 5px 5px 5px #2d522d;
+}
+#btnSubmit {
+width:15rem;
+}
+
+/*Found.cshtml*/
+
+.cityOption {
+    width: 10rem;
+    margin: 0 1rem rem 1rem 1rem;
+}
+}
+
+.btnToChoose {
+    padding: 2%;
+}
+.myRow {
+margin-bottom:1rem;
+}
+.cityDesc {
+    font-size: 1.2rem;
 }

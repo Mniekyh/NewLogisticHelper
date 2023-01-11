@@ -89,11 +89,10 @@ public class AccountController : Controller
 
     //mailer
     //[HttpPost] - psulo
+
     public ActionResult SendEmail(Models.AccountController acc)
     {
-        Console.WriteLine("Mailer start");
-        Console.WriteLine(acc.EmailToResetPass);
-
+     
         var mailAddress = acc.EmailToResetPass;
         ViewBag.EmailConfirm = mailAddress;
         int _min = 1000;
@@ -101,7 +100,7 @@ public class AccountController : Controller
         Random _rdm = new Random();
         var mailContent = _rdm.Next(_min, _max);
         ViewBag.EmailContent = mailContent;
-        Console.WriteLine(mailContent);
+      
 
         var smtpClient = new SmtpClient("smtp.gmail.com")
         {
@@ -111,9 +110,9 @@ public class AccountController : Controller
         };
 
         smtpClient.Send("new.logistic.helper@gmail.com", mailAddress, "Token do zmiany hasła", mailContent.ToString());
-        Console.WriteLine("Wyslano wiadomosc");
+        
         return View("ResetPasswordConfirm");
-        //return new EmptyResult();
+       
     }
 
 
@@ -320,9 +319,7 @@ public IActionResult Register()
     }
     public IActionResult Details(string miejscowosc, string ulica)
     {
-        //Directory.GetFiles(Directory.GetCurrentDirectory(), "Attachments");
-        //System.Diagnostics.Debug.WriteLine("K:  {0}", (object)test);
-        //System.Diagnostics.Debug.WriteLine("J:  {0}", (object)testA);
+
         List<String> tempList = new List<String>();
         tempList.Add(miejscowosc);
         tempList.Add(ulica);

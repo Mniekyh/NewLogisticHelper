@@ -6,14 +6,22 @@
 <link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/start/jquery-ui.css">
 @using (Html.BeginForm("Found", "Simc", FormMethod.Post))
 {
-    <input type="text" id="textGmi" name="search" />
-  
+    <div id = "myForm">
+    <label class = "formLabel"> WYSZUKAJ MIEJSCOWOŚĆ</label>
+    <input type="text" class = "myInputs" id="textGmi" name="search" required />
+
     <br />
-    <input type="submit" id="btnSubmit" value="Submit" />
+    <input type="submit" id="btnSubmit" value="Wyszukaj" class="btn btn-light">
     <br />
     <br />
-    @ViewBag.Message
+    @ViewBag.Message  
+</div>
 }
+
+
+
+
+
 @section scripts{
     <script src="https://code.jquery.com/ui/1.13.1/jquery-ui.min.js" integrity="sha256-eTyxS0rkjpLEo16uXTS0uVCS4815lc40K2iVpWDvdSY=" crossorigin="anonymous"></script>
     <script type="text/javascript">
@@ -66,19 +74,4 @@
     }
 
    
-
-@*
-<form>
-  <div class="form-group">
-    <label for="GMIFORM">Podaj Gminę</label>
-    <input type="text" class="form-control" id="GMI" placeholder="Podaj Gminę">
-
-  </div>
-  <div class="form-group">
-    <label for="POW">Jaki Powiat</label>
-    <input type="text" class="form-control" id="POW" placeholder="POW">
-  </div>
- 
-  <button type="submit" class="btn btn-primary">Szukaj</button>
-</form>*@
 

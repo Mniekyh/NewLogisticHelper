@@ -1,5 +1,5 @@
 ﻿$(document).ready(function () {
-    console.log("ready");
+   
     //wyszukiwanie
     $('#search').click(function (event) {
         buttonSearchClick()
@@ -14,7 +14,7 @@ function buttonSearchClick() {
     var geocoder = new google.maps.Geocoder();
     var street = document.getElementById('txtStreet').value;
     var city = document.getElementById('txtCity').value;
-    console.log("dupa");
+ 
 
     var com = city + "," + street;
     geocoder.geocode({ 'address': com }, function (results, status) {
