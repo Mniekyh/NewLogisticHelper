@@ -329,7 +329,7 @@ namespace LogisticHelper.Controllers
 
 
                     //Dodanie jednostki administracyjnej
-                    case "D": //**********************************************ADD ALL IMPORTANT SIMC STUFFF**********************************************
+                    case "D": 
                         string xSym = (xNode.SelectSingleNode("Identyfikator").InnerText);
                         string xWojPo = (xNode.SelectSingleNode("WojPo").InnerText);
                         string xPowPo = (xNode.SelectSingleNode("PowPo").InnerText);

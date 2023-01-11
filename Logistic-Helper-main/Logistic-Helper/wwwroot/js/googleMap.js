@@ -14,7 +14,8 @@ function buttonSearchClick() {
     var geocoder = new google.maps.Geocoder();
     var street = document.getElementById('txtStreet').value;
     var city = document.getElementById('txtCity').value;
-    
+    console.log("dupa");
+
     var com = city + "," + street;
     geocoder.geocode({ 'address': com }, function (results, status) {
         if (status == google.maps.GeocoderStatus.OK) {
