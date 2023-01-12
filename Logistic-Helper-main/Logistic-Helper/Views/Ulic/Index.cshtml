@@ -24,64 +24,40 @@
 
 @model List<UlicaDrzewo>
  
-    <div  id = "choosenStreet" class="bg-success">
+    <div   class="myForm" id = "myForm">
 
     @*Form whichh allows to search for correct street in chosen city*@
 
       @using (Html.BeginForm("Index", "GoogleMap", FormMethod.Post))
-        {
+     
         @*    @TempData["wojewodztwo"], @TempData["Powiat"],@TempData["nazwa"]*@
-        
+           {
 
-          <datalist id="countrydata">
-                @foreach(var streets in Model )
-                {
+              <datalist id="countrydata">
+                    @foreach(var streets in Model )
+                    {
            
-                    <option value ='@streets.Nazwa1'>@streets.Nazwa1</option>
+                        <option value ='@streets.Nazwa1'>@streets.Nazwa1</option>
                     
-                }
-            </datalist>
-            <label for="country">Voivodeship</label>
+                    }
+                </datalist>
 
-            <input type="text" id = "VoivodeId"
-           value ='@TempData["wojewodztwo"]'
-            autocomplete="off" 
-            disabled/> 
-            <br/>
-            <label for="country">Powiat</label>
+                <label class = "formLabel" for="country">Ulica</label>
 
-            <input type="text" id = "PowiatId"
-           value ='@TempData["powiat"]'
-            disabled /> 
-            <br />
-            
-            <label for="country">City</label>
-
-            <input type="text" id = "CityId"
-           value ='@TempData["nazwa"]'
-            disabled /> 
-           
+                <input  class = "myInputsWider" type="text" id = "InputId"
+                list="countrydata"
+                size="50"
+                autocomplete="off" /> 
   
-            <br />
-            <label for="country">Street</label>
+                <br />
+                <input type="submit" id="btnSubmit" value="Wyszukaj" onclick = "getValue()" value="Submit" class="btn btn-light"/>
+                <br />
+                <br />
+            }
 
-            <input type="text" id = "InputId"
-            list="countrydata"
-            size="50"
-            autocomplete="off" /> 
-  
-            <br />
-            <input type="submit" id="btnSubmit" onclick = "getValue()" value="Submit" />
-            <br />
-            <br />
-       
-       
-    }
-
-
-   
    
     </div>
+
         <div id="output"></div>
 
 

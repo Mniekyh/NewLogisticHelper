@@ -22,9 +22,18 @@ input {
     font-size: 2rem;
   
     box-shadow: 5px 5px 5px #2d522d;
+    margin-bottom:1rem;
+}
+
+.myInputsWider {
+    width: 65%;
+    height: 50%;
+    font-size: 2rem;
+    box-shadow: 5px 5px 5px #2d522d;
+    margin-bottom: 1rem;
 }
 #btnSubmit {
-width:15rem;
+    width: 15rem;
 }
 
 /*Found.cshtml*/
