@@ -32,8 +32,13 @@ input {
     box-shadow: 5px 5px 5px #2d522d;
     margin-bottom: 1rem;
 }
+.fS15 {
+    font-size: 1.5rem;
+    width: 30rem;
+}
 #btnSubmit {
     width: 15rem;
+    margin-top: 1rem;
 }
 
 /*Found.cshtml*/
@@ -53,3 +58,25 @@ margin-bottom:1rem;
 .cityDesc {
     font-size: 1.2rem;
 }
+
+.agile-right {
+    width: 42%;
+    display: inline-block;
+    padding: 1rem;
+    font-size: 1.2rem;
+}
+    .agile-right a {
+        padding: 0.5rem;
+        border: 1px solid #0d6efd;
+        text-decoration: none;
+        color: #0a6efd;
+
+        border-radius:2px;
+        transition:1s;
+    }
+        .agile-right a:hover {
+            background: #2c3e50;
+            color: azure;
+            border: 1px solid azure;
+        }
+
