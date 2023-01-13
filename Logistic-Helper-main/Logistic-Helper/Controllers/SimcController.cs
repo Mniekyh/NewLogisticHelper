@@ -121,7 +121,7 @@ namespace LogisticHelper.Controllers
         public async Task<ActionResult> FoundAsync(string search)
         {
             var client = connection();
-            //Zastanowić się jak rozgryźć wyszukiwarkę, 2 autocomplete? Jedna ze stringiem dla użytkownika, jedna dla sprzętu?
+            
             var ss = AutoComplete(search);
             dynamic jsoon = JsonConvert.DeserializeObject(ss);
             var villagesArrays = new List<Miejscowosc[]> { };
