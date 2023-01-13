@@ -3,6 +3,7 @@ using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Newtonsoft.Json;
 using ServiceReference1;
+using Microsoft.AspNetCore.Authorization;
 
 namespace LogisticHelper.Controllers
 {

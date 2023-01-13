@@ -6,6 +6,7 @@ using System.IO.Compression;
 using System.Xml;
 using Quartz;
 using Quartz.Impl;
+using Microsoft.AspNetCore.Authorization;
 
 namespace LogisticHelper.Controllers
 {

@@ -29,7 +29,6 @@ namespace LogisticHelper.Models
         public string ulica { get; set; }
         public string Policy { get; set; }
 
-
         //public string? txtCon { get; set; }
         //public string? txtCity { get; set; }
 
