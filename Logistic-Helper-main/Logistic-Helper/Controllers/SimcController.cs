@@ -71,7 +71,7 @@ namespace LogisticHelper.Controllers
                               stan_na = Simc.STAN_NA,
 
 
-
+                              //Take 5 most suitable
                           }).Take(5).ToList();
 
            
@@ -135,16 +135,10 @@ namespace LogisticHelper.Controllers
                 villagesArrays.Add(await client.WyszukajMiejscowoscAsync(objNazwa, objSym)); // <---- Za każdym razem, tworzy się tutaj obiekt Miejscowość, teraz trzeba ją wyrucić na ekran
 
             }
-            //WORKS!!!!!
-            //Now have to write correct instruction to show data, but the principal of it works 
-            //Whole JSON is being send, so np to choose data
-
-            /*  foreach (ServiceReference1.Miejscowosc[] obj in villagesArrays)
-              {
-              }*/
+          
 
 
-            //Working!!!
+
             //Now find out how to show links on page!
           
             List<Miejscowosc> villages = new List<Miejscowosc>();
@@ -164,9 +158,6 @@ namespace LogisticHelper.Controllers
 
             return View(villages);
         }
-
-        //Why symbol == null?
-        //GET /Details/sym
 
 
         public async Task<IActionResult> DetailsAsync(string symbol, string wojewodztwo, string powiat, string nazwaMiejscowosci)

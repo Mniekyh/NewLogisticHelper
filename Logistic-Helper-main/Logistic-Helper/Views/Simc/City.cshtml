@@ -14,69 +14,10 @@
 
         </div>
         <div class= "col-6 text-end">
-            <a asp-controller="Terc" asp-action= "Search" class = "btn btn-primary"> Search  Terc <i class="bi bi-plus-circle"></i></a>
+            <a asp-controller="Terc" asp-action= "Search" class = "btn btn-primary"> Przeszukaj tabelę TERC <i class="bi bi-plus-circle"></i></a>
 
         </div>
     </div>
     <br /><br/>
 </div>
 
-@*Table which shows Category inside*@
-@*
-table class="table table-bordered table-stripped" style= "width:100%;">
-    <thead>
-        <tr>
-            <th>
-               ID
-            </th>
-            <th>
-                LAST_NAME
-            </th>
-               <th>
-               NAME
-            </th>
-            <th>
-                Data Urodzenia
-            </th>
-               <th>
-               Mail
-            </th>
-            <th>
-                PHONE
-            </th>
-            <th>
-                Edit
-            </th>
-              <th>
-                Delete
-            </th>
-        </tr>
-    </thead>
-    <tbody>
-        Loop to get data from database
-        @foreach(var obj in Model)
-        {
-            <tr>
-                <td width= "10%">
-                    @obj.WOJ
-                </td>
-
-                <td width= "10%">
-                    @obj.POW
-                </td>
-            
-            
-                <td width= "10%">
-                    @obj.GMI
-
-                </td>
-                 <td width= "10%">
-                    @obj.STAN_NA
-
-                </td>
-          </tr>
-        }
-    </tbody>
-
-
-</table>*@
