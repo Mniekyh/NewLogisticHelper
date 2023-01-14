@@ -8,13 +8,22 @@ using Newtonsoft.Json;
 using System.Collections.Generic;
 using Microsoft.Data.SqlClient;
 using NuGet.Protocol.Plugins;
+using Microsoft.AspNetCore.Authorization;
 namespace LogisticHelper.Controllers
 {
     public class GoogleMapController : Controller
-    { 
+    {
         public IActionResult Index()
         {
-            return View();
+            if (@ViewBag.userId > 0)
+            {
+                return View();
+            }
+            else
+            {
+                ViewBag.ErrorMessage = "Dostęp tylko dla zalogowanych użytkowników!";
+                return RedirectToAction("Login", "Account");
+            }
         }
     }
 }

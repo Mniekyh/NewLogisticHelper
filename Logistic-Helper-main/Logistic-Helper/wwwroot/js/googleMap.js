@@ -8,6 +8,10 @@
     $('#save').click(function (event) {
         buttonSaveClick()
     });
+    //pokazywanie na mapie w details
+    $('#show').click(function (event) {
+        buttonShowClick()
+    });
 });
 
 function buttonSearchClick() {
@@ -61,6 +65,40 @@ function sendDataToController(street, city) {
         },
         error: function (xhr, ajaxOptions, thrownError) {
             console.error("Blad: ", thrownError, xhr, ajaxOptions);
+        }
+    });
+}
+
+
+function buttonShowClick() {
+    var geocoder = new google.maps.Geocoder();
+    var street = document.getElementById("city").value;
+    var city = document.getElementById('mala').value;
+
+    var com = city + "," + street;
+    geocoder.geocode({ 'address': com }, function (results, status) {
+        if (status == google.maps.GeocoderStatus.OK) {
+            var x = results[0].geometry.location.lat();
+            var y = results[0].geometry.location.lng();
+            var latlng = new google.maps.LatLng(x, y);
+            var myOptions = {
+                zoom: 8,
+                center: latlng,
+                mapTypeId: google.maps.MapTypeId.ROADMAP
+            };
+            map = new google.maps.Map(document.getElementById("map-canvas"), myOptions);
+            var marker = new google.maps.Marker({
+                position: new google.maps.LatLng(x, y),
+                map: map,
+                title: com
+            });
+            var infowindow = new google.maps.InfoWindow({
+                content: com
+            });
+            infowindow.open(map, marker);
+            google.maps.event.addDomListener(window, 'load');
+        } else {
+            res.innerHTML = "Enter correct Details: " + status;
         }
     });
 }

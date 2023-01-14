@@ -2,13 +2,15 @@
     ViewData["Title"] = "Bindings";
     <link href="~/styles/style.css" rel="stylesheet" />
 }
-@*<div class="agile-right">
+<div class="agile-right">
     <a>@Html.ActionLink("Dodaj", "Create", "Account")</a>
-</div>*@
+</div><div class="agile-right">
+    <a>@Html.ActionLink("gogle", "Index", "GoogleMap")</a>
+</div>
 <div class="agile-center">
     <ol>
-        <li class = "fS15" >Cześć, Twoje ID to: @ViewBag.userId</</li>
-        <li class = "fS15">Lista Twoich adresów: </li>
+        <li>Cześć, Twoje ID to: @ViewBag.userId</</li>
+        <li>Lista Twoich adresów: </li>
     </ol>
 </div>
 <div class="agile-center">
@@ -19,7 +21,7 @@
             <tr>
                     <td style="white-space:nowrap">>@address[0], @address[1]</td>
                 <td>
-                    <button type="button" class="btn  btnToChoose aButton">
+                    <button type="button" class="btn">
                         @Html.ActionLink(
                             "Szczegóły",
                             "Details",
