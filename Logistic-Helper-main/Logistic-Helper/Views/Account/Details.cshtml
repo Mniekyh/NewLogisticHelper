@@ -3,42 +3,25 @@
 <h1>Szczegóły</h1>
 <div>
     <ol>
-        <li>Miejscowosc: @ViewBag.addressesDetails[0]</li>
-        <li>Ulica: @ViewBag.addressesDetails[1]</li>
+        <li class = "fS15">Miejscowosc: @ViewBag.addressesDetails[0]</li>
+        <li class = "fS15">Ulica: @ViewBag.addressesDetails[1]</li>
     </ol>
 </div>
-<div id="map-canvas" style="height: 500px; width: 500px">
-</div>
+
 <h2>Dodaj załącznik</h2>
 
 @using (Html.BeginForm("AddAttachment", "Account", FormMethod.Post, new { @enctype = "multipart/form-data" })){
 <form asp-controller="Account" asp-action="AddAttachment">
     <form action="AddAttachment" method="post">
             <label for="formFile">Wgraj z dysku:</label>
-            <input type="file" name="formFile" id="file" />
+            <input type="file" name="formFile" id="file btnSubmit" />
             <br><br>
-            <input type="submit" value="Zapisz" />
+            <input type="submit" value="Zapisz" id = "btnSubmit" />
             <br><br>
             @ViewBag.Message
         </form>
     </form>
 }
+<div id="map-canvas" style="height: 500px; width: 500px">
+    </div>
 
-
-@*@using (Html("ReadAttachment", "Account", FormMethod.Get, new { @enctype = "multipart/form-data" })){
-<form asp-controller="Account" asp-action="ReadAttachment">
-<div>
-    <table>
-        <tr>
-            <th>File Name</th>
-            <th></th>
-        </tr>
-            @foreach (AccountController file in Model)
-        {
-            <tr>
-                <td>@file.FileName</td>
-                <td>@Html.ActionLink("Download", "DownloadFile", new { fileName = file.FileName })</td>
-            </tr>
-        }
-    </table>
-</div>*@
