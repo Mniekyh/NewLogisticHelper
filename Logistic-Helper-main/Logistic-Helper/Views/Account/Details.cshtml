@@ -7,11 +7,9 @@
         <li>Miejscowosc: @ViewBag.addressesDetails[0]</li>
         <li>Ulica: @ViewBag.addressesDetails[1]</li>
     </ol>
-    <a>@Html.ActionLink("powrut", "Bindings", "Account")</a>
-</div>
+@*</div>
 <div id="map-canvas" style="height: 500px; width: 500px">
-</div>
-<img src="favicon.ico" width="200" height="200"/>
+</div>*@
 <h2>Dodaj załącznik</h2>
 
 @using (Html.BeginForm("AddAttachment", "Account", FormMethod.Post, new { @enctype = "multipart/form-data" })){
@@ -26,8 +24,8 @@
         </form>
     </form>
 }
-<script src="~/js/googleMap.js"></script>
-<script src="~/js/GetInput.js"></script>
+@*<script src="~/js/googleMap.js"></script>
+<script src="~/js/GetInput.js"></script>*@
 
 @*@using (Html("ReadAttachment", "Account", FormMethod.Get, new { @enctype = "multipart/form-data" })){
 <form asp-controller="Account" asp-action="ReadAttachment">
@@ -45,11 +43,51 @@
             </tr>
         }
     </table>
-</div>*@
+    </div>*@@*
+<div asp-controller="Account" asp-action="GetFile">
+    <div action="GetFile" method="post">
+        <table>
+            <tbody>
+                    <p>elo @TempData.Peek("files.Lenght")</p>
 
-<form asp-controller="Account" asp-action="GetFile">
+                @if (@TempData.Peek("files") == null)
+                {
+                    ViewBag.MessageErr = ("pusto");
+                }
+                else{
+                <p>elo @TempData.Peek("files")</p>
+                        @foreach (var item in (dynamic) @TempData["files"])
+                        {
+                            <tr>
+                                <td>
+                                    @item[0]
+                                </td>
+                            </tr>
+                        }
+                    }
+                    @ViewBag.MessageErr
+            </tbody>
+        </table>
+    </div>
+    </div>*@
+
+    @model IEnumerable<FileInfo>
+
+    <h2>Twoje załączniki:</h2>
+
+    <ul>
+        @foreach (FileInfo file in Model)
+        {
+            <p>@Html.ActionLink(file.Name, "Download", "Account", new{Path = file.FullName, fileName = file.Name}, null)</p>
+        }
+    </ul>
+
+
+
+
+@*<form asp-controller="Account" asp-action="GetFile">
     <form action="GetFile" method="post">
             <input type="submit" value="odczyt" />
             <br><br>
     </form>
-    </form>
+    </form>*@

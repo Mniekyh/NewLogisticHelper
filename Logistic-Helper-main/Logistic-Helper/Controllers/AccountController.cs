@@ -88,6 +88,12 @@ public class AccountController : Controller
             //Console.WriteLine(ViewBag.userId);
             Console.WriteLine(TempData.Peek("userId"));
             GetUserAddresses(ViewBag.userId);
+            //GetFile();
+            
+
+            
+            //pass the data trough the "View" method
+           // return View("Details");
 
 
             //var claims = new List<Claim>
@@ -327,73 +333,41 @@ public IActionResult Register()
         Console.WriteLine(ViewBag.Message);
         return (RedirectToAction("Details"));
     }
-    [AcceptVerbs()]
-    public ActionResult GetFile()
-    {
-        try
-        {
-            // No need to dispose the stream, MVC does it for you
-            ViewBag.userId = Models.AccountController.userId;
-            string fileName = @ViewBag.userId + "att" + "%" + ".jpg";
-            string path = Path.Combine(Directory.GetCurrentDirectory(), "Attachments", fileName);
-            FileStream stream = new FileStream(path, FileMode.Open);
-            FileStreamResult result = new FileStreamResult(stream, "image/jpg");
-            result.FileDownloadName = fileName;
-            return result;
-        }
-        catch
-        {
-            ViewBag.Message = "błąd załącznika";
-            return (RedirectToAction("Details"));
-        }
-    }
-
-
-    //[HttpPost]
-    //[Obsolete]
-    //public ActionResult AddAttachment(IFormFile file)
+    //[AcceptVerbs()]
+    //public FileInfo[] GetFile()
     //{
-    //System.Diagnostics.Debug.WriteLine("K:  JESTEM TUTAJ {0}");
-    //    if (file != null)
-    //    {
-    //        try
-    //        {
-    //            string filepath = Path.Combine(("~/Attachments"),Path.GetFileName(file.FileName));
-    //            //file.SaveAs(filepath);
-    //            System.Diagnostics.Debug.WriteLine("K:  {0}", file);
-    //            var fileName = Path.GetFileName(file.FileName);
-    //            System.Diagnostics.Debug.WriteLine("Z:  {0}", fileName);
-    //            file.SaveAs(filepath);
-    //            ViewBag.Message = "File uploaded successfully";
-    //            }
-    //        catch (Exception ex)
-    //        {
-    //            ViewBag.Message = "ERROR:" + ex.Message.ToString();
-    //        }
-    //    }
-    //    else
-    //    {
-    //        ViewBag.Message = "You have not specified a file.";
-    //    }
-    //    return View("Details");
-    //}
 
-    //[HttpPost]
-    //public async Task<IActionResult> AddAttachment(IList<IFormFile> files)
-    //{
-    //    Console.WriteLine("AddAttachment start");
-    //    string uploads = Path.Combine("~/Attachments");
-    //    foreach (IFormFile file in files)
-    //    {
-    //        if (file.Length > 0)
-    //        {
-    //            string filePath = Path.Combine(uploads, file.FileName);
-    //            using Stream fileStream = new FileStream(filePath, FileMode.Create);
-    //            await file.CopyToAsync(fileStream);
-    //        }
-    //    }
-    //    Console.WriteLine("AddAttachment ending");
+    //    //    string folderPath = Path.Combine(Directory.GetCurrentDirectory(), "Attachments");
+    //    //    DirectoryInfo dir = new DirectoryInfo(folderPath);
+    //    //    FileInfo[] files = dir.GetFiles("171_s*", SearchOption.TopDirectoryOnly);
+    //    //    //Console.WriteLine("{0}", files);
+    //    //    //foreach (var item in files) { }
+    //    //    TempData["files"] = files;
+    //    ////TempData["files"] = JsonConvert.SerializeObject(files);
+    //    ////Console.WriteLine(TempData["files"]);
+
+    //    ViewBag.Message = "Your file page.";
+    //    DirectoryInfo dirInfo = new DirectoryInfo(Path.Combine(Directory.GetCurrentDirectory(), "Attachments"));
+    //    List<FileInfo> files = dirInfo.GetFiles().ToList();
+    //    TempData["files"] = files;
+    //    //pass the data trough the "View" method
     //    return View("Details");
+    //    //pass the data trough the "View" method
+    //    //return filesx;
+
+
+    //    //return files;
+
+
+    //            // No need to dispose the stream, MVC does it for you
+    //            //    ViewBag.userId = Models.AccountController.userId;
+    //            //string fileName = @ViewBag.userId + "att" + "%" + ".jpg";
+    //            //string path = Path.Combine(Directory.GetCurrentDirectory(), "Attachments", fileName);
+    //            //FileStream stream = new FileStream(path, FileMode.Open);
+    //            //FileStreamResult result = new FileStreamResult(stream, "image/jpg");
+    //            //result.FileDownloadName = fileName;
+    //            //return result;
+
     //}
     public IActionResult Create()
     {
@@ -410,9 +384,28 @@ public IActionResult Register()
             tempList.Add(miejscowosc);
             tempList.Add(ulica);
             ViewBag.addressesDetails = tempList;
-            return View("Details");
-    }
 
+        ViewBag.userId = Models.AccountController.userId;
+        DirectoryInfo dirInfo = new DirectoryInfo(Path.Combine(Directory.GetCurrentDirectory(), "Attachments"));
+        List<FileInfo> files = dirInfo.GetFiles(Models.AccountController.userId + "*").ToList();
+        return View(files);
+    }
+    public FileResult Download(string filePath, string fileName)
+    {
+        var path = Path.Combine(Directory.GetCurrentDirectory(), "Attachments", fileName);
+
+        //Read the File data into Byte Array.
+        byte[] bytes = System.IO.File.ReadAllBytes(path);
+
+        //Send the File to Download.
+        return File(bytes, "application/octet-stream", fileName);
+
+        Console.WriteLine(path, "path");
+        Console.WriteLine(fileName, "name");
+        var file = File(path, System.Net.Mime.MediaTypeNames.Image.Jpeg, fileName);
+        return file;
+    }
+    // + "\\" + fileName
 
     //[HttpGet]
     //public ActionResult ReadAttachment(Models.AccountController acc)
