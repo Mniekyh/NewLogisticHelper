@@ -3,9 +3,9 @@
     <link href="~/styles/style.css" rel="stylesheet" />
 }
 <div class="agile-right">
-    <a>@Html.ActionLink("Dodaj", "Create", "Account")</a>
+    @Html.ActionLink("Dodaj", "Create", "Account")
 </div><div class="agile-right">
-    <a>@Html.ActionLink("gogle", "Index", "GoogleMap")</a>
+  @Html.ActionLink("gogle", "Index", "GoogleMap")
 </div>
 <div class="agile-center">
     <ol>
@@ -21,7 +21,7 @@
             <tr>
                     <td style="white-space:nowrap">>@address[0], @address[1]</td>
                 <td>
-                    <button type="button" class="btn">
+                    <button type="button" class="btn aButton">
                         @Html.ActionLink(
                             "Szczegóły",
                             "Details",
@@ -34,7 +34,7 @@
                         </button>
                 </td> 
                 <td>
-                    <button type="button" class="btn">
+                    <button type="button" class="btn aButton">
                         @Html.ActionLink(
                             "Usuń",
                             "Remove",

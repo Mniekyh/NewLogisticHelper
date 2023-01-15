@@ -24,6 +24,7 @@ using System.Reflection;
 using Microsoft.AspNetCore.Session;
 using System.Collections.Generic;
 using System.Collections;
+using NPOI.SS.Formula.Functions;
 //using System.Web.Mvc;
 //using Chilkat;
 
@@ -119,9 +120,11 @@ public class AccountController : Controller
                 List<String>myList = new List<String>();
 
                 myList.Add(reader.GetString(2));
-                if (!reader.IsDBNull(3))
+                if (!reader.IsDBNull(3) && !reader.IsDBNull(0))
                 {
                     myList.Add(reader.GetString(3));
+                    string id = Convert.ToString(reader.GetInt32(0) );
+                    myList.Add(id);
                 }
                 else
                 {
@@ -224,7 +227,7 @@ public class AccountController : Controller
         }
     }
     //Removing user
-    [HttpPost]
+   // [HttpPost]
     public ActionResult Remove(Models.AccountController acc)
     {
         try
@@ -233,13 +236,13 @@ public class AccountController : Controller
             con.Open();
             com.Connection = con;
             //Console.WriteLine("K:  {0}" , Models.AccountController.userId);
-            com.CommandText = "INSERT INTO PD2023.dbo.address_with_userid(user_id, miejscowosc, ulica) VALUES('" + Models.AccountController.userId + "','" + acc.miejscowosc + "','" + acc.ulica + "')";
+            com.CommandText = "DELETE FROM dbo.address_with_userid WHERE id =  " + Models.AccountController.userId;
             dr = com.ExecuteReader();
             con.Close();
             GetUserAddresses(Models.AccountController.userId);
             ViewBag.userId = Models.AccountController.userId;
 
-            return View("Bindings");
+            return View("Remove");
 
         }
         catch (Exception e)
@@ -402,7 +405,7 @@ public IActionResult Register()
     }
     public IActionResult Details(Models.AccountController acc, string miejscowosc, string ulica)
     {
-            //Console.WriteLine(@ViewBag.userId);
+           //Console.WriteLine(@ViewBag.userId);
             List<String> tempList = new List<String>();
             tempList.Add(miejscowosc);
             tempList.Add(ulica);
