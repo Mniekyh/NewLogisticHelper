@@ -18,6 +18,7 @@
         <tbody>
             @foreach (var address in ViewBag.addressesList)
             {
+
             <tr>
                     <td style="white-space:nowrap">>@address[0], @address[1]</td>
                 <td>
@@ -40,8 +41,8 @@
                             "Remove",
                             "Account",
                             routeValues: new {
-                                miejscowosc = @address[0],
-                                ulica = @address[1]
+                                id = @address[2],
+                               
                             },
                             htmlAttributes: null)
                         </button>

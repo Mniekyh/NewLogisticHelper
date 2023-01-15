@@ -228,7 +228,7 @@ public class AccountController : Controller
     }
     //Removing user
    // [HttpPost]
-    public ActionResult Remove(Models.AccountController acc)
+    public ActionResult Remove(int? id)
     {
         try
         {
@@ -236,7 +236,7 @@ public class AccountController : Controller
             con.Open();
             com.Connection = con;
             //Console.WriteLine("K:  {0}" , Models.AccountController.userId);
-            com.CommandText = "DELETE FROM dbo.address_with_userid WHERE id =  " + Models.AccountController.userId;
+            com.CommandText = "DELETE FROM dbo.address_with_userid WHERE id =  " + id;
             dr = com.ExecuteReader();
             con.Close();
             GetUserAddresses(Models.AccountController.userId);
