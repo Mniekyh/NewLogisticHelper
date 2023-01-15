@@ -327,7 +327,26 @@ public IActionResult Register()
         Console.WriteLine(ViewBag.Message);
         return (RedirectToAction("Details"));
     }
-
+    [AcceptVerbs()]
+    public ActionResult GetFile()
+    {
+        try
+        {
+            // No need to dispose the stream, MVC does it for you
+            ViewBag.userId = Models.AccountController.userId;
+            string fileName = @ViewBag.userId + "att" + "%" + ".jpg";
+            string path = Path.Combine(Directory.GetCurrentDirectory(), "Attachments", fileName);
+            FileStream stream = new FileStream(path, FileMode.Open);
+            FileStreamResult result = new FileStreamResult(stream, "image/jpg");
+            result.FileDownloadName = fileName;
+            return result;
+        }
+        catch
+        {
+            ViewBag.Message = "błąd załącznika";
+            return (RedirectToAction("Details"));
+        }
+    }
 
 
     //[HttpPost]
