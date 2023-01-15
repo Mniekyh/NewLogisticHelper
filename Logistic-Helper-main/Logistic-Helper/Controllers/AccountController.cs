@@ -223,6 +223,32 @@ public class AccountController : Controller
             return View("Error");
         }
     }
+    //Removing user
+    [HttpPost]
+    public ActionResult Remove(Models.AccountController acc)
+    {
+        try
+        {
+            connectionString();
+            con.Open();
+            com.Connection = con;
+            //Console.WriteLine("K:  {0}" , Models.AccountController.userId);
+            com.CommandText = "INSERT INTO PD2023.dbo.address_with_userid(user_id, miejscowosc, ulica) VALUES('" + Models.AccountController.userId + "','" + acc.miejscowosc + "','" + acc.ulica + "')";
+            dr = com.ExecuteReader();
+            con.Close();
+            GetUserAddresses(Models.AccountController.userId);
+            ViewBag.userId = Models.AccountController.userId;
+
+            return View("Bindings");
+
+        }
+        catch (Exception e)
+        {
+            ViewBag.ErrorMessage = JsonConvert.SerializeObject(e, Formatting.Indented);
+            con.Close();
+            return View("Error");
+        }
+    }
     // przypisanie adresów klikając save przy mapie
     [HttpPost]
     public ActionResult GetDataFromView(Models.AccountController acc, string street, string city)
@@ -380,6 +406,7 @@ public IActionResult Register()
             List<String> tempList = new List<String>();
             tempList.Add(miejscowosc);
             tempList.Add(ulica);
+       
             ViewBag.addressesDetails = tempList;
             return View("Details");
     }

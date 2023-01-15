@@ -32,6 +32,19 @@
                             },
                             htmlAttributes: null)
                         </button>
+                </td> 
+                <td>
+                    <button type="button" class="btn">
+                        @Html.ActionLink(
+                            "Usuń",
+                            "Remove",
+                            "Account",
+                            routeValues: new {
+                                miejscowosc = @address[0],
+                                ulica = @address[1]
+                            },
+                            htmlAttributes: null)
+                        </button>
                 </td>
             </tr>
             }
