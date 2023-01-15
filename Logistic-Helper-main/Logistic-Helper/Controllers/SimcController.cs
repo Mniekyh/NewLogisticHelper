@@ -14,6 +14,7 @@ using Newtonsoft.Json.Linq;
 using System.Diagnostics;
 using Microsoft.AspNetCore.Mvc.ViewFeatures;
 using LogisticHelper.Classes;
+using Microsoft.AspNetCore.Authorization;
 
 namespace LogisticHelper.Controllers
 {
@@ -71,7 +72,7 @@ namespace LogisticHelper.Controllers
                               stan_na = Simc.STAN_NA,
 
 
-
+                              //Take 5 most suitable
                           }).Take(5).ToList();
 
            
@@ -121,7 +122,7 @@ namespace LogisticHelper.Controllers
         public async Task<ActionResult> FoundAsync(string search)
         {
             var client = connection();
-            //Zastanowić się jak rozgryźć wyszukiwarkę, 2 autocomplete? Jedna ze stringiem dla użytkownika, jedna dla sprzętu?
+            
             var ss = AutoComplete(search);
             dynamic jsoon = JsonConvert.DeserializeObject(ss);
             var villagesArrays = new List<Miejscowosc[]> { };
@@ -135,16 +136,10 @@ namespace LogisticHelper.Controllers
                 villagesArrays.Add(await client.WyszukajMiejscowoscAsync(objNazwa, objSym)); // <---- Za każdym razem, tworzy się tutaj obiekt Miejscowość, teraz trzeba ją wyrucić na ekran
 
             }
-            //WORKS!!!!!
-            //Now have to write correct instruction to show data, but the principal of it works 
-            //Whole JSON is being send, so np to choose data
-
-            /*  foreach (ServiceReference1.Miejscowosc[] obj in villagesArrays)
-              {
-              }*/
+          
 
 
-            //Working!!!
+
             //Now find out how to show links on page!
           
             List<Miejscowosc> villages = new List<Miejscowosc>();
@@ -164,9 +159,6 @@ namespace LogisticHelper.Controllers
 
             return View(villages);
         }
-
-        //Why symbol == null?
-        //GET /Details/sym
 
 
         public async Task<IActionResult> DetailsAsync(string symbol, string wojewodztwo, string powiat, string nazwaMiejscowosci)

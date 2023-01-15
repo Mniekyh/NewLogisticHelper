@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "h0fz9Shb+u3xF5niWLoqIF88W/hxmpabHIDHvQgzPOZQwxvXA9uwXNB7JjcOe0qGyenHDsoyS0Pqgg7wiJ08ig==",
+  "dgSpecHash": "XP7xXAccoVR2LD1+9WGHR6jIc24O6UuCnJY7Nr9AaMhWLX+AbNQJIV0XPa8ysvwbyXyoaCIKmW9xcmmSlckdvQ==",
   "success": true,
   "projectFilePath": "N:\\Programowanie\\Inzynierka\\PI2023\\NewLogistic\\NewLogisticHelper\\Logistic-Helper-main\\LogisticHelper.DataAccess\\LogisticHelper.DataAccess.csproj",
   "expectedPackageFiles": [
@@ -13,6 +13,9 @@
     "C:\\Users\\MK\\.nuget\\packages\\jquery\\2.0.0\\jquery.2.0.0.nupkg.sha512",
     "C:\\Users\\MK\\.nuget\\packages\\jquery.ui.combined\\1.13.1\\jquery.ui.combined.1.13.1.nupkg.sha512",
     "C:\\Users\\MK\\.nuget\\packages\\libuv\\1.9.1\\libuv.1.9.1.nupkg.sha512",
+    "C:\\Users\\MK\\.nuget\\packages\\microsoft.aspnetcore.cryptography.internal\\6.0.13\\microsoft.aspnetcore.cryptography.internal.6.0.13.nupkg.sha512",
+    "C:\\Users\\MK\\.nuget\\packages\\microsoft.aspnetcore.cryptography.keyderivation\\6.0.13\\microsoft.aspnetcore.cryptography.keyderivation.6.0.13.nupkg.sha512",
+    "C:\\Users\\MK\\.nuget\\packages\\microsoft.aspnetcore.identity.entityframeworkcore\\6.0.13\\microsoft.aspnetcore.identity.entityframeworkcore.6.0.13.nupkg.sha512",
     "C:\\Users\\MK\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\1.0.0\\microsoft.bcl.asyncinterfaces.1.0.0.nupkg.sha512",
     "C:\\Users\\MK\\.nuget\\packages\\microsoft.codeanalysis.analyzers\\1.1.0\\microsoft.codeanalysis.analyzers.1.1.0.nupkg.sha512",
     "C:\\Users\\MK\\.nuget\\packages\\microsoft.codeanalysis.common\\1.3.0\\microsoft.codeanalysis.common.1.3.0.nupkg.sha512",
@@ -33,6 +36,8 @@
     "C:\\Users\\MK\\.nuget\\packages\\microsoft.extensions.configuration.abstractions\\7.0.0-preview.4.22229.4\\microsoft.extensions.configuration.abstractions.7.0.0-preview.4.22229.4.nupkg.sha512",
     "C:\\Users\\MK\\.nuget\\packages\\microsoft.extensions.dependencyinjection\\7.0.0-preview.4.22229.4\\microsoft.extensions.dependencyinjection.7.0.0-preview.4.22229.4.nupkg.sha512",
     "C:\\Users\\MK\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\7.0.0-preview.4.22229.4\\microsoft.extensions.dependencyinjection.abstractions.7.0.0-preview.4.22229.4.nupkg.sha512",
+    "C:\\Users\\MK\\.nuget\\packages\\microsoft.extensions.identity.core\\6.0.13\\microsoft.extensions.identity.core.6.0.13.nupkg.sha512",
+    "C:\\Users\\MK\\.nuget\\packages\\microsoft.extensions.identity.stores\\6.0.13\\microsoft.extensions.identity.stores.6.0.13.nupkg.sha512",
     "C:\\Users\\MK\\.nuget\\packages\\microsoft.extensions.logging\\7.0.0-preview.4.22229.4\\microsoft.extensions.logging.7.0.0-preview.4.22229.4.nupkg.sha512",
     "C:\\Users\\MK\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\7.0.0-preview.4.22229.4\\microsoft.extensions.logging.abstractions.7.0.0-preview.4.22229.4.nupkg.sha512",
     "C:\\Users\\MK\\.nuget\\packages\\microsoft.extensions.options\\7.0.0-preview.4.22229.4\\microsoft.extensions.options.7.0.0-preview.4.22229.4.nupkg.sha512",

@@ -1,26 +1,26 @@
 ﻿@{   ViewData["Title"] = "Home Page";
     <link href="~/styles/style.css" rel="stylesheet" />}
 <h1>Logowanie</h1>
-<div>
+<div  id = "myForm">
     <!-- form starts here -->
     <form asp-controller="Account" asp-action="Verify">
         <form action="Verify" method="post">
             <div class="agile-field-txt">
-                <label><i class="fa fa-user" aria-hidden="true"></i> Login </label>
-                <input type="text" name="Name" placeholder="Wprowadź nazwę użytkownika" required="" />
+                <label class = "formLabel"><i class="fa fa-user" aria-hidden="true" ></i> Login </label>
+                <input type="text" name="Name" placeholder="Wprowadź nazwę użytkownika" required="" class = "myInputs fS15" />
             </div>
             <div class="agile-field-txt">
-                <label><i class="fa fa-unlock-alt" aria-hidden="true"></i> Hasło </label>
-                <input type="password" name="Password" placeholder="Wprowadź hasło" required="" id="myInput" />
+                <label class = "formLabel"l><i class="fa fa-unlock-alt" aria-hidden="true"></i> Hasło </label>
+                <input type="password" name="Password" placeholder="Wprowadź hasło" required="" id="myInput" class = "myInputs fS15" />
                 <div class="agile_label">
                     <input id="check3" name="check3" type="checkbox" value="show password" onclick="showPassword()">
-                    <label class="check" for="check3">Pokaż hasło</label>
+                    <label class="check " for="check3">Pokaż hasło</label>
                 </div>
                 <div class="agile-right">
-                    <a>@Html.ActionLink("Rejestracja", "Register", "Account")</a>
+                   @Html.ActionLink("Rejestracja", "Register", "Account")
                 </div>
-                <div class="agile-right">
-                    <a>@Html.ActionLink("Reset hasła", "ResetPassword", "Account")</a>
+                <div class="agile-right ">
+                   @Html.ActionLink("Reset hasła", "ResetPassword", "Account")
                 </div>
             </div>
             <!-- script for show password -->
@@ -35,7 +35,7 @@
                 }
             </script>
             <!-- //end script -->
-            <input type="submit" value="Zaloguj">
+            <input type="submit" value="Zaloguj" class = "btn btn-light" id = "btnSubmit">
         </form>
     </form>
 </div>

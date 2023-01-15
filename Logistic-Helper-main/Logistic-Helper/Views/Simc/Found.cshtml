@@ -9,28 +9,32 @@
         @foreach(var obj in Model)
         {
          
-                <p> Województwo:  @obj.Wojewodztwo
+            <div class = "row myRow">
+                    @*Button which will allow user choose village for showing on map, now just create this shit....
+
+                    God Im awesome...
+                    *@
+                  
+                        
+                    
+                    <span class = "col-sm cityDesc">Województwo:  @obj.Wojewodztwo
            
 
                      Powiat:  @obj.Powiat
             
                 
                     Gmina: @obj.Gmina
-                    Miejsowość: @obj.Nazwa
+                    Miejsowość: @obj.Nazwa</span>
+                   
+                         <a asp-controller = "Simc" asp-action ="Details" class = "cityOption btn col-sm-3 btn btn-outline-primary btnToChoose" asp-route-symbol="@obj.Symbol" asp-route-wojewodztwo = "@obj.Wojewodztwo" asp-route-powiat = "@obj.Powiat" asp-route-nazwaMiejscowosci = "@obj.Nazwa" >
+                            <i class="bi bi-pen " ></i> Wybierz</a> 
+                      
+                   
+        
 
-                    @*Button which will allow user choose village for showing on map, now just create this shit....
+                   
 
-                    God Im awesome...
-                    *@
-                    <div class = "w-75 btn-group" role = "group">
-                        <a asp-controller = "Simc" asp-action ="Details"  asp-route-symbol="@obj.Symbol" asp-route-wojewodztwo = "@obj.Wojewodztwo" asp-route-powiat = "@obj.Powiat" asp-route-nazwaMiejscowosci = "@obj.Nazwa" class = "btn btn-primary">
-                            <i class="bi bi-pen"></i> Wybierz</a>
-                    </div>
+            </div>
 
-                    <div class = "w-75 btn-group" role = "group">
-                        <a href = 'https://www.google.com/maps/search/+"@obj.Wojewodztwo"+"@obj.Powiat"+"@obj.Nazwa"'>
-                            <i class="bi bi-pen"></i> Google</a>
-                    </div>
-                    </p>
         }
 

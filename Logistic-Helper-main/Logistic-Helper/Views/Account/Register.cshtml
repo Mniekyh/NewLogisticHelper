@@ -1,27 +1,27 @@
 ﻿@{    ViewData["Title"] = "Register";
     <link href="~/styles/style.css" rel="stylesheet" />}
 <h1>Formularz Rejestracji</h1>
-<div>
+<div id = "myForm">
     <!-- form starts here -->
     <form asp-controller="Account" asp-action="Sign">
         <form action="Sign" method="post">
             <div class="agile-field-txt">
-                <label><i class="fa fa-user" aria-hidden="true"></i> Username </label>
-                <input type="text" name="Name" placeholder="Enter User Name" required="" />
+                <label class = "formLabel"><i class="fa fa-user" aria-hidden="true"></i> Login </label>
+                <input type="text" name="Name" placeholder="Podaj Login" required="" class = "myInputs fS15"/>
             </div>
             <div class="agile-field-txt">
-                <label><i class="fa fa-user" aria-hidden="true"></i> E-mail </label>
-                <input type="email" name="Email" placeholder="Enter e-mail address" required="" />
+                <label class = "formLabel"><i class="fa fa-user" aria-hidden="true"></i> E-mail </label>
+                <input type="email" name="Email" placeholder="Podaj swój adres e-mail" required="" class = "myInputs fS15" />
             </div>
             <div class="agile-field-txt">
-                <label><i class="fa fa-unlock-alt" aria-hidden="true"></i> password </label>
-                <input type="password" name="Password" placeholder="Enter Password" required="" id="myInput" />
+                <label class = "formLabel"><i class="fa fa-unlock-alt" aria-hidden="true"></i> Hasło </label>
+                <input type="password" name="Password" placeholder="Podaj hasło" required="" id="myInput" class = "myInputs fS15"/>
                 <div class="agile_label">
                     <input id="check3" name="check3" type="checkbox" value="show password" onclick="myFunction()">
-                    <label class="check" for="check3">Show password</label>
+                    <label class="check" for="check3">Pokaż hasło</label>
                 </div>
                 <div class="agile-right">
-                    <a>@Html.ActionLink("Powrót", "Login", "Account")</a>
+                    @Html.ActionLink("Powrót", "Login", "Account")
                 </div>
             </div>
             <!-- script for show password -->
@@ -36,7 +36,7 @@
                 }
             </script>
             <!-- //end script -->
-            <input type="submit" value="Zarejestruj się">
+            <input type="submit" value="Zarejestruj się" id = "btnSubmit" class="btn btn-light">
         </form>
     </form>
 </div>

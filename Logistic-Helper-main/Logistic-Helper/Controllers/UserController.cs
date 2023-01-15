@@ -6,6 +6,7 @@ using System.Linq;
 using Microsoft.EntityFrameworkCore;
 using LogisticHelper.DataAccess;
 using LogisticHelper.Models;
+using Microsoft.AspNetCore.Authorization;
 
 namespace LogisticHelper.Controllers
 {

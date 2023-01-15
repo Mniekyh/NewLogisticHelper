@@ -83,11 +83,15 @@
             },
             "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
               "target": "Package",
-              "version": "[6.0.10, )"
+              "version": "[6.0.11, )"
             },
             "MongoDB.Driver": {
               "target": "Package",
               "version": "[2.15.1, )"
+            },
+            "NPOI": {
+              "target": "Package",
+              "version": "[2.6.0, )"
             },
             "Newtonsoft.Json": {
               "target": "Package",
@@ -199,6 +203,10 @@
             "ChilkatDnCore": {
               "target": "Package",
               "version": "[9.5.0.90, )"
+            },
+            "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[6.0.13, )"
             },
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",
