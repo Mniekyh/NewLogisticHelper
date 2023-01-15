@@ -3,14 +3,11 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using System.Web;
-
-
 namespace LogisticHelper.Models
 {
     public class AccountController
     {
         public static int userId;
-
         public string Name { get; set; }
         public string Password { get; set; }
         public string Email { get; set; }
@@ -35,7 +32,5 @@ namespace LogisticHelper.Models
         //public string? con { get; set; }
         //public string? city { get; set; }
         //public string? com { get; set; }
-
     }
-
 }

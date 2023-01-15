@@ -41,8 +41,10 @@ public class AccountController : Controller
     }    [HttpGet]
     public ActionResult Logout()
     {
-        ViewBag.userId = 0;
-        Console.WriteLine(ViewBag.userId);
+        ViewBag.userId = null;
+        TempData["userId"] = null;
+        //Console.WriteLine(ViewBag.userId);
+        ViewBag.LoginMessage = "Wylogowano";
         return View("Login");
     }
     void connectionString()
@@ -78,11 +80,13 @@ public class AccountController : Controller
             while (dr.HasRows)
             {
                 Models.AccountController.userId = dr.GetInt32(0);
+                TempData["userId"] = dr.GetInt32(0);
                 ViewBag.userId = dr.GetInt32(0);
                 break;
             }
             con.Close();
-            Console.WriteLine(ViewBag.userId);
+            //Console.WriteLine(ViewBag.userId);
+            Console.WriteLine(TempData.Peek("userId"));
             GetUserAddresses(ViewBag.userId);
 
 
@@ -114,24 +118,30 @@ public class AccountController : Controller
         List<List<String>> list = new List<List<String>>();
         using (SqlDataReader reader = com.ExecuteReader())
         {
+            //var list = (List<int>)Session["my"];
             while (reader.Read())
             {
-                List<String>myList = new List<String>();
+                try {
+                    List<String> myList = new List<String>();
 
-                myList.Add(reader.GetString(2));
-                if (!reader.IsDBNull(3))
-                {
-                    myList.Add(reader.GetString(3));
+                    myList.Add(reader.GetString(2));
+                    if (!reader.IsDBNull(3))
+                    {
+                        myList.Add(reader.GetString(3));
+                    }
+                    else
+                    {
+                        myList.Add("no details provided");
+                    }
+                    list.Add(myList);
+                    //Console.WriteLine("ILE: {0} ", reader.GetString(1));
                 }
-                else
-                {
-                    myList.Add("no details provided");
-                }
-                list.Add(myList);
-                //Console.WriteLine("ILE: {0} ", reader.GetString(1));
+                catch (Exception e) { }
             }
             //Session[myList] = list;
-            ViewBag.addressesList = list;
+            //JsonConvert.SerializeObject(list);
+            TempData["addressesList"] = list;
+            //JsonConvert.DeserializeObject(TempData["addresseslist"]);
             //@TempData["list"];
             //TempData.Keep("MyData");
             //ISession[list] as ViewBag.addressesList;

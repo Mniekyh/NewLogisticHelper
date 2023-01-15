@@ -15,14 +15,15 @@ namespace LogisticHelper.Controllers
     {
         public IActionResult Index()
         {
-            if (@ViewBag.userId > 0)
-            {
+            Console.WriteLine(TempData["userId"]);
+            if (TempData.Peek("userId") != null)
+                {
                 return View();
-            }
+                }
             else
             {
-                ViewBag.ErrorMessage = "Dostęp tylko dla zalogowanych użytkowników!";
-                return RedirectToAction("Login", "Account");
+                ViewBag.LoginMessage = "Dostęp tylko dla zalogowanych użytkowników!";
+                return View("~/Views/Account/Login.cshtml");
             }
         }
     }

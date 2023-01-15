@@ -7,9 +7,11 @@
         <li>Miejscowosc: @ViewBag.addressesDetails[0]</li>
         <li>Ulica: @ViewBag.addressesDetails[1]</li>
     </ol>
+    <a>@Html.ActionLink("powrut", "Bindings", "Account")</a>
 </div>
 <div id="map-canvas" style="height: 500px; width: 500px">
 </div>
+<img src="favicon.ico" width="200" height="200"/>
 <h2>Dodaj załącznik</h2>
 
 @using (Html.BeginForm("AddAttachment", "Account", FormMethod.Post, new { @enctype = "multipart/form-data" })){
