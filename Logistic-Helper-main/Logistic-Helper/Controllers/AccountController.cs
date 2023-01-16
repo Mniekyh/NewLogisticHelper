@@ -216,12 +216,12 @@ public class AccountController : Controller
             connectionString();
             con.Open();
             com.Connection = con;
-            //Console.WriteLine("K:  {0}" , Models.AccountController.userId);
+           
             com.CommandText = "DELETE FROM dbo.address_with_userid WHERE id =  " + id;
             dr = com.ExecuteReader();
             con.Close();
-            GetUserAddresses(Models.AccountController.userId);
-            ViewBag.userId = Models.AccountController.userId;
+           /* GetUserAddresses(Models.AccountController.userId);
+            ViewBag.userId = Models.AccountController.userId;*/
             return View("Remove");
         }
         catch (Exception e)
