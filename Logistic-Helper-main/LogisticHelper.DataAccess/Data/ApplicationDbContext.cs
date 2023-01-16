@@ -1,4 +1,5 @@
 ﻿using LogisticHelper.Models;
+//using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 using System.ComponentModel.DataAnnotations.Schema;
 
@@ -17,7 +18,7 @@ namespace LogisticHelper.DataAccess
         public DbSet<Terc> Tercs { get; set; }
         public DbSet<Simc> Simcs { get; set; }
         public DbSet<Ulic> Ulics { get; set; }
-  
+        // dodac save address
 
     }
 

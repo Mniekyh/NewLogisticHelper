@@ -9,6 +9,14 @@
       "PackagePath": "staticwebassets\\css\\Original.css"
     },
     {
+      "Id": "C:\\Users\\Łukasz\\Documents\\GitHub\\newnewnewLogisticHelper\\NewLogisticHelper\\Logistic-Helper-main\\Logistic-Helper\\wwwroot\\css\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\css\\bootstrap.min.css"
+    },
+    {
+      "Id": "C:\\Users\\Łukasz\\Documents\\GitHub\\newnewnewLogisticHelper\\NewLogisticHelper\\Logistic-Helper-main\\Logistic-Helper\\wwwroot\\css\\myStyle.css",
+      "PackagePath": "staticwebassets\\css\\myStyle.css"
+    },
+    {
       "Id": "C:\\Users\\Łukasz\\Documents\\GitHub\\newnewnewLogisticHelper\\NewLogisticHelper\\Logistic-Helper-main\\Logistic-Helper\\wwwroot\\css\\site.css",
       "PackagePath": "staticwebassets\\css\\site.css"
     },
@@ -17,16 +25,20 @@
       "PackagePath": "staticwebassets\\favicon.ico"
     },
     {
-      "Id": "C:\\Users\\Łukasz\\Documents\\GitHub\\newnewnewLogisticHelper\\NewLogisticHelper\\Logistic-Helper-main\\Logistic-Helper\\wwwroot\\js\\GetInput.js",
-      "PackagePath": "staticwebassets\\js\\GetInput.js"
-    },
-    {
       "Id": "C:\\Users\\Łukasz\\Documents\\GitHub\\newnewnewLogisticHelper\\NewLogisticHelper\\Logistic-Helper-main\\Logistic-Helper\\wwwroot\\js\\formCheck.js",
       "PackagePath": "staticwebassets\\js\\formCheck.js"
     },
     {
+      "Id": "C:\\Users\\Łukasz\\Documents\\GitHub\\newnewnewLogisticHelper\\NewLogisticHelper\\Logistic-Helper-main\\Logistic-Helper\\wwwroot\\js\\getInput.js",
+      "PackagePath": "staticwebassets\\js\\getInput.js"
+    },
+    {
       "Id": "C:\\Users\\Łukasz\\Documents\\GitHub\\newnewnewLogisticHelper\\NewLogisticHelper\\Logistic-Helper-main\\Logistic-Helper\\wwwroot\\js\\googleMap.js",
       "PackagePath": "staticwebassets\\js\\googleMap.js"
+    },
+    {
+      "Id": "C:\\Users\\Łukasz\\Documents\\GitHub\\newnewnewLogisticHelper\\NewLogisticHelper\\Logistic-Helper-main\\Logistic-Helper\\wwwroot\\js\\myScript.js",
+      "PackagePath": "staticwebassets\\js\\myScript.js"
     },
     {
       "Id": "C:\\Users\\Łukasz\\Documents\\GitHub\\newnewnewLogisticHelper\\NewLogisticHelper\\Logistic-Helper-main\\Logistic-Helper\\wwwroot\\js\\site.js",

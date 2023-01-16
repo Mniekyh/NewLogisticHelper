@@ -9,18 +9,19 @@
 </div>
 <div class="agile-center">
     <ol>
-        <li>Cześć, Twoje ID to: @ViewBag.userId</</li>
+        <li>Cześć, Twoje ID to: @TempData.Peek("userId")</</li>
         <li>Lista Twoich adresów: </li>
     </ol>
 </div>
 <div class="agile-center">
     <table>
-        <tbody>
-            @foreach (var address in ViewBag.addressesList)
-            {
-
-            <tr>
-                    <td style="white-space:nowrap">>@address[0], @address[1]</td>
+        <tbody> 
+            @TempData.Peek("addressesList")
+            @{
+                @foreach (var address in (dynamic)TempData["addresseslist"])
+                {
+                    <tr>
+                        <td style="white-space:nowrap">>@address[0], @address[1]</td>
                 <td>
                     <button type="button" class="btn aButton">
                         @Html.ActionLink(
@@ -48,6 +49,7 @@
                         </button>
                 </td>
             </tr>
+            }
             }
         </tbody>
     </table>

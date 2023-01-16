@@ -42,8 +42,10 @@ public class AccountController : Controller
     }    [HttpGet]
     public ActionResult Logout()
     {
-        ViewBag.userId = 0;
-        Console.WriteLine(ViewBag.userId);
+        ViewBag.userId = null;
+        TempData["userId"] = null;
+        //Console.WriteLine(ViewBag.userId);
+        ViewBag.LoginMessage = "Wylogowano";
         return View("Login");
     }
     void connectionString()
@@ -83,23 +85,9 @@ public class AccountController : Controller
                 break;
             }
             con.Close();
-            Console.WriteLine(ViewBag.userId);
+            Console.WriteLine(TempData.Peek("userId"));
             GetUserAddresses(ViewBag.userId);
-
-
-            //var claims = new List<Claim>
-            //    {
-            //        new Claim(ClaimTypes.Name, Models.AccountController.userId)
-            //    };
-            //var claimsIdentity = new ClaimsIdentity(claims, "Login");
-
-            //await HttpContext.SignInAsync(CookieAuthenticationDefaults.AuthenticationScheme, new ClaimsPrincipal(claimsIdentity));
-            //return Redirect(ReturnUrl == null ? "/Secured" : ReturnUrl);
-
-            //var identity = new ClaimsIdentity("Custom");
-            //HttpContext.User = new ClaimsPrincipal(identity);
-            //Console.WriteLine("Zalogowano {0}", HttpContext.User.Identity.IsAuthenticated);
-            return View("Bindings");
+return View("Bindings");
         }
         else
         {
@@ -117,37 +105,30 @@ public class AccountController : Controller
         {
             while (reader.Read())
             {
-                List<String>myList = new List<String>();
+                try
+                {
+                    List<String> myList = new List<String>();
 
-                myList.Add(reader.GetString(2));
-                if (!reader.IsDBNull(3) && !reader.IsDBNull(0))
-                {
-                    myList.Add(reader.GetString(3));
-                    string id = Convert.ToString(reader.GetInt32(0) );
-                    myList.Add(id);
+                    myList.Add(reader.GetString(2));
+                    if (!reader.IsDBNull(3) && !reader.IsDBNull(0))
+                    {
+                        myList.Add(reader.GetString(3));
+                        string id = Convert.ToString(reader.GetInt32(0));
+                        myList.Add(id);
+                    }
+                    else
+                    {
+                        myList.Add("no details provided");
+                    }
+                    list.Add(myList);
                 }
-                else
-                {
-                    myList.Add("no details provided");
-                }
-                list.Add(myList);
-                //Console.WriteLine("ILE: {0} ", reader.GetString(1));
+                catch (Exception e) { }
             }
-            //Session[myList] = list;
-            ViewBag.addressesList = list;
-            //@TempData["list"];
-            //TempData.Keep("MyData");
-            //ISession[list] as ViewBag.addressesList;
-            //var addressesList = Session["addressesList"] as List<List>;
-            //object list = TempData.Peek("list");
-            //TempData["EmpName"] as List<string>;
-            //TempData.Keep();
-            //new List<String>();
-        }
+            TempData["addressesList"] = list;
+            }
     }
 
     //mailer
-    //[HttpPost] - psulo
     public ActionResult SendEmail(Models.AccountController acc)
     {
         Console.WriteLine("Mailer start");
@@ -172,7 +153,6 @@ public class AccountController : Controller
         smtpClient.Send("new.logistic.helper@gmail.com", mailAddress, "Token do zmiany hasła", mailContent.ToString());
         Console.WriteLine("Wyslano wiadomosc");
         return View("ResetPasswordConfirm");
-        //return new EmptyResult();
     }
     //Rejestracja
     [HttpPost]
@@ -241,9 +221,7 @@ public class AccountController : Controller
             con.Close();
             GetUserAddresses(Models.AccountController.userId);
             ViewBag.userId = Models.AccountController.userId;
-
             return View("Remove");
-
         }
         catch (Exception e)
         {
@@ -275,12 +253,6 @@ public class AccountController : Controller
             return View("Error");
         }
     }
-
-//Console.WriteLine("STREET:  {0}" , street);
-//Console.WriteLine("City:  {0}", city);
-//var test = 'a';
-//return Json(test);
-
 public IActionResult Register()
     {
         Console.WriteLine("Hej {0}", HttpContext.User.Identity.IsAuthenticated);
@@ -346,55 +318,6 @@ public IActionResult Register()
         Console.WriteLine(ViewBag.Message);
         return (RedirectToAction("Details"));
     }
-
-
-
-    //[HttpPost]
-    //[Obsolete]
-    //public ActionResult AddAttachment(IFormFile file)
-    //{
-    //System.Diagnostics.Debug.WriteLine("K:  JESTEM TUTAJ {0}");
-    //    if (file != null)
-    //    {
-    //        try
-    //        {
-    //            string filepath = Path.Combine(("~/Attachments"),Path.GetFileName(file.FileName));
-    //            //file.SaveAs(filepath);
-    //            System.Diagnostics.Debug.WriteLine("K:  {0}", file);
-    //            var fileName = Path.GetFileName(file.FileName);
-    //            System.Diagnostics.Debug.WriteLine("Z:  {0}", fileName);
-    //            file.SaveAs(filepath);
-    //            ViewBag.Message = "File uploaded successfully";
-    //            }
-    //        catch (Exception ex)
-    //        {
-    //            ViewBag.Message = "ERROR:" + ex.Message.ToString();
-    //        }
-    //    }
-    //    else
-    //    {
-    //        ViewBag.Message = "You have not specified a file.";
-    //    }
-    //    return View("Details");
-    //}
-
-    //[HttpPost]
-    //public async Task<IActionResult> AddAttachment(IList<IFormFile> files)
-    //{
-    //    Console.WriteLine("AddAttachment start");
-    //    string uploads = Path.Combine("~/Attachments");
-    //    foreach (IFormFile file in files)
-    //    {
-    //        if (file.Length > 0)
-    //        {
-    //            string filePath = Path.Combine(uploads, file.FileName);
-    //            using Stream fileStream = new FileStream(filePath, FileMode.Create);
-    //            await file.CopyToAsync(fileStream);
-    //        }
-    //    }
-    //    Console.WriteLine("AddAttachment ending");
-    //    return View("Details");
-    //}
     public IActionResult Create()
     {
         return View("Create");
@@ -409,48 +332,25 @@ public IActionResult Register()
             List<String> tempList = new List<String>();
             tempList.Add(miejscowosc);
             tempList.Add(ulica);
-       
             ViewBag.addressesDetails = tempList;
-            return View("Details");
+        ViewBag.userId = Models.AccountController.userId;
+        DirectoryInfo dirInfo = new DirectoryInfo(Path.Combine(Directory.GetCurrentDirectory(), "Attachments"));
+        List<FileInfo> files = dirInfo.GetFiles(Models.AccountController.userId + "*").ToList();
+        return View(files);
     }
+    public FileResult Download(string filePath, string fileName)
+    {
+        var path = Path.Combine(Directory.GetCurrentDirectory(), "Attachments", fileName);
 
+        //Read the File data into Byte Array.
+        byte[] bytes = System.IO.File.ReadAllBytes(path);
 
-    //[HttpGet]
-    //public ActionResult ReadAttachment(Models.AccountController acc)
-    //{
-    //    Console.WriteLine("ReadAttachment start");
-    //    try
-    //    {
-    //        string downloadpath = Path.Combine(Directory.GetCurrentDirectory(), "Attachments");
-    //        var stream = new FileStream(downloadpath, FileMode.Create);
-    //        //formFile.CopyToAsync(stream);
-    //        Console.WriteLine(ViewBag.Message);
-    //    }
-    //    catch
-    //    {
-    //        ViewBag.Message = "Wystąpił błąd podczas odczytu załączników";
-    //    }
-    //    Console.WriteLine(ViewBag.Message);
-    //    return (RedirectToAction("Details"));
-    //}
+        //Send the File to Download.
+        return File(bytes, "application/octet-stream", fileName);
 
-    //public FileResult DownloadAttachment(string fileName)
-    //{
-    //    //Build the File Path.
-    //    string path = Server.MapPath("~/Files/") + fileName;
-
-    //    //Read the File data into Byte Array.
-    //    byte[] bytes = System.IO.File.ReadAllBytes(path);
-
-    //    //Send the File to Download.
-    //    return File(bytes, "application/octet-stream", fileName);
-    //}
+        Console.WriteLine(path, "path");
+        Console.WriteLine(fileName, "name");
+        var file = File(path, System.Net.Mime.MediaTypeNames.Image.Jpeg, fileName);
+        return file;
+    }
 }
-
-
-
-
-
-
-
-
