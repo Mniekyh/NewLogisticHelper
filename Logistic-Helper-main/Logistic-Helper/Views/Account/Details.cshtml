@@ -7,11 +7,15 @@
         <li>Miejscowosc: @ViewBag.addressesDetails[0]</li>
         <li>Ulica: @ViewBag.addressesDetails[1]</li>
     </ol>
-</div>
-<div id="map-canvas" style="height: 500px; width: 500px">
-</div>
+@model IEnumerable<FileInfo>
+    <h2>Twoje załączniki:</h2>
+    <ul>
+        @foreach (FileInfo file in Model)
+        {
+            <p>@Html.ActionLink(file.Name, "Download", "Account", new{Path = file.FullName, fileName = file.Name}, null)</p>
+        }
+    </ul>
 <h2>Dodaj załącznik</h2>
-
 @using (Html.BeginForm("AddAttachment", "Account", FormMethod.Post, new { @enctype = "multipart/form-data" })){
 <form asp-controller="Account" asp-action="AddAttachment">
     <form action="AddAttachment" method="post">
@@ -24,15 +28,4 @@
         </form>
     </form>
 }
-    @model IEnumerable<FileInfo>
-
-    <h2>Twoje załączniki:</h2>
-
-    <ul>
-        @foreach (FileInfo file in Model)
-        {
-            <p>@Html.ActionLink(file.Name, "Download", "Account", new{Path = file.FullName, fileName = file.Name}, null)</p>
-        }
-    </ul>
-<script src="~/js/googleMap.js"></script>
 <script src="~/js/GetInput.js"></script>

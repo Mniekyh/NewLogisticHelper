@@ -30,7 +30,9 @@
                             "Account",
                             routeValues: new {
                                 miejscowosc = @address[0],
-                                ulica = @address[1]
+                                ulica = @address[1],
+                                adressId =@address[2],
+
                             },
                             htmlAttributes: null)
                         </button>
@@ -42,8 +44,7 @@
                             "Remove",
                             "Account",
                             routeValues: new {
-                                id = @address[2],
-                               
+                                id = @address[2],                               
                             },
                             htmlAttributes: null)
                         </button>
