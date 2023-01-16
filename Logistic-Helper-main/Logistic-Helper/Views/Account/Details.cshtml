@@ -24,23 +24,15 @@
         </form>
     </form>
 }
+    @model IEnumerable<FileInfo>
+
+    <h2>Twoje załączniki:</h2>
+
+    <ul>
+        @foreach (FileInfo file in Model)
+        {
+            <p>@Html.ActionLink(file.Name, "Download", "Account", new{Path = file.FullName, fileName = file.Name}, null)</p>
+        }
+    </ul>
 <script src="~/js/googleMap.js"></script>
 <script src="~/js/GetInput.js"></script>
-
-@*@using (Html("ReadAttachment", "Account", FormMethod.Get, new { @enctype = "multipart/form-data" })){
-<form asp-controller="Account" asp-action="ReadAttachment">
-<div>
-    <table>
-        <tr>
-            <th>File Name</th>
-            <th></th>
-        </tr>
-            @foreach (AccountController file in Model)
-        {
-            <tr>
-                <td>@file.FileName</td>
-                <td>@Html.ActionLink("Download", "DownloadFile", new { fileName = file.FileName })</td>
-            </tr>
-        }
-    </table>
-</div>*@
