@@ -1,5 +1,6 @@
 ﻿@{ViewData["Title"] = "Details";
     <link href="~/styles/style.css" rel="stylesheet" />}
+<script src="https://code.jquery.com/jquery-3.3.1.js"></script>
 <h1>Szczegóły</h1>
 <div>
     <ol>
@@ -23,7 +24,8 @@
         </form>
     </form>
 }
-
+<script src="~/js/googleMap.js"></script>
+<script src="~/js/GetInput.js"></script>
 
 @*@using (Html("ReadAttachment", "Account", FormMethod.Get, new { @enctype = "multipart/form-data" })){
 <form asp-controller="Account" asp-action="ReadAttachment">

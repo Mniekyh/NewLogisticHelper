@@ -3,7 +3,9 @@
     <link href="~/styles/style.css" rel="stylesheet" />
 }
 <div class="agile-right">
-    <a>@Html.ActionLink("Dodaj", "Create", "Account")</a>
+    @Html.ActionLink("Dodaj", "Create", "Account")
+</div><div class="agile-right">
+  @Html.ActionLink("gogle", "Index", "GoogleMap")
 </div>
 <div class="agile-center">
     <ol>
@@ -16,10 +18,11 @@
         <tbody>
             @foreach (var address in ViewBag.addressesList)
             {
+
             <tr>
                     <td style="white-space:nowrap">>@address[0], @address[1]</td>
                 <td>
-                    <button type="button" class="btn">
+                    <button type="button" class="btn aButton">
                         @Html.ActionLink(
                             "Szczegóły",
                             "Details",
@@ -27,6 +30,19 @@
                             routeValues: new {
                                 miejscowosc = @address[0],
                                 ulica = @address[1]
+                            },
+                            htmlAttributes: null)
+                        </button>
+                </td> 
+                <td>
+                    <button type="button" class="btn aButton">
+                        @Html.ActionLink(
+                            "Usuń",
+                            "Remove",
+                            "Account",
+                            routeValues: new {
+                                id = @address[2],
+                               
                             },
                             htmlAttributes: null)
                         </button>

@@ -3,139 +3,62 @@
     ViewData["Title"] = "Ulic";
 }
 
-<h1>Hej, łelkom na Ulicy</h1>
+<h1>Wybór ulicy w miejscowości</h1>
+<script src="~/js/site.js"></script>
 
 
-<div class="container p-3">
-    <div class="row pt-4">
-        <div class="col-6">
-            <h2 class="text-primary">Ulic List</h2>
 
-        </div>
-        <div class="col-6 text-end">
-            <a asp-controller="Terc" asp-action="Search" class="btn btn-primary"> Search  Terc <i class="bi bi-plus-circle"></i></a>
+<div class = "container p-3">
+    <div class = "row pt-4">
+        <div class= "col-6">
+            
 
         </div>
+       @* <div class= "col-6 text-end">
+            <a asp-controller="Terc" asp-action= "Search" class = "btn btn-primary"> Search  Terc <i class="bi bi-plus-circle"></i></a>
+            
+        </div>*@
     </div>
-    <br /><br />
+    <br /><br/>
 </div>
 
 @model List<UlicaDrzewo>
-<div id="choosenStreet" class="bg-success">
+ 
+    <div   class="myForm" id = "myForm">
 
     @*Form whichh allows to search for correct street in chosen city*@
 
-    @using (Html.BeginForm("Index", "GoogleMap", FormMethod.Post))
-    {
+      @using (Html.BeginForm("Index", "GoogleMap", FormMethod.Post))
+     
         @*    @TempData["wojewodztwo"], @TempData["Powiat"],@TempData["nazwa"]*@
+           {
 
+              <datalist id="countrydata">
+                    @foreach(var streets in Model )
+                    {
+           
+                        <option value ='@streets.Nazwa1'>@streets.Nazwa1</option>
+                    
+                    }
+                </datalist>
 
-        <datalist id="countrydata">
-            @foreach (var streets in Model)
-            {
+                <label class = "formLabel" for="country">Ulica</label>
 
-                <option value='@streets.Nazwa1'>@streets.Nazwa1</option>
-
+                <input  class = "myInputsWider" type="text" id = "InputId"
+                list="countrydata"
+                size="50"
+                autocomplete="off" /> 
+  
+                <br />
+                <input type="submit" id="btnSubmit" value="Wyszukaj" onclick = "getValue()" value="Submit" class="btn btn-light"/>
+                <br />
+                <br />
             }
-        </datalist>
-        <label for="country">Voivodeship</label>
 
-        <input type="text" id="VoivodeId"
-           value='@TempData["wojewodztwo"]'
-           autocomplete="off"
-           disabled />
-        <br />
-        <label for="country">Powiat</label>
+   
+    </div>
 
-        <input type="text" id="PowiatId"
-           value='@TempData["powiat"]'
-           disabled />
-        <br />
-
-        <label for="country">City</label>
-
-        <input type="text" id="CityId"
-           value='@TempData["nazwa"]'
-           disabled />
+        <div id="output"></div>
 
 
-        <br />
-        <label for="country">Street</label>
 
-        <input type="text" id="InputId"
-           list="countrydata"
-           size="50"
-           autocomplete="off" />
-
-        <br />
-        <input type="submit" id="btnSubmit" onclick="getValue()" value="Submit" />
-        <br />
-        <br />
-
-
-    }
-
-    @*<button onclick = "getValue()">Submit</button>*@
-
-</div>
-<div id="output"></div>
-
-
-@*Table which shows Category inside*@
-@*
-table class="table table-bordered table-stripped" style= "width:100%;">
-    <thead>
-        <tr>
-            <th>
-               ID
-            </th>
-            <th>
-                LAST_NAME
-            </th>
-               <th>
-               NAME
-            </th>
-            <th>
-                Data Urodzenia
-            </th>
-               <th>
-               Mail
-            </th>
-            <th>
-                PHONE
-            </th>
-            <th>
-                Edit
-            </th>
-              <th>
-                Delete
-            </th>
-        </tr>
-    </thead>
-    <tbody>
-        Loop to get data from database
-        @foreach(var obj in Model)
-        {
-            <tr>
-                <td width= "10%">
-                    @obj.WOJ
-                </td>
-
-                <td width= "10%">
-                    @obj.POW
-                </td>
-
-
-                <td width= "10%">
-                    @obj.GMI
-
-                </td>
-                 <td width= "10%">
-                    @obj.STAN_NA
-
-                </td>
-          </tr>
-        }
-    </tbody>
-
-</table>*@

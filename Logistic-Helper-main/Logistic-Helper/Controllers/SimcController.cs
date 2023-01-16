@@ -14,6 +14,7 @@ using Newtonsoft.Json.Linq;
 using System.Diagnostics;
 using Microsoft.AspNetCore.Mvc.ViewFeatures;
 using LogisticHelper.Classes;
+using Microsoft.AspNetCore.Authorization;
 
 namespace LogisticHelper.Controllers
 {
@@ -71,7 +72,7 @@ namespace LogisticHelper.Controllers
                               stan_na = Simc.STAN_NA,
 
 
-
+                              //Take 5 most suitable
                           }).Take(5).ToList();
 
            
@@ -97,8 +98,7 @@ namespace LogisticHelper.Controllers
         public IActionResult Search()
         {
 
-            
-            
+
 
 
             return View();
@@ -122,7 +122,7 @@ namespace LogisticHelper.Controllers
         public async Task<ActionResult> FoundAsync(string search)
         {
             var client = connection();
-            //Zastanowić się jak rozgryźć wyszukiwarkę, 2 autocomplete? Jedna ze stringiem dla użytkownika, jedna dla sprzętu?
+            
             var ss = AutoComplete(search);
             dynamic jsoon = JsonConvert.DeserializeObject(ss);
             var villagesArrays = new List<Miejscowosc[]> { };
@@ -136,16 +136,10 @@ namespace LogisticHelper.Controllers
                 villagesArrays.Add(await client.WyszukajMiejscowoscAsync(objNazwa, objSym)); // <---- Za każdym razem, tworzy się tutaj obiekt Miejscowość, teraz trzeba ją wyrucić na ekran
 
             }
-            //WORKS!!!!!
-            //Now have to write correct instruction to show data, but the principal of it works 
-            //Whole JSON is being send, so np to choose data
-
-            /*  foreach (ServiceReference1.Miejscowosc[] obj in villagesArrays)
-              {
-              }*/
+          
 
 
-            //Working!!!
+
             //Now find out how to show links on page!
           
             List<Miejscowosc> villages = new List<Miejscowosc>();
@@ -165,9 +159,6 @@ namespace LogisticHelper.Controllers
 
             return View(villages);
         }
-
-        //Why symbol == null?
-        //GET /Details/sym
 
 
         public async Task<IActionResult> DetailsAsync(string symbol, string wojewodztwo, string powiat, string nazwaMiejscowosci)
@@ -270,25 +261,16 @@ namespace LogisticHelper.Controllers
 
 
 
-            IEnumerable<Simc> SimcObjList = _unitOfWork.Simc.GetAll();
+            DateTime s = DateTime.Now;
+            DateTime e = s.AddYears(-1);
 
-
-            //Teec is updated once a year
-
-            DateTime prsD = DateTime.Now;
-            string presentDate = prsD.ToShortDateString();
-
-            DateTime pstD = prsD.AddYears(-1);
-            string pastDate = pstD.ToShortDateString();
-
-
-            
+         
+            //Simc is updated once a year
 
 
 
-            //Here we have XML compressed to ZIP, now figure out how to suck it to db
-            //FileChange is a variable in which is file, it doesnt exist phyisically on disc, how to unzip it?
-            var UpdateFile = client.PobierzZmianySimcUrzedowyAsync(pstD, prsD);
+            var UpdateFile = client.PobierzZmianySimcUrzedowyAsync(e, s);
+
             PlikZmiany fileChange = UpdateFile.Result;
             string fileName = fileChange.nazwa_pliku;
             string zipContent = fileChange.plik_zawartosc;
@@ -307,15 +289,29 @@ namespace LogisticHelper.Controllers
             ZipArchive zipArchive = new ZipArchive(fs);
             string destination = Directory.GetCurrentDirectory() + @"/File/";
             zipArchive.ExtractToDirectory(destination);
-            ViewBag.Message = "Selected SS Name: " + zipContent;
-            //  ViewBag.Message = "Selected GMI Name: " + search;
+            //return XML
+        }
+     
 
-            //Above works, need smth to read xml
+            
+            public void readXML()
+        {
+            DateTime s = DateTime.Now;
+            string startingDate = s.ToString("yyyy-MM-dd");
+
+
+            DateTime e = s.AddYears(-1);
+            string endingDate = e.ToString("yyyy-MM-dd");
+
+            IEnumerable<Simc> SimcObjList = _unitOfWork.Simc.GetAll();
+
+
+
 
 
             XmlDocument doc = new XmlDocument();
 
-            doc.Load(Directory.GetCurrentDirectory() + "/File/SIMC_Urzedowy_zmiany_" + pastDate + "_" + presentDate + ".xml");
+            doc.Load(Directory.GetCurrentDirectory() + "/File/SIMC_Urzedowy_zmiany_" + endingDate + "_" + startingDate + ".xml");
             var xList = doc.SelectNodes("/zmiany/zmiana"); // Znajdź węzeł zmiany, w której znajdują się informacje dot. modernizacji
             foreach (XmlNode xNode in xList)
             {
@@ -325,7 +321,7 @@ namespace LogisticHelper.Controllers
 
 
                     //Dodanie jednostki administracyjnej
-                    case "D": //**********************************************ADD ALL IMPORTANT SIMC STUFFF**********************************************
+                    case "D": 
                         string xSym = (xNode.SelectSingleNode("Identyfikator").InnerText);
                         string xWojPo = (xNode.SelectSingleNode("WojPo").InnerText);
                         string xPowPo = (xNode.SelectSingleNode("PowPo").InnerText);
@@ -516,10 +512,10 @@ namespace LogisticHelper.Controllers
                         break;
                 }
 
-                //WORKS, now polishing this little boy!!!
+       
 
             }
-            // wezły
+           
 
 
         }

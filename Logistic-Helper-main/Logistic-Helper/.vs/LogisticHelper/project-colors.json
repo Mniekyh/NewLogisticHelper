@@ -25,7 +25,17 @@
       "ProjectGuid": "f22db838-6222-4b0b-8734-55abf5e5fce1",
       "DisplayName": "LogisticHelper.Utility",
       "ColorIndex": 3
+    },
+    "56f76e78-337b-4062-85f7-4a844e0606e3": {
+      "ProjectGuid": "56f76e78-337b-4062-85f7-4a844e0606e3",
+      "DisplayName": "LogisticHelper.Web",
+      "ColorIndex": 4
+    },
+    "57710c6a-bac2-4b47-8b8b-cdb8091a9879": {
+      "ProjectGuid": "57710c6a-bac2-4b47-8b8b-cdb8091a9879",
+      "DisplayName": "LogisticHelper.Web",
+      "ColorIndex": 5
     }
   },
-  "NextColorIndex": 4
+  "NextColorIndex": 6
 }

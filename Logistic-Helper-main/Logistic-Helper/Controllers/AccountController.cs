@@ -15,6 +15,18 @@ using Microsoft.OData.Edm;
 using NuGet.Packaging;
 using System.Security.Cryptography;
 using System.Text;
+using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Authentication.Cookies;
+using Microsoft.AspNetCore.Authentication;
+using ServiceReference1;
+using System.Drawing;
+using System.Reflection;
+using Microsoft.AspNetCore.Session;
+using System.Collections.Generic;
+using System.Collections;
+using NPOI.SS.Formula.Functions;
+//using System.Web.Mvc;
+//using Chilkat;
 
 namespace LogisticHelper.Controllers;
 public class AccountController : Controller
@@ -23,11 +35,16 @@ public class AccountController : Controller
     readonly SqlCommand com = new SqlCommand();
     SqlDataReader dr;
     //int userId;
-
     [HttpGet]
     public ActionResult Login()
     {
-        return View();
+            return View();
+    }    [HttpGet]
+    public ActionResult Logout()
+    {
+        ViewBag.userId = 0;
+        Console.WriteLine(ViewBag.userId);
+        return View("Login");
     }
     void connectionString()
     {
@@ -49,10 +66,9 @@ public class AccountController : Controller
     }
     //Logowanie
     [HttpPost]
-    public ActionResult Verify(Models.AccountController acc)
+    public ActionResult Verify(Models.AccountController acc, string ReturnUrl)
     {
         string hashValue = ComputeSHA512(acc.Password);
-        Console.WriteLine(hashValue);
         connectionString();
         con.Open();
         com.Connection = con;
@@ -67,7 +83,19 @@ public class AccountController : Controller
                 break;
             }
             con.Close();
+            Console.WriteLine(ViewBag.userId);
             GetUserAddresses(ViewBag.userId);
+
+
+            //var claims = new List<Claim>
+            //    {
+            //        new Claim(ClaimTypes.Name, Models.AccountController.userId)
+            //    };
+            //var claimsIdentity = new ClaimsIdentity(claims, "Login");
+
+            //await HttpContext.SignInAsync(CookieAuthenticationDefaults.AuthenticationScheme, new ClaimsPrincipal(claimsIdentity));
+            //return Redirect(ReturnUrl == null ? "/Secured" : ReturnUrl);
+
             //var identity = new ClaimsIdentity("Custom");
             //HttpContext.User = new ClaimsPrincipal(identity);
             //Console.WriteLine("Zalogowano {0}", HttpContext.User.Identity.IsAuthenticated);
@@ -83,27 +111,38 @@ public class AccountController : Controller
     public void GetUserAddresses(int userId)
     {
         con.Open();
-        //Console.WriteLine("ID: {0} ", userId);
         com.CommandText = "select * from PD2023.dbo.address_with_userid where user_id='" + userId + "'";
         List<List<String>> list = new List<List<String>>();
         using (SqlDataReader reader = com.ExecuteReader())
         {
             while (reader.Read())
             {
-                List<String> tempList = new List<String>();
-                tempList.Add(reader.GetString(2));
-                if (!reader.IsDBNull(3))
+                List<String>myList = new List<String>();
+
+                myList.Add(reader.GetString(2));
+                if (!reader.IsDBNull(3) && !reader.IsDBNull(0))
                 {
-                    tempList.Add(reader.GetString(3));
+                    myList.Add(reader.GetString(3));
+                    string id = Convert.ToString(reader.GetInt32(0) );
+                    myList.Add(id);
                 }
                 else
                 {
-                    tempList.Add("no details provided");
+                    myList.Add("no details provided");
                 }
-                list.Add(tempList);
+                list.Add(myList);
                 //Console.WriteLine("ILE: {0} ", reader.GetString(1));
             }
+            //Session[myList] = list;
             ViewBag.addressesList = list;
+            //@TempData["list"];
+            //TempData.Keep("MyData");
+            //ISession[list] as ViewBag.addressesList;
+            //var addressesList = Session["addressesList"] as List<List>;
+            //object list = TempData.Peek("list");
+            //TempData["EmpName"] as List<string>;
+            //TempData.Keep();
+            //new List<String>();
         }
     }
 
@@ -135,7 +174,6 @@ public class AccountController : Controller
         return View("ResetPasswordConfirm");
         //return new EmptyResult();
     }
-
     //Rejestracja
     [HttpPost]
     public ActionResult Sign(Models.AccountController acc)
@@ -163,7 +201,6 @@ public class AccountController : Controller
     }
 
     //Przypisanie adresow manualne
-
     [HttpPost]
     public ActionResult AddAddress(Models.AccountController acc)
     {
@@ -180,6 +217,32 @@ public class AccountController : Controller
             ViewBag.userId = Models.AccountController.userId;
 
             return View("Bindings");
+
+        }
+        catch (Exception e)
+        {
+            ViewBag.ErrorMessage = JsonConvert.SerializeObject(e, Formatting.Indented);
+            con.Close();
+            return View("Error");
+        }
+    }
+    //Removing user
+   // [HttpPost]
+    public ActionResult Remove(int? id)
+    {
+        try
+        {
+            connectionString();
+            con.Open();
+            com.Connection = con;
+            //Console.WriteLine("K:  {0}" , Models.AccountController.userId);
+            com.CommandText = "DELETE FROM dbo.address_with_userid WHERE id =  " + id;
+            dr = com.ExecuteReader();
+            con.Close();
+            GetUserAddresses(Models.AccountController.userId);
+            ViewBag.userId = Models.AccountController.userId;
+
+            return View("Remove");
 
         }
         catch (Exception e)
@@ -223,8 +286,6 @@ public IActionResult Register()
         Console.WriteLine("Hej {0}", HttpContext.User.Identity.IsAuthenticated);
         return View("Register");
     }
-    //[Authorize]
-
     public IActionResult ResetPassword()
     {
         return View("ResetPassword");
@@ -263,7 +324,6 @@ public IActionResult Register()
     }
 
     //dodawanie załączników
-
     [HttpPost]
     public IActionResult AddAttachment(IFormFile formFile)
     {
@@ -335,21 +395,23 @@ public IActionResult Register()
     //    Console.WriteLine("AddAttachment ending");
     //    return View("Details");
     //}
-
     public IActionResult Create()
     {
         return View("Create");
     }
-    public IActionResult Details(string miejscowosc, string ulica)
+    public IActionResult Bindings()
     {
-        //Directory.GetFiles(Directory.GetCurrentDirectory(), "Attachments");
-        //System.Diagnostics.Debug.WriteLine("K:  {0}", (object)test);
-        //System.Diagnostics.Debug.WriteLine("J:  {0}", (object)testA);
-        List<String> tempList = new List<String>();
-        tempList.Add(miejscowosc);
-        tempList.Add(ulica);
-        ViewBag.addressesDetails = tempList;
-        return View("Details");
+        return View("Bindings");
+    }
+    public IActionResult Details(Models.AccountController acc, string miejscowosc, string ulica)
+    {
+           //Console.WriteLine(@ViewBag.userId);
+            List<String> tempList = new List<String>();
+            tempList.Add(miejscowosc);
+            tempList.Add(ulica);
+       
+            ViewBag.addressesDetails = tempList;
+            return View("Details");
     }
 
 

@@ -5,11 +5,11 @@ VisualStudioVersion = 17.0.32112.339
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LogisticHelper", "LogisticHelper.csproj", "{EBE967E9-4C57-46D5-896C-BEC6FAE6ABC7}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LogisticHelper.DataAccess", "..\LogisticHelper.DataAccess\LogisticHelper.DataAccess.csproj", "{45DE63A5-0F73-4FA2-A7D3-78D3CD55B180}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LogisticHelper.DataAccess", "..\LogisticHelper.DataAccess\LogisticHelper.DataAccess.csproj", "{45DE63A5-0F73-4FA2-A7D3-78D3CD55B180}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LogisticHelper.Models", "..\LogisticHelper.Models\LogisticHelper.Models.csproj", "{6784EAFB-548C-4374-A2CA-C5C9E4CC1774}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LogisticHelper.Models", "..\LogisticHelper.Models\LogisticHelper.Models.csproj", "{6784EAFB-548C-4374-A2CA-C5C9E4CC1774}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LogisticHelper.Utility", "..\LogisticHelper.Utility\LogisticHelper.Utility.csproj", "{F22DB838-6222-4B0B-8734-55ABF5E5FCE1}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LogisticHelper.Utility", "..\LogisticHelper.Utility\LogisticHelper.Utility.csproj", "{F22DB838-6222-4B0B-8734-55ABF5E5FCE1}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
