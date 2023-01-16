@@ -1,45 +1,12 @@
-﻿@{ViewData["Title"] = "Details";
+﻿@{ViewData["Title"] = "Deleted";
     <link href="~/styles/style.css" rel="stylesheet" />}
 <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
-
 <h2>Adres usunięto</h2>
-
-@*@using (Html.BeginForm("AddAttachment", "Account", FormMethod.Post, new { @enctype = "multipart/form-data" })){
-<form asp-controller="Account" asp-action="AddAttachment">
-    <form action="AddAttachment" method="post">
-            <label for="formFile">Wgraj z dysku:</label>
-            <input type="file" name="formFile" id="file" />
-            <br><br>
-            <input type="submit" value="Zapisz" />
-            <br><br>
-            @ViewBag.Message
-        </form>
-    </form>
-}*@
  <button type="button" class="btn aButton">
                         @Html.ActionLink(
                             "Powrót",
-                            "",
-                            "Account",
-                           
+                            "Index",
+                            "Account",                          
                             htmlAttributes: null)
-                        </button><script src="~/js/googleMap.js"></script>
-<script src="~/js/GetInput.js"></script>
-
-@*@using (Html("ReadAttachment", "Account", FormMethod.Get, new { @enctype = "multipart/form-data" })){
-<form asp-controller="Account" asp-action="ReadAttachment">
-<div>
-    <table>
-        <tr>
-            <th>File Name</th>
-            <th></th>
-        </tr>
-            @foreach (AccountController file in Model)
-        {
-            <tr>
-                <td>@file.FileName</td>
-                <td>@Html.ActionLink("Download", "DownloadFile", new { fileName = file.FileName })</td>
-            </tr>
-        }
-    </table>
-</div>*@
+                        </button>
+@*<script src="~/js/GetInput.js"></script>*@

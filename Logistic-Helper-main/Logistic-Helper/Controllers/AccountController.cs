@@ -81,13 +81,14 @@ public class AccountController : Controller
             while (dr.HasRows)
             {
                 Models.AccountController.userId = dr.GetInt32(0);
+                TempData["userId"] = dr.GetInt32(0);
                 ViewBag.userId = dr.GetInt32(0);
                 break;
             }
             con.Close();
             Console.WriteLine(TempData.Peek("userId"));
             GetUserAddresses(ViewBag.userId);
-return View("Bindings");
+        return View("Bindings");
         }
         else
         {
@@ -297,13 +298,13 @@ public IActionResult Register()
 
     //dodawanie załączników
     [HttpPost]
-    public IActionResult AddAttachment(IFormFile formFile)
+    public IActionResult AddAttachment(IFormFile formFile, int addressId)
     {
         Console.WriteLine("AddAttachment start");
         try
         {
             ViewBag.userId = Models.AccountController.userId;
-            string fileName = @ViewBag.userId +"att"+ Path.GetFileName(formFile.FileName);
+            string fileName = @ViewBag.userId +"att"+addressId+ Path.GetFileName(formFile.FileName);
             string uploadpath = Path.Combine(Directory.GetCurrentDirectory(), "Attachments", fileName);
             var stream = new FileStream(uploadpath, FileMode.Create);
             formFile.CopyToAsync(stream);
