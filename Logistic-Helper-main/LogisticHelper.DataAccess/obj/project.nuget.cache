@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "QxJDsKYYGJ9StovGUJNo4QuaiS8mwSL/s1+haXW7fDiMsD4/ppn6/SJZL3K4RIOxevi5MOtB0hmgQull2aycqg==",
+  "dgSpecHash": "vSmbkiGgGDmAhb+Wmh84uqYTvaVVtRnYQJuGybErouK6iXFinUAB9fhcWq+35AOjFVS7fZJPS3HN6510QZOrRw==",
   "success": true,
-  "projectFilePath": "D:\\GitHubDesktop\\AgregatorAdresow\\NewLogisticHelper\\Logistic-Helper-main\\LogisticHelper.DataAccess\\LogisticHelper.DataAccess.csproj",
+  "projectFilePath": "D:\\Programowanie\\VisualStudio\\Agregator_Adresow\\NewLogisticHelper\\Logistic-Helper-main\\LogisticHelper.DataAccess\\LogisticHelper.DataAccess.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\mariu\\.nuget\\packages\\azure.core\\1.6.0\\azure.core.1.6.0.nupkg.sha512",
     "C:\\Users\\mariu\\.nuget\\packages\\azure.identity\\1.3.0\\azure.identity.1.3.0.nupkg.sha512",

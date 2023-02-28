@@ -14067,11 +14067,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\GitHubDesktop\\AgregatorAdresow\\NewLogisticHelper\\Logistic-Helper-main\\Logistic-Helper\\LogisticHelper.csproj",
+      "projectUniqueName": "D:\\Programowanie\\VisualStudio\\Agregator_Adresow\\NewLogisticHelper\\Logistic-Helper-main\\Logistic-Helper\\LogisticHelper.csproj",
       "projectName": "LogisticHelper",
-      "projectPath": "D:\\GitHubDesktop\\AgregatorAdresow\\NewLogisticHelper\\Logistic-Helper-main\\Logistic-Helper\\LogisticHelper.csproj",
+      "projectPath": "D:\\Programowanie\\VisualStudio\\Agregator_Adresow\\NewLogisticHelper\\Logistic-Helper-main\\Logistic-Helper\\LogisticHelper.csproj",
       "packagesPath": "C:\\Users\\mariu\\.nuget\\packages\\",
-      "outputPath": "D:\\GitHubDesktop\\AgregatorAdresow\\NewLogisticHelper\\Logistic-Helper-main\\Logistic-Helper\\obj\\",
+      "outputPath": "D:\\Programowanie\\VisualStudio\\Agregator_Adresow\\NewLogisticHelper\\Logistic-Helper-main\\Logistic-Helper\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -14092,11 +14092,11 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "D:\\GitHubDesktop\\AgregatorAdresow\\NewLogisticHelper\\Logistic-Helper-main\\LogisticHelper.DataAccess\\LogisticHelper.DataAccess.csproj": {
-              "projectPath": "D:\\GitHubDesktop\\AgregatorAdresow\\NewLogisticHelper\\Logistic-Helper-main\\LogisticHelper.DataAccess\\LogisticHelper.DataAccess.csproj"
+            "D:\\Programowanie\\VisualStudio\\Agregator_Adresow\\NewLogisticHelper\\Logistic-Helper-main\\LogisticHelper.DataAccess\\LogisticHelper.DataAccess.csproj": {
+              "projectPath": "D:\\Programowanie\\VisualStudio\\Agregator_Adresow\\NewLogisticHelper\\Logistic-Helper-main\\LogisticHelper.DataAccess\\LogisticHelper.DataAccess.csproj"
             },
-            "D:\\GitHubDesktop\\AgregatorAdresow\\NewLogisticHelper\\Logistic-Helper-main\\LogisticHelper.Models\\LogisticHelper.Models.csproj": {
-              "projectPath": "D:\\GitHubDesktop\\AgregatorAdresow\\NewLogisticHelper\\Logistic-Helper-main\\LogisticHelper.Models\\LogisticHelper.Models.csproj"
+            "D:\\Programowanie\\VisualStudio\\Agregator_Adresow\\NewLogisticHelper\\Logistic-Helper-main\\LogisticHelper.Models\\LogisticHelper.Models.csproj": {
+              "projectPath": "D:\\Programowanie\\VisualStudio\\Agregator_Adresow\\NewLogisticHelper\\Logistic-Helper-main\\LogisticHelper.Models\\LogisticHelper.Models.csproj"
             }
           }
         }

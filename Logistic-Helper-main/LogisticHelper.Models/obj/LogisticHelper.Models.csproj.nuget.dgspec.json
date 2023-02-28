@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\GitHubDesktop\\AgregatorAdresow\\NewLogisticHelper\\Logistic-Helper-main\\LogisticHelper.Models\\LogisticHelper.Models.csproj": {}
+    "D:\\Programowanie\\VisualStudio\\Agregator_Adresow\\NewLogisticHelper\\Logistic-Helper-main\\LogisticHelper.Models\\LogisticHelper.Models.csproj": {}
   },
   "projects": {
-    "D:\\GitHubDesktop\\AgregatorAdresow\\NewLogisticHelper\\Logistic-Helper-main\\LogisticHelper.Models\\LogisticHelper.Models.csproj": {
+    "D:\\Programowanie\\VisualStudio\\Agregator_Adresow\\NewLogisticHelper\\Logistic-Helper-main\\LogisticHelper.Models\\LogisticHelper.Models.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\GitHubDesktop\\AgregatorAdresow\\NewLogisticHelper\\Logistic-Helper-main\\LogisticHelper.Models\\LogisticHelper.Models.csproj",
+        "projectUniqueName": "D:\\Programowanie\\VisualStudio\\Agregator_Adresow\\NewLogisticHelper\\Logistic-Helper-main\\LogisticHelper.Models\\LogisticHelper.Models.csproj",
         "projectName": "LogisticHelper.Models",
-        "projectPath": "D:\\GitHubDesktop\\AgregatorAdresow\\NewLogisticHelper\\Logistic-Helper-main\\LogisticHelper.Models\\LogisticHelper.Models.csproj",
+        "projectPath": "D:\\Programowanie\\VisualStudio\\Agregator_Adresow\\NewLogisticHelper\\Logistic-Helper-main\\LogisticHelper.Models\\LogisticHelper.Models.csproj",
         "packagesPath": "C:\\Users\\mariu\\.nuget\\packages\\",
-        "outputPath": "D:\\GitHubDesktop\\AgregatorAdresow\\NewLogisticHelper\\Logistic-Helper-main\\LogisticHelper.Models\\obj\\",
+        "outputPath": "D:\\Programowanie\\VisualStudio\\Agregator_Adresow\\NewLogisticHelper\\Logistic-Helper-main\\LogisticHelper.Models\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
